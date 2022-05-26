@@ -69,13 +69,13 @@
      <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterEventComponent.cs" />
      <Compile Include="Assets\Scripts\Utils\HandleUtils.cs" />
      <Compile Include="Assets\Scripts\Utils\GameObjectExtensions.cs" />
-     <Compile Include="Assets\Scripts\Componenets\Audio\PlaySoundsComponents.cs" />
-     <Compile Include="Assets\Scripts\Utils\AudioUtils.cs" />
+     <Compile Include="Assets\Scripts\Componenets\Audio\PlaySoundsComponent.cs" />
      <Compile Include="Assets\Scripts\Creatures\Mobs\MobAI.cs" />
      <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\Patrol.cs" />
      <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
      <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\PointPatrol.cs" />
      <Compile Include="Assets\Scripts\Animation\SpriteAnimator.cs" />
+     <Compile Include="Assets\Scripts\Componenets\Audio\AudioLerp.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

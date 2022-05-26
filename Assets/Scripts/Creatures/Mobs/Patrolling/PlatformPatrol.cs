@@ -12,12 +12,12 @@ namespace Scriptes.Creatures.Mobs.Patrolling
         [SerializeField] private LayerCheck _obstacleCheck;
         [SerializeField] private OnChangeDirection _onChangeDirection;
         [SerializeField] private int _direction;
-        
+
         public override IEnumerator DoPatrol()
         {
             while (enabled)
             {
-                if (_isGround.isTouchingLayer && !_obstacleCheck.isTouchingLayer)
+                if (_isGround.isTouchingLayer && _obstacleCheck.isTouchingLayer)
                 {
                     _onChangeDirection?.Invoke(new Vector2(_direction, 0));
                 }
@@ -32,9 +32,9 @@ namespace Scriptes.Creatures.Mobs.Patrolling
             }
         }
     }
+}
 
-    [Serializable]
-    public class OnChangeDirection : UnityEvent<Vector2>
-    {
-    }
+[Serializable]
+public class OnChangeDirection : UnityEvent<Vector2>
+{
 }

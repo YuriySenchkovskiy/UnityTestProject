@@ -8,38 +8,47 @@ namespace Scriptes.Creatures.Mobs
 {
     public class MobAI : MonoBehaviour
     {
-        [SerializeField] private LayerCheck _vision;
-        [SerializeField] protected LayerCheck _canAttack;
-        [SerializeField] protected Creature _creature;
+        [SerializeField] private LayerCheck _canAttack;
+        [SerializeField] private Creatures _creature;
+        [SerializeField] private float _horizontalTrashold = 0.2f;
+        [SerializeField] private float _alarmDelay = 0.5f; 
         
-        [SerializeField] protected float _alarmDelay = 0.5f; 
-        [SerializeField] protected float _attackCooldawn = 1f;
+        [SerializeField] private float _attackCooldawn = 1f;
         [SerializeField] private float _missHeroCooldown = 0.5f;
-
-        [SerializeField] protected float _horizontalTrashold = 0.2f; 
-
-        private IEnumerator _current; 
-        protected GameObject _target; 
-        protected SpawnListComponent _particles;
+        [SerializeField] private LayerCheck _vision;
+        [SerializeField] private string _attack = "Attack";
         
-        protected Animator _animator; 
-        protected bool _isDead; 
-        protected Patrol _patrol;
+        [SerializeField] private string _miss = "Miss";
+        [SerializeField] private string _exclamation = "Exclamation";
         
+        private GameObject _target; 
+        private SpawnListComponent _particles;
+        private Animator _animator;
+        private bool _isDead; 
+        
+        private Patrol _patrol;
+        private IEnumerator _current;
         private static readonly int IsDeadKey = Animator.StringToHash("isDeadKey");
         
-        private void Awake()
+        public virtual void OnHeroInVision(GameObject go)
         {
-            _particles = GetComponent<SpawnListComponent>();
-            _animator = GetComponent<Animator>();
-            _patrol = GetComponent<Patrol>();
+            if (_isDead) return;
+            _target = go;
+            
+            StartState(AgroToHero());
         }
 
-        private void Start()
+        public void OnDie()
         {
-            StartState(_patrol.DoPatrol());
-        }
+            _isDead = true;
+            _animator.SetBool(IsDeadKey,true);
 
+            if (_current != null)
+            {
+                StopCoroutine(_current);
+            }
+        }
+        
         protected void StartState(IEnumerator coroutine)
         {
             _creature.SetDirection(Vector2.zero); 
@@ -56,7 +65,7 @@ namespace Scriptes.Creatures.Mobs
         protected virtual IEnumerator AgroToHero()
         {
             LookAtHero();
-            _particles.Spawn("Exclamation"); 
+            _particles.Spawn(_exclamation); 
             yield return new WaitForSeconds(_alarmDelay); 
             StartState(GoToHero());
         }
@@ -90,28 +99,18 @@ namespace Scriptes.Creatures.Mobs
             }
             
             _creature.SetDirection(Vector2.zero);
-            _particles.Spawn("Miss");
+            _particles.Spawn(_miss);
             yield return new WaitForSeconds(_missHeroCooldown);
 
             DoubleCheckHero();
         }
-
-        private void DoubleCheckHero()
-        {
-            if (_vision.isTouchingLayer)
-                StartState(GoToHero());
-            else
-            {
-                StartState(_patrol.DoPatrol());
-            }
-        }
-
+        
         protected virtual IEnumerator Attack()
         {
             while (_canAttack.isTouchingLayer)
             {
                 _creature.Attack();
-                _particles.Spawn("Attack");
+                _particles.Spawn(_attack);
                 yield return new WaitForSeconds(_attackCooldawn);
             }
 
@@ -124,30 +123,33 @@ namespace Scriptes.Creatures.Mobs
             _creature.SetDirection(direction);
         }
 
+        private void DoubleCheckHero()
+        {
+            if (_vision.isTouchingLayer)
+                StartState(GoToHero());
+            else
+            {
+                StartState(_patrol.DoPatrol());
+            }
+        }
+        
+        private void Awake()
+        {
+            _particles = GetComponent<SpawnListComponent>();
+            _animator = GetComponent<Animator>();
+            _patrol = GetComponent<Patrol>();
+        }
+
+        private void Start()
+        {
+            StartState(_patrol.DoPatrol());
+        }
+        
         private Vector2 GetDirectionToTarget()
         {
             var direction = _target.transform.position - transform.position;
             direction.y = 0;
             return direction.normalized;
-        }
-        
-        public virtual void OnHeroInVision(GameObject go)
-        {
-            if (_isDead) return;
-            _target = go;
-            
-            StartState(AgroToHero());
-        }
-
-        public void OnDie()
-        {
-            _isDead = true;
-            _animator.SetBool(IsDeadKey,true);
-
-            if (_current != null)
-            {
-                StopCoroutine(_current);
-            }
         }
     }
 }

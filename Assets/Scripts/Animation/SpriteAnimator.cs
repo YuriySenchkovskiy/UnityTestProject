@@ -18,8 +18,25 @@ namespace Scriptes.Animation
         private float _nextFrameTime; 
         private int _currentFrame;
         private bool _isPlaying = true;
+        
         private int _currentClip;
+        private int _nextClip = 1;
 
+        public void SetClip(string name)
+        {
+            for (var i = 0; i < _clips.Length; i++)
+            {
+                if (_clips[i].Name == name)
+                {
+                    _currentClip = i;
+                    StartAnimation();
+                    return;
+                }
+            }
+
+            enabled = _isPlaying = false;
+        }
+        
         private void OnEnable() 
         {
             _nextFrameTime = Time.time;
@@ -62,7 +79,7 @@ namespace Scriptes.Animation
                     if (clip.AllowNextClip)
                     {
                         _currentFrame = 0;
-                        _currentClip = (int) Mathf.Repeat(_currentClip + 1, _clips.Length);
+                        _currentClip = (int) Mathf.Repeat(_currentClip + _nextClip, _clips.Length);
                     }
                 }
 
@@ -74,38 +91,28 @@ namespace Scriptes.Animation
             _currentFrame++;
         }
 
-        public void SetClip(string name)
-        {
-            for (var i = 0; i < _clips.Length; i++)
-            {
-                if (_clips[i].Name == name)
-                {
-                    _currentClip = i;
-                    StartAnimation();
-                    return;
-                }
-            }
-
-            enabled = _isPlaying = false;
-        }
-
         private void StartAnimation()
         {
             _nextFrameTime = Time.time;
             enabled = _isPlaying = true;
             if (!_clips[_currentClip].Random)
-                _currentFrame = 0;
+            {
+                _currentFrame = 0; 
+            }
             else
+            {
                 _currentFrame = Random.Range(0, _clips[_currentClip].Sprites.Length);
+            }
         }
-    
+
         [Serializable]
-        public class AnimationClip
+        private class AnimationClip
         {
             [SerializeField] private string _name;
             [SerializeField] private bool _loop;
             [SerializeField] private bool _random;
             [SerializeField] private bool _allowNextClip;
+            
             [SerializeField] private Sprite[] _sprites;
             [SerializeField] private UnityEvent _onComplete;
             

@@ -7,7 +7,7 @@ namespace Scriptes.Utils.ObjectPool
     {
         private readonly Dictionary<int, Queue<PoolItem>> _items = new Dictionary<int, Queue<PoolItem>>();
         private static Pool _instance;
-
+        
         public static Pool Instance
         {
             get
@@ -42,7 +42,15 @@ namespace Scriptes.Utils.ObjectPool
 
             return instance;
         }
-
+        
+        public void Release(int id, PoolItem poolItem)
+        {
+            var queue = RequireQueue(id);
+            queue.Enqueue(poolItem);
+            
+            poolItem.gameObject.SetActive(false);
+        }
+        
         private Queue<PoolItem> RequireQueue(int id)
         {
             if (!_items.TryGetValue(id, out var queue))
@@ -52,14 +60,6 @@ namespace Scriptes.Utils.ObjectPool
             }
 
             return queue;
-        }
-
-        public void Release(int id, PoolItem poolItem)
-        {
-            var queue = RequireQueue(id);
-            queue.Enqueue(poolItem);
-            
-            poolItem.gameObject.SetActive(false);
         }
     }
 }
