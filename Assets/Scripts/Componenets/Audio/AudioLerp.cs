@@ -41,7 +41,7 @@ namespace Scriptes.Components.Audio
         private IEnumerator TurnOnLerp()
         {
             float currentTime = 0;
-            
+
             while (_audio.volume < _finalVolume)
             {
                 currentTime += Time.deltaTime;
