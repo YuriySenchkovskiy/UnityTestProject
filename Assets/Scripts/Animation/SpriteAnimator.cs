@@ -11,14 +11,14 @@ namespace Scriptes.Animation
         [Header("Settings")] 
         [SerializeField] [Range(1, 30)] private int _frameRate = 10;
         [SerializeField] private AnimationClip[] _clips;
-        [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private UnityEvent<string> _onComplete;
         
+        private SpriteRenderer _renderer;
         private float _secondPerFrame;
         private float _nextFrameTime; 
         private int _currentFrame;
-        private bool _isPlaying = true;
         
+        private bool _isPlaying = true;
         private int _currentClip;
         private int _nextClip = 1;
 
@@ -44,6 +44,7 @@ namespace Scriptes.Animation
 
         private void Start()
         {
+            _renderer = GetComponent<SpriteRenderer>();
             _secondPerFrame = 1f / _frameRate;
             StartAnimation();
         }
@@ -61,8 +62,10 @@ namespace Scriptes.Animation
         private void Update()
         {
             if (_nextFrameTime > Time.time)
+            {
                 return;
-
+            }
+            
             var clip = _clips[_currentClip]; 
             if (_currentFrame >= clip.Sprites.Length)
             {

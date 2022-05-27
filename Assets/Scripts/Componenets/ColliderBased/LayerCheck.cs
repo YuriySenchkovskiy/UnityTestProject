@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Scriptes.Components.ColliderBased
 {
+    [RequireComponent(typeof(Collider2D))]
     public class LayerCheck : MonoBehaviour
     {
         [SerializeField] protected LayerMask layer; 

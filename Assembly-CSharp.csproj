@@ -52,30 +52,31 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Componenets\ColliderBased\LayerCheck.cs" />
-     <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterTriggerComponent.cs" />
-     <Compile Include="Assets\Scripts\Componenets\ColliderBased\CheckCircleOverlap.cs" />
-     <Compile Include="Assets\Scripts\Componenets\GoBased\SpawnListComponent.cs" />
-     <Compile Include="Assets\Scripts\Componenets\GoBased\SpawnComponent.cs" />
-     <Compile Include="Assets\Scripts\Utils\ObjectPool.cs" />
-     <Compile Include="Assets\Scripts\Utils\PoolItem.cs" />
-     <Compile Include="Assets\Scripts\Utils\SpawnUtils.cs" />
      <Compile Include="Assets\Scripts\Creatures\Creatures.cs" />
+     <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterTriggerComponent.cs" />
+     <Compile Include="Assets\Scripts\Utils\PoolItem.cs" />
+     <Compile Include="Assets\Scripts\Componenets\ColliderBased\BaseDetectionComponent.cs" />
      <Compile Include="Assets\Scripts\Componenets\ColliderBased\LineCastCheck.cs" />
-     <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterCollisionComponent.cs" />
+     <Compile Include="Assets\Scripts\Utils\ObjectPool.cs" />
+     <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\PointPatrol.cs" />
+     <Compile Include="Assets\Scripts\Componenets\GoBased\SpawnListComponent.cs" />
+     <Compile Include="Assets\Scripts\Componenets\Audio\AudioParabola.cs" />
+     <Compile Include="Assets\Scripts\Componenets\ColliderBased\LayerCheck.cs" />
+     <Compile Include="Assets\Scripts\Animation\SpriteAnimator.cs" />
+     <Compile Include="Assets\Scripts\Componenets\GoBased\SpawnComponent.cs" />
+     <Compile Include="Assets\Scripts\Utils\HandleUtils.cs" />
+     <Compile Include="Assets\Scripts\Creatures\Mobs\MobAI.cs" />
+     <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
      <Compile Include="Assets\Scripts\Componenets\ColliderBased\ExitTriggerComponent.cs" />
+     <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterEventComponent.cs" />
+     <Compile Include="Assets\Scripts\Componenets\Audio\PlaySoundsComponent.cs" />
+     <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterCollisionComponent.cs" />
+     <Compile Include="Assets\Scripts\Utils\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Scripts\Componenets\ColliderBased\CheckCircleOverlap.cs" />
+     <Compile Include="Assets\Scripts\Utils\SpawnUtils.cs" />
+     <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\Patrol.cs" />
      <Compile Include="Assets\Scripts\Componenets\ColliderBased\StayTriggerComponent.cs" />
      <Compile Include="Assets\Scripts\Componenets\ColliderBased\ExitCollisionComponent.cs" />
-     <Compile Include="Assets\Scripts\Componenets\ColliderBased\EnterEventComponent.cs" />
-     <Compile Include="Assets\Scripts\Utils\HandleUtils.cs" />
-     <Compile Include="Assets\Scripts\Utils\GameObjectExtensions.cs" />
-     <Compile Include="Assets\Scripts\Componenets\Audio\PlaySoundsComponent.cs" />
-     <Compile Include="Assets\Scripts\Creatures\Mobs\MobAI.cs" />
-     <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\Patrol.cs" />
-     <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
-     <Compile Include="Assets\Scripts\Creatures\Mobs\Patrolling\PointPatrol.cs" />
-     <Compile Include="Assets\Scripts\Animation\SpriteAnimator.cs" />
-     <Compile Include="Assets\Scripts\Componenets\Audio\AudioLerp.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace Scriptes.Creatures.Mobs
 {
+    [RequireComponent(typeof(Animator), typeof(Patrol))]
     public class MobAI : MonoBehaviour
     {
         [SerializeField] private LayerCheck _canAttack;
@@ -27,12 +28,15 @@ namespace Scriptes.Creatures.Mobs
         private bool _isDead; 
         
         private Patrol _patrol;
-        private IEnumerator _current;
+        private IEnumerator _currentCoroutine;
         private static readonly int IsDeadKey = Animator.StringToHash("isDeadKey");
         
         public virtual void OnHeroInVision(GameObject go)
         {
-            if (_isDead) return;
+            if (_isDead)
+            {
+                return;
+            }
             _target = go;
             
             StartState(AgroToHero());
@@ -43,9 +47,9 @@ namespace Scriptes.Creatures.Mobs
             _isDead = true;
             _animator.SetBool(IsDeadKey,true);
 
-            if (_current != null)
+            if (_currentCoroutine != null)
             {
-                StopCoroutine(_current);
+                StopCoroutine(_currentCoroutine);
             }
         }
         
@@ -53,12 +57,12 @@ namespace Scriptes.Creatures.Mobs
         {
             _creature.SetDirection(Vector2.zero); 
             
-            if (_current != null)
+            if (_currentCoroutine != null)
             {
-                StopCoroutine(_current);
+                StopCoroutine(_currentCoroutine);
             }
             
-            _current = coroutine;
+            _currentCoroutine = coroutine;
             StartCoroutine(coroutine);
         }
 
@@ -90,9 +94,13 @@ namespace Scriptes.Creatures.Mobs
                     var horizontalDelta = Mathf.Abs(_target.transform.position.x 
                                                     - transform.position.x);
                     if (horizontalDelta <= _horizontalTrashold)
+                    {
                         _creature.SetDirection(Vector2.zero);
+                    }
                     else
+                    {
                         SetDirectionToTarget();
+                    }
                 }
                 
                 yield return null;
@@ -126,7 +134,9 @@ namespace Scriptes.Creatures.Mobs
         private void DoubleCheckHero()
         {
             if (_vision.isTouchingLayer)
+            {
                 StartState(GoToHero());
+            }
             else
             {
                 StartState(_patrol.DoPatrol());

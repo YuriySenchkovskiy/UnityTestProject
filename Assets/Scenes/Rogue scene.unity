@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763d0c59c96c460392944a9bd1b0b965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 
   _layer:
     serializedVersion: 2
     m_Bits: 64
@@ -224,8 +223,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1385717178}
-        m_TargetAssemblyTypeName: Scriptes.Components.Audio.AudioLerp, Assembly-CSharp
-        m_MethodName: TurnOff
+        m_TargetAssemblyTypeName: Scriptes.Components.Audio.AudioParabola, Assembly-CSharp
+        m_MethodName: ChangeSoundVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -815,6 +814,7 @@ MonoBehaviour:
   - {fileID: 1114810581}
   _treshold: 0.6
   _waitTime: 2
+  _miss: Miss
 --- !u!1 &469173063
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,8 +3228,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1385717178}
-          m_TargetAssemblyTypeName: Scriptes.Components.Audio.AudioLerp, Assembly-CSharp
-          m_MethodName: TurnOn
+          m_TargetAssemblyTypeName: Scriptes.Components.Audio.AudioParabola, Assembly-CSharp
+          m_MethodName: ChangeSoundVolume
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3262,7 +3262,6 @@ MonoBehaviour:
             m_StringArgument: idle
             m_BoolArgument: 0
           m_CallState: 2
-  _renderer: {fileID: 1781183393}
   _onComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -3296,7 +3295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0381bedbff3ac431091015fca42afaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 
   _layer:
     serializedVersion: 2
     m_Bits: 64

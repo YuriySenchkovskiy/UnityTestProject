@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Scriptes.Creatures
 {
+    [RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
     public class Creatures : MonoBehaviour
     {
         [Header("Movement")] 

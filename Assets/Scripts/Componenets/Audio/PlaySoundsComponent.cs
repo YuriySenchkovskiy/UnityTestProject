@@ -14,7 +14,10 @@ namespace Scriptes.Components.Audio
         {
             foreach (var audioData in _sounds)
             {
-                if (audioData.Id != id) continue;
+                if (audioData.Id != id)
+                {
+                    continue;
+                }
                 _source.PlayOneShot(audioData.Clip);
                 break;
             }

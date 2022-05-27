@@ -15,6 +15,7 @@ namespace Scriptes.Creatures.Mobs.Patrolling
         private float _multiplier = 1.5f;
         private int _zeroValue = 0;
         private int _destinationPointIndex;
+        
         private int _nextPoint = 1;
         private Creatures _creature;
         private SpawnListComponent _particles;

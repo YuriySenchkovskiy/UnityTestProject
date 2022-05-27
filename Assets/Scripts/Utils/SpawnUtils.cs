@@ -10,7 +10,9 @@ namespace Scriptes.Utils
         {
             var container = GameObject.Find(containerName);
             if (container == null)
+            {
                 container = new GameObject(containerName);
+            }
             
             return Object.Instantiate(prefab, position, Quaternion.identity, container.transform);
         }

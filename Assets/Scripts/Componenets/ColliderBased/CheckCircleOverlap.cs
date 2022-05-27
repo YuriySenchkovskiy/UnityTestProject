@@ -11,6 +11,7 @@ using UnityEngine.Events;
 
 namespace Scriptes.Components.ColliderBased
 {
+    [RequireComponent(typeof(LayerMask))]
     public class CheckCircleOverlap : MonoBehaviour
     {
         [SerializeField] private float _radius = 1f; 
