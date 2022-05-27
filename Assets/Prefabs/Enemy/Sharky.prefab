@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6299724645828961930}
   - component: {fileID: 6299724645828961931}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: MissPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,9 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 6299724645828961930}
   _prefab: {fileID: 4898851383623844100, guid: eb4e3714ecdc5410899faddb3f7f978e, type: 3}
-  _invertXScale: 0
-  _invertYScale: 0
-  _usePool: 0
+  _isInvertXScale: 1
+  _isInvertYScale: 0
+  _isUsePool: 1
 --- !u!1 &6299724645880345759
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,7 +64,8 @@ GameObject:
   - component: {fileID: 6299724645880345729}
   - component: {fileID: 6299724645880345732}
   - component: {fileID: 6299724645880345735}
-  - component: {fileID: 6299724645880345734}
+  - component: {fileID: 399778647}
+  - component: {fileID: 7060651372853294280}
   m_Layer: 6
   m_Name: Sharky
   m_TagString: Enemy
@@ -79,7 +80,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6299724645880345759}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.65, y: -1.564, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -209,10 +210,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawners:
-  - id: Run
-    component: {fileID: 6299724645911396204}
-  - id: Miss
-    component: {fileID: 6299724645828961931}
+  - Id: Run
+    Component: {fileID: 6299724645911396204}
+  - Id: Miss
+    Component: {fileID: 6299724645828961931}
 --- !u!114 &6299724645880345732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,15 +226,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf02624f00147fb8557e13733b97a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.2
   _rigidbody2D: {fileID: 6299724645880345728}
-  _invertScale: 1
-  jumpLevel: 0
-  damageJumpLevel: 0
+  _speed: 1.2
+  _jumpLevel: 0
+  _damageJumpLevel: 0
   _layerCheck: {fileID: 6299724647413262876}
+  _jump: Jump
   _damage: 0
   _attackRange: {fileID: 0}
+  _melee: Melee
   _particles: {fileID: 6299724645880345729}
+  _run: Run
   _animator: {fileID: 6299724645880345730}
 --- !u!114 &6299724645880345735
 MonoBehaviour:
@@ -247,14 +250,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29dd0847202c4b4a94c926acbeebbb71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vision: {fileID: 0}
-  _canAttack: {fileID: 0}
+  _isCanAttack: {fileID: 0}
   _creature: {fileID: 6299724645880345732}
+  _horizontalTrashold: 0.2
   _alarmDelay: 0.5
   _attackCooldawn: 1
   _missHeroCooldown: 0.5
-  _horizontalTrashold: 0.2
---- !u!114 &6299724645880345734
+  _vision: {fileID: 0}
+  _attack: Attack
+  _miss: Miss
+  _exclamation: Exclamation
+--- !u!114 &399778647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -263,26 +269,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 6299724645880345759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 280a3fd29d774f418586125a2feceb6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 7150d749224747b9b720b14870030e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isGround: {fileID: 6299724646472048324}
-  _onChangeDirection:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6299724645880345732}
-        m_TargetAssemblyTypeName: Scriptes.Creatures.Creatures, Assembly-CSharp
-        m_MethodName: SetDirection
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _direction: -1
+  _points:
+  - {fileID: 0}
+  - {fileID: 0}
+  _treshold: 0.6
+  _waitTime: 2
+  _miss: Miss
+--- !u!114 &7060651372853294280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299724645880345759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c489f2bfc91c42cdb409d2f25f110259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 0}
+  _sounds: []
 --- !u!1 &6299724645911396206
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6299724645911396207}
   - component: {fileID: 6299724645911396204}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FootStepPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,9 +337,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 6299724645911396207}
   _prefab: {fileID: 2306195718720910413, guid: b4f0fb16f48954b71948f6623adad29e, type: 3}
-  _invertXScale: 1
-  _invertYScale: 0
-  _usePool: 1
+  _isInvertXScale: 1
+  _isInvertYScale: 0
+  _isUsePool: 1
 --- !u!1 &6299724646472048326
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6299724646472048327}
   - component: {fileID: 6299724646472048324}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: PatrolCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,10 +384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38cab3f49dfa418c93657bf62106d9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer:
+  _layer:
     serializedVersion: 2
     m_Bits: 8
-  _isTouchingLayer: 0
+  IsOnLayer: 0
   _target: {fileID: 6299724646778958930}
 --- !u!1 &6299724646778959021
 GameObject:
@@ -389,7 +398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6299724646778958930}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6299724647341739105}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +462,7 @@ GameObject:
   - component: {fileID: 6299724647413262879}
   - component: {fileID: 6299724647413262877}
   - component: {fileID: 6299724647413262876}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b33c08e4b23a44d2b798b692ac35d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layer:
+  _layer:
     serializedVersion: 2
     m_Bits: 8
-  _isTouchingLayer: 0
+  IsOnLayer: 0
