@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Scriptes.Components.GoBased;
 using UnityEngine;

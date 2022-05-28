@@ -87,8 +87,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waitTimeFrom: 1.1
-  _waitTimeTo: 3.5
-  _detonate:
+  _waitTimeTo: 2.2
+  _detonated:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3938720149249661188}

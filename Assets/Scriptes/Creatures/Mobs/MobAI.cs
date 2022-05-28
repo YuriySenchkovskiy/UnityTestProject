@@ -3,11 +3,10 @@ using Scriptes.Components.ColliderBased;
 using Scriptes.Components.GoBased;
 using Scriptes.Creatures.Mobs.Patrolling;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Scriptes.Creatures.Mobs
 {
-    [RequireComponent(typeof(Animator), typeof(Patrol), typeof(SpawnListComponent))]
+    [RequireComponent(typeof(Patrol), typeof(SpawnListComponent))]
     public class MobAI : MonoBehaviour
     {
         [SerializeField] private LayerCheck _isCanAttack;
@@ -25,40 +24,16 @@ namespace Scriptes.Creatures.Mobs
         
         private GameObject _target; 
         private SpawnListComponent _particles;
-        private Animator _animator;
         private bool _isDead; 
         
         private Patrol _patrol;
-        private IEnumerator _currentCoroutine;
-        private static readonly int IsDeadKey = Animator.StringToHash("isDeadKey");
+        private Coroutine _currentCoroutine;
         private WaitForSeconds _attackWait;
         
         private WaitForSeconds _cooldownWait;
         private WaitForSeconds _alarmWait;
-        
-        public virtual void CatchHeroInVision(GameObject go)
-        {
-            if (_isDead)
-            {
-                return;
-            }
-            _target = go;
-            
-            StartState(AgroToHero());
-        }
 
-        public void SetDieState()
-        {
-            _isDead = true;
-            _animator.SetBool(IsDeadKey,true);
-
-            if (_currentCoroutine != null)
-            {
-                StopCoroutine(_currentCoroutine);
-            }
-        }
-        
-        protected void StartState(IEnumerator coroutine)
+        private void StartState(IEnumerator coroutine)
         {
             _creature.SetDirection(Vector2.zero); 
             
@@ -67,11 +42,10 @@ namespace Scriptes.Creatures.Mobs
                 StopCoroutine(_currentCoroutine);
             }
             
-            _currentCoroutine = coroutine;
-            StartCoroutine(coroutine);
+            _currentCoroutine = StartCoroutine(coroutine);
         }
 
-        protected virtual IEnumerator AgroToHero()
+        private IEnumerator AgroToHero()
         {
             LookAtHero();
             _particles.Spawn(_exclamation);
@@ -79,14 +53,14 @@ namespace Scriptes.Creatures.Mobs
             StartState(GoToHero());
         }
 
-        protected void LookAtHero()
+        private void LookAtHero()
         {
             _creature.SetDirection(Vector2.zero);
             var direction = GetDirectionToTarget();
             _creature.UpdateSpriteDirection(direction);
         }
 
-        protected IEnumerator GoToHero()
+        private IEnumerator GoToHero()
         {
             while (_vision.IsTouchingLayer) 
             {
@@ -118,7 +92,7 @@ namespace Scriptes.Creatures.Mobs
             CheckHeroPosition();
         }
         
-        protected virtual IEnumerator Attack()
+        private IEnumerator Attack()
         {
             while (_isCanAttack.IsTouchingLayer)
             {
@@ -130,7 +104,7 @@ namespace Scriptes.Creatures.Mobs
             StartState(GoToHero());
         }
 
-        protected virtual void SetDirectionToTarget()
+        private void SetDirectionToTarget()
         {
             var direction = GetDirectionToTarget();
             _creature.SetDirection(direction);
@@ -138,20 +112,12 @@ namespace Scriptes.Creatures.Mobs
 
         private void CheckHeroPosition()
         {
-            if (_vision.IsTouchingLayer)
-            {
-                StartState(GoToHero());
-            }
-            else
-            {
-                StartState(_patrol.DoPatrol());
-            }
+            StartState(_vision.IsTouchingLayer ? GoToHero() : _patrol.DoPatrol());
         }
         
         private void Awake()
         {
             _particles = GetComponent<SpawnListComponent>();
-            _animator = GetComponent<Animator>();
             _patrol = GetComponent<Patrol>();
         }
 
