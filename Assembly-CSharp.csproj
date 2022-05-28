@@ -77,6 +77,8 @@
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\Patrol.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\StayTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
+     <Compile Include="Assets\Scriptes\Creatures\Mobs\Bomb.cs" />
+     <Compile Include="Assets\Scriptes\Components\Timer\TimerComponent.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
