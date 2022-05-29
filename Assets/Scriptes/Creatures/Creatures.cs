@@ -12,6 +12,7 @@ namespace Scriptes.Creatures
         [Header("Movement")] 
         [SerializeField] private Rigidbody2D _rigidbody2D;
         [SerializeField, Range(0, 10)] private float _speed;
+        [SerializeField] private bool _invertScale;
 
         private Vector2 _direction;
         private Vector3 _forwardScale = Vector3.one; 
@@ -61,13 +62,14 @@ namespace Scriptes.Creatures
         
         public void UpdateSpriteDirection(Vector2 direction)
         {
+            var multiplier = _invertScale ? -1 : 1;
             if (direction.x > 0)
             {
-                transform.localScale = new Vector3(_forwardScale.x, _forwardScale.y, _forwardScale.z);
+                transform.localScale = new Vector3(_forwardScale.x * multiplier, _forwardScale.y, _forwardScale.z);
             }
             else if (direction.x < 0)
             {
-                transform.localScale = new Vector3(_backwardsScale.x, _backwardsScale.y, _backwardsScale.z);
+                transform.localScale = new Vector3(_backwardsScale.x * multiplier, _backwardsScale.y, _backwardsScale.z);
             }
         }
         
@@ -93,17 +95,17 @@ namespace Scriptes.Creatures
             this._direction = direction; 
         }
 
-        protected virtual void Awake()
+        private void Awake()
         {
             _sounds = GetComponent<PlaySoundsComponent>();
         }
 
-        protected virtual void Update()
+        private void Update()
         {
             _isGrounded = _layerCheck.IsTouchingLayer;
         }
 
-        protected virtual void FixedUpdate()
+        private void FixedUpdate()
         {
             var xVelocity = CalculateXVelocity(); 
             var yVelocity = CalculateYVelocity();
@@ -113,15 +115,16 @@ namespace Scriptes.Creatures
             UpdateSpriteDirection(_direction); 
         }
 
-        protected virtual float CalculateXVelocity()
+        private float CalculateXVelocity()
         {
             return _direction.x * CalculateSpeed;
         }
 
-        protected virtual float CalculateYVelocity() 
+        private float CalculateYVelocity() 
         {
             var yVelocity = _rigidbody2D.velocity.y; 
-            var isJumpPressed = _direction.y > 0; 
+            var isJumpPressed = _direction.y > 0;
+            var lowJumpLevel = 0.85f;
             
             if (_isGrounded)
             {
@@ -133,18 +136,17 @@ namespace Scriptes.Creatures
                 _isJumping = true; 
                 
                 var isFalling = _rigidbody2D.velocity.y <= 0.001f;
-                var _isOnSliderPlatform = _rigidbody2D.velocity.y == _platformSpeed;;
-                yVelocity = isFalling||_isOnSliderPlatform ? CalculateJumpVelocity(yVelocity) : yVelocity; 
+                yVelocity = isFalling ? CalculateJumpVelocity(yVelocity) : yVelocity; 
             }
             else if (_rigidbody2D.velocity.y > 0 && _isJumping) 
             {
-                yVelocity *= 0.85f; 
+                yVelocity *= lowJumpLevel; 
             }
 
             return yVelocity;
         }
 
-        protected virtual float CalculateJumpVelocity(float yVelocity) 
+        private float CalculateJumpVelocity(float yVelocity) 
         {
             if (_isGrounded) 
             {
@@ -155,13 +157,13 @@ namespace Scriptes.Creatures
             return yVelocity;
         }
 
-        protected void DoJumpVfx()
+        private void DoJumpVfx()
         {
             _particles.Spawn(_jump);
             _sounds.Play(_jump);
         }
-        
-        protected void SpawnFootDust()
+
+        private void SpawnFootDust()
         {
             if (_isGrounded && _rigidbody2D.velocity.y <= _minSpeed)
             {

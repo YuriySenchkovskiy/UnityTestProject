@@ -77,7 +77,7 @@ namespace Scriptes.Animation
                 else
                 {
                     enabled = _isPlaying = clip.AllowNextClip;
-                    clip.OnComplete?.Invoke();
+                    clip.Complited?.Invoke();
                     _endAnimation?.Invoke(clip.Name);
 
                     if (clip.AllowNextClip)
@@ -118,14 +118,14 @@ namespace Scriptes.Animation
             [SerializeField] private bool _allowNextClip;
             
             [SerializeField] private Sprite[] _sprites;
-            [SerializeField] private UnityEvent _onComplete;
+            [SerializeField] private UnityEvent _complited;
             
             public string Name => _name;
             public Sprite[] Sprites => _sprites;
             public bool Loop => _loop;
             public bool Random => _random;
             public bool AllowNextClip => _allowNextClip;
-            public UnityEvent OnComplete => _onComplete;
+            public UnityEvent Complited => _complited;
         }
     }
 }

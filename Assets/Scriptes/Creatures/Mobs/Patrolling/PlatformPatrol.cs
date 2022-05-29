@@ -3,14 +3,12 @@ using System.Collections;
 using Scriptes.Components.ColliderBased;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 namespace Scriptes.Creatures.Mobs.Patrolling
 {
     public class PlatformPatrol : Patrol
     {
         [SerializeField] private LayerCheck _isGround;
-        [SerializeField] private LayerCheck _isObstacle;
         [SerializeField] private OnChangeDirection _onChangeDirection;
         [SerializeField] private int _direction;
 
@@ -18,7 +16,7 @@ namespace Scriptes.Creatures.Mobs.Patrolling
         {
             while (enabled)
             {
-                if (_isGround.IsTouchingLayer && _isObstacle.IsTouchingLayer)
+                if (_isGround.IsTouchingLayer)
                 {
                     _onChangeDirection?.Invoke(new Vector2(_direction, 0));
                 }

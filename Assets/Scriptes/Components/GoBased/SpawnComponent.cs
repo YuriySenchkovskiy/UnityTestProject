@@ -19,7 +19,7 @@ namespace Scriptes.Components.GoBased
             SpawnInstance();
         }
 
-        public GameObject SpawnInstance()
+        private GameObject SpawnInstance()
         {
             var instance = _isUsePool 
                 ? Pool.Instance.GetGameObject(_prefab, _target.position) 
