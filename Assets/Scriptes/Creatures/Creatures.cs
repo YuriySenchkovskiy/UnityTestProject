@@ -50,7 +50,10 @@ namespace Scriptes.Creatures
         
         private static readonly int VerticalVelocity = Animator.StringToHash("verticalVelocity");
         private int _zeroValue = 0;
+        
         private PlaySoundsComponent _sounds;
+        private string _healSound = "Heal";
+        private string _damageSound = "Damage";
         
         public float Speed
         {
@@ -73,13 +76,20 @@ namespace Scriptes.Creatures
             }
         }
         
-        public virtual void TakeDamage() 
+        public void TakeDamage() 
         {
             _isJumping = false;
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel); 
+            _animator.SetTrigger(Hit);
+            _sounds.Play(_damageSound);
+        }
+
+        public void TakeHeal()
+        {
+            _sounds.Play(_healSound);
         }
         
-        public virtual void Attack()
+        public void Attack()
         {
             _animator.SetTrigger(AttackKey);
             _sounds.Play(_melee);

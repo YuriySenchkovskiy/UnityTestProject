@@ -52,6 +52,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scriptes\UI\LifeBarWidget.cs" />
+     <Compile Include="Assets\Scriptes\Components\Health\ChangeHealthComponent.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Creatures.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\ObjectPool\PoolItem.cs" />
@@ -64,15 +66,20 @@
      <Compile Include="Assets\Scriptes\Components\GoBased\SpawnListComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\AudioParabola.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\LayerCheck.cs" />
+     <Compile Include="Assets\Scriptes\Components\GoBased\DestroyObjectComponent.cs" />
+     <Compile Include="Assets\Scriptes\Components\Audio\SfxSound.cs" />
      <Compile Include="Assets\Scriptes\Animation\SpriteAnimator.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\SpawnComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\HandleUtils.cs" />
+     <Compile Include="Assets\Scriptes\Components\Health\HealthComponent.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Bomb.cs" />
+     <Compile Include="Assets\Scriptes\Utils\AudioUtils.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\MobAI.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterEventComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\PlaySoundsComponent.cs" />
+     <Compile Include="Assets\Scriptes\UI\HealthBarWidget.cs" />
      <Compile Include="Assets\Scriptes\Components\RandomSpawnerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterCollisionComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\GameObjectExtensions.cs" />
@@ -82,9 +89,27 @@
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\Patrol.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\StayTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
-     <Compile Include="Assets\Scriptes\Components\GoBased\DestroyObjectComponent.cs" />
-     <Compile Include="Assets\Scriptes\Utils\AudioUtils.cs" />
-     <Compile Include="Assets\Scriptes\Components\Audio\SfxSound.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
