@@ -649,8 +649,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 767871585
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 84e0f90e2abc646fdb5e91ff711db20c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hp: {fileID: 1749219279}
   _step: 1
-  _healthBar: {fileID: 1909660425}
+  _bar: {fileID: 1909660423}
 --- !u!1 &681287367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3953,7 +3953,6 @@ GameObject:
   - component: {fileID: 1909660422}
   - component: {fileID: 1909660424}
   - component: {fileID: 1909660423}
-  - component: {fileID: 1909660425}
   m_Layer: 5
   m_Name: Bar
   m_TagString: Untagged
@@ -4018,19 +4017,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909660421}
   m_CullTransparentMesh: 1
---- !u!114 &1909660425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909660421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e5079799e6b43d08d96a94f7ed0f2fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bar: {fileID: 1909660423}
 --- !u!1 &1916572857
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,6 +4492,10 @@ PrefabInstance:
       propertyPath: _changedHp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 666079055}
+    - target: {fileID: 1749219279, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
+      propertyPath: _changedHp.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetBarValue
+      objectReference: {fileID: 0}
     - target: {fileID: 6347780493505673560, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
       propertyPath: m_Volume
       value: 0.47
