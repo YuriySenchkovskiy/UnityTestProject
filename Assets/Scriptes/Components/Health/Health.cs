@@ -10,18 +10,26 @@ namespace Components.Health
         [SerializeField] private HealthChangeEvent _changedHp;
         [SerializeField] private UnityEvent _damaged;
         [SerializeField] private UnityEvent _healed;
+        
+        private int _minHealth;
+        private int _maxHealth;
 
         public int HealthValue => _healthValue;
-        private int _startHealthValue;
-
+        
+        public event UnityAction Damaged
+        {
+            add => _damaged?.AddListener(value);
+            remove => _damaged?.RemoveListener(value);
+        }
+        public event UnityAction Healed
+        {
+            add => _healed?.AddListener(value);
+            remove => _healed?.RemoveListener(value);
+        }
+        
         public void ApplyHeal(int healthDelta)
         {
-            _healthValue += healthDelta;
-
-            if (_healthValue > _startHealthValue)
-            {
-                _healthValue = _startHealthValue;
-            }
+            _healthValue = Mathf.Clamp(_healthValue + healthDelta, _minHealth, _maxHealth);
 
             _healed?.Invoke();
             _changedHp?.Invoke(_healthValue);
@@ -29,12 +37,7 @@ namespace Components.Health
 
         public void ApplyDamage(int damage)
         {
-            _healthValue -= damage;
-            
-            if (_healthValue <= 0)
-            {
-                _healthValue = 0;
-            }
+            _healthValue =Mathf.Clamp(_healthValue - damage, _minHealth, _maxHealth);
             
             _damaged?.Invoke();
             _changedHp?.Invoke(_healthValue);
@@ -42,7 +45,8 @@ namespace Components.Health
         
         private void Start()
         {
-            _startHealthValue = _healthValue;
+            _maxHealth = _healthValue;
+            _minHealth = 0;
         }
 
         [Serializable]

@@ -945,7 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hp: {fileID: 1749219279}
   _step: 1
-  _bar: {fileID: 1909660423}
+  _healthBar: {fileID: 1909660425}
 --- !u!1 &681287367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,7 +3015,6 @@ GameObject:
   - component: {fileID: 1588761731}
   - component: {fileID: 1588761730}
   - component: {fileID: 1588761733}
-  - component: {fileID: 1588761732}
   m_Layer: 5
   m_Name: AddDamage
   m_TagString: Untagged
@@ -3084,19 +3083,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588761728}
   m_CullTransparentMesh: 1
---- !u!114 &1588761732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588761728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92afb778ab7a4a93bb0fb011814bd9fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _changeValue: 10
 --- !u!114 &1588761733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3141,14 +3127,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1588761732}
-        m_TargetAssemblyTypeName: Components.Health.ChangeHealthComponent, Assembly-CSharp
+      - m_Target: {fileID: 1749219279}
+        m_TargetAssemblyTypeName: Components.Health.Health, Assembly-CSharp
         m_MethodName: ApplyDamage
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1749219278}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3355,17 +3341,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1749219278 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6347780494746357157, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
-  m_PrefabInstance: {fileID: 6347780494188792073}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1749219279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1749219279, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
   m_PrefabInstance: {fileID: 6347780494188792073}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749219278}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41721a7cd3c54f07a33b2704d92b3b2b, type: 3}
@@ -3972,6 +3953,7 @@ GameObject:
   - component: {fileID: 1909660422}
   - component: {fileID: 1909660424}
   - component: {fileID: 1909660423}
+  - component: {fileID: 1909660425}
   m_Layer: 5
   m_Name: Bar
   m_TagString: Untagged
@@ -4036,6 +4018,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909660421}
   m_CullTransparentMesh: 1
+--- !u!114 &1909660425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909660421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5079799e6b43d08d96a94f7ed0f2fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bar: {fileID: 1909660423}
 --- !u!1 &1916572857
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,7 +4125,6 @@ GameObject:
   - component: {fileID: 1971167909}
   - component: {fileID: 1971167908}
   - component: {fileID: 1971167910}
-  - component: {fileID: 1971167911}
   m_Layer: 5
   m_Name: AddHp
   m_TagString: Untagged
@@ -4243,31 +4237,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1971167911}
-        m_TargetAssemblyTypeName: Components.Health.ChangeHealthComponent, Assembly-CSharp
+      - m_Target: {fileID: 1749219279}
+        m_TargetAssemblyTypeName: Components.Health.Health, Assembly-CSharp
         m_MethodName: ApplyHeal
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1749219278}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1971167911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971167906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92afb778ab7a4a93bb0fb011814bd9fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _changeValue: 10
 --- !u!1 &2030220152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,16 +4503,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1801238906}
     m_Modifications:
     - target: {fileID: 1749219279, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
-      propertyPath: _healthValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1749219279, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
       propertyPath: _changedHp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 666079055}
     - target: {fileID: 6347780493505673560, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
       propertyPath: m_Volume
-      value: 0
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 6347780494746357157, guid: bb6b4a31c863f4672abdf404c8210c84, type: 3}
       propertyPath: m_Name

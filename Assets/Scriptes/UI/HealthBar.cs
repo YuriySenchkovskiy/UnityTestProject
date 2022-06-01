@@ -9,7 +9,7 @@ namespace UI
     {
         [SerializeField] private Health _hp;
         [SerializeField] private float _step;
-        [SerializeField] private Image _bar;
+        [SerializeField] private HealthBarUISetter _healthBar;
 
         private Coroutine _currentCoroutine;
         private float _previousHp;
@@ -38,15 +38,10 @@ namespace UI
             {
                 currentTime += Time.deltaTime;
                 _previousHp = Mathf.MoveTowards(_previousHp, hp, currentTime / _step);
-                SetProgress(_previousHp / _maxHp);
+                _healthBar.SetProgress(_previousHp / _maxHp);
                 
                 yield return null;
             }
-        }
-        
-        private void SetProgress(float progress)
-        {
-            _bar.fillAmount = progress;
         }
 
         private void Start()

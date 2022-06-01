@@ -1,3 +1,5 @@
+using System;
+using Components.Health;
 using Scriptes.Components.Audio;
 using Scriptes.Components.ColliderBased;
 using Scriptes.Components.GoBased;
@@ -6,7 +8,7 @@ using UnityEngine.Serialization;
 
 namespace Scriptes.Creatures
 {
-    [RequireComponent(typeof(Animator), typeof(PlaySoundsComponent))]
+    [RequireComponent(typeof(Animator), typeof(PlaySoundsComponent), typeof(Health))]
     public class Creatures : MonoBehaviour
     {
         [Header("Movement")] 
@@ -54,6 +56,8 @@ namespace Scriptes.Creatures
         private PlaySoundsComponent _sounds;
         private string _healSound = "Heal";
         private string _damageSound = "Damage";
+
+        private Health _health;
         
         public float Speed
         {
@@ -75,20 +79,7 @@ namespace Scriptes.Creatures
                 transform.localScale = new Vector3(_backwardsScale.x * multiplier, _backwardsScale.y, _backwardsScale.z);
             }
         }
-        
-        public void TakeDamage() 
-        {
-            _isJumping = false;
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel); 
-            _animator.SetTrigger(Hit);
-            _sounds.Play(_damageSound);
-        }
 
-        public void TakeHeal()
-        {
-            _sounds.Play(_healSound);
-        }
-        
         public void Attack()
         {
             _animator.SetTrigger(AttackKey);
@@ -103,6 +94,20 @@ namespace Scriptes.Creatures
         public void SetDirection(Vector2 direction)
         {
             this._direction = direction; 
+        }
+
+        private void OnEnable()
+        {
+            _health = GetComponent<Health>();
+            
+            _health.Damaged += TakeDamage;
+            _health.Healed += TakeHeal;
+        }
+
+        private void OnDisable()
+        {
+            _health.Damaged -= TakeDamage;
+            _health.Healed -= TakeHeal;
         }
 
         private void Awake()
@@ -123,6 +128,19 @@ namespace Scriptes.Creatures
             
             UpdateAnimation(); 
             UpdateSpriteDirection(_direction); 
+        }
+        
+        private void TakeDamage() 
+        {
+            _isJumping = false;
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel); 
+            _animator.SetTrigger(Hit);
+            _sounds.Play(_damageSound);
+        }
+
+        private void TakeHeal()
+        {
+            _sounds.Play(_healSound);
         }
 
         private float CalculateXVelocity()
