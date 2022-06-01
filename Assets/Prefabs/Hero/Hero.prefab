@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 6347780493505673561}
   m_Layer: 7
   m_Name: Audio
-  m_TagString: Untagged
+  m_TagString: SfxAudioSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9f26ccbd91b6146b0af19dfb23a62fe8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.277
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 6347780494746357182}
   - component: {fileID: 6347780494746357183}
   - component: {fileID: 6347780494746357180}
+  - component: {fileID: 1749219279}
   m_Layer: 7
   m_Name: Hero
   m_TagString: Untagged
@@ -421,6 +422,10 @@ MonoBehaviour:
   _sounds:
   - _id: Jump
     _clip: {fileID: 8300000, guid: d4402032918fc46ec98d1722dca12ad8, type: 3}
+  - _id: Heal
+    _clip: {fileID: 8300000, guid: 3953496524ef34e61927e67ef777c37e, type: 3}
+  - _id: Damage
+    _clip: {fileID: 8300000, guid: 3a1bb3e8a3b5743088240a2ae82db184, type: 3}
 --- !u!114 &6347780494746357179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +442,7 @@ MonoBehaviour:
   _speed: 2.2
   _invertScale: 0
   _jumpLevel: 12.5
-  _damageJumpLevel: 12.5
+  _damageJumpLevel: 5
   _layerCheck: {fileID: 6347780493372067440}
   _jump: Jump
   _damage: 0
@@ -562,6 +567,64 @@ MonoBehaviour:
     Component: {fileID: 6347780494858127691}
   - Id: Jump
     Component: {fileID: 6347780494264343532}
+--- !u!114 &1749219279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347780494746357157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41721a7cd3c54f07a33b2704d92b3b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _changedHp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI.HealthBar, Assembly-CSharp
+        m_MethodName: ChangeBarValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _damaged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6347780494746357179}
+        m_TargetAssemblyTypeName: Scriptes.Creatures.Creatures, Assembly-CSharp
+        m_MethodName: TakeDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _healed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6347780494746357179}
+        m_TargetAssemblyTypeName: Scriptes.Creatures.Creatures, Assembly-CSharp
+        m_MethodName: TakeHeal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6347780494858127689
 GameObject:
   m_ObjectHideFlags: 0

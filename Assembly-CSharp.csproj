@@ -52,7 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scriptes\UI\LifeBarWidget.cs" />
+     <Compile Include="Assets\Scriptes\UI\HealthBar.cs" />
      <Compile Include="Assets\Scriptes\Components\Health\ChangeHealthComponent.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Creatures.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerComponent.cs" />
@@ -71,7 +71,7 @@
      <Compile Include="Assets\Scriptes\Animation\SpriteAnimator.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\SpawnComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\HandleUtils.cs" />
-     <Compile Include="Assets\Scriptes\Components\Health\HealthComponent.cs" />
+     <Compile Include="Assets\Scriptes\Components\Health\Health.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Bomb.cs" />
      <Compile Include="Assets\Scriptes\Utils\AudioUtils.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\MobAI.cs" />
@@ -79,7 +79,6 @@
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterEventComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\PlaySoundsComponent.cs" />
-     <Compile Include="Assets\Scriptes\UI\HealthBarWidget.cs" />
      <Compile Include="Assets\Scriptes\Components\RandomSpawnerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterCollisionComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\GameObjectExtensions.cs" />

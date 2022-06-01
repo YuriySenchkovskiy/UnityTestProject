@@ -1,15 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using Components.Health;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI
 {
-    public class LifeBarWidget : MonoBehaviour
+    public class HealthBar : MonoBehaviour
     {
-        [SerializeField] private HealthBarWidget _healthBar;
-        [SerializeField] private HealthComponent _hp;
+        [SerializeField] private Health _hp;
         [SerializeField] private float _step;
+        [SerializeField] private Image _bar;
 
         private Coroutine _currentCoroutine;
         private float _previousHp;
@@ -38,15 +38,20 @@ namespace UI
             {
                 currentTime += Time.deltaTime;
                 _previousHp = Mathf.MoveTowards(_previousHp, hp, currentTime / _step);
-                _healthBar.SetProgress(_previousHp/_maxHp);
+                SetProgress(_previousHp / _maxHp);
                 
                 yield return null;
             }
         }
+        
+        private void SetProgress(float progress)
+        {
+            _bar.fillAmount = progress;
+        }
 
         private void Start()
         {
-            _maxHp = _hp.Health;
+            _maxHp = _hp.HealthValue;
             _previousHp = _maxHp;
         }
     }

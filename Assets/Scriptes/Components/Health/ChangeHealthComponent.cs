@@ -8,19 +8,19 @@ namespace Components.Health
         
         public void ApplyDamage(GameObject target)
         {
-            var healthComponent = target.GetComponent<HealthComponent>();
+            var healthComponent = target.GetComponent<Health>();
             if (healthComponent != null)
             {
-                healthComponent.ModifyHealth(_changeValue);
+                healthComponent.ApplyDamage(_changeValue);
             }
         }
         
-        public void ApplyPotion(GameObject target)
+        public void ApplyHeal(GameObject target)
         {
-            var healthComponent = target.GetComponent<HealthComponent>();
+            var healthComponent = target.GetComponent<Health>();
             if (healthComponent != null)
             {
-                healthComponent.ModifyHealth(_changeValue);
+                healthComponent.ApplyHeal(_changeValue);
             }
         }
     }
