@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Scriptes.Creatures.Hero
@@ -28,7 +27,7 @@ namespace Scriptes.Creatures.Hero
 
         public void TryMoveUp()
         {
-            if (_targetPosition.y < _maxHeight)
+            if (_targetPosition.y <= _maxHeight)
             {
                 SetNextPosition(_stepSize);
             }
@@ -36,7 +35,7 @@ namespace Scriptes.Creatures.Hero
         
         public void TryMoveDown()
         {
-            if (_targetPosition.y > _minHeight)
+            if (_targetPosition.y >= _minHeight)
             {
                 SetNextPosition(-_stepSize);
             }

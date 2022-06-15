@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Scriptes.Creatures.Hero
 {
@@ -6,9 +7,18 @@ namespace Scriptes.Creatures.Hero
     {
         [SerializeField] private int _health;
 
+        public event UnityAction<int> HealthChanged;
+        public event UnityAction Died;
+
+        private void Start()
+        {
+            HealthChanged?.Invoke(_health);
+        }
+
         public void ApplyDamage(int damage)
         {
             _health -= damage;
+            HealthChanged?.Invoke(_health);
 
             if (_health <= 0)
             {
@@ -18,7 +28,7 @@ namespace Scriptes.Creatures.Hero
 
         public void Die()
         {
-            
+            Died?.Invoke();
         }
     }
 }
