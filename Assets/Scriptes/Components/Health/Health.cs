@@ -21,10 +21,17 @@ namespace Components.Health
             add => _damaged?.AddListener(value);
             remove => _damaged?.RemoveListener(value);
         }
+        
         public event UnityAction Healed
         {
             add => _healed?.AddListener(value);
             remove => _healed?.RemoveListener(value);
+        }
+        
+        private void Start()
+        {
+            _maxHealth = _healthValue;
+            _minHealth = 0;
         }
         
         public void ApplyHeal(int healthDelta)
@@ -37,16 +44,10 @@ namespace Components.Health
 
         public void ApplyDamage(int damage)
         {
-            _healthValue =Mathf.Clamp(_healthValue - damage, _minHealth, _maxHealth);
+            _healthValue = Mathf.Clamp(_healthValue - damage, _minHealth, _maxHealth);
             
             _damaged?.Invoke();
             _changedHp?.Invoke(_healthValue);
-        }
-        
-        private void Start()
-        {
-            _maxHealth = _healthValue;
-            _minHealth = 0;
         }
 
         [Serializable]

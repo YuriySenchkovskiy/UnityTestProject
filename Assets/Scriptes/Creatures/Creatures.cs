@@ -1,4 +1,3 @@
-using System;
 using Components.Health;
 using Scriptes.Components.Audio;
 using Scriptes.Components.ColliderBased;
@@ -67,6 +66,39 @@ namespace Scriptes.Creatures
 
         private float CalculateSpeed => _speed;
         
+        private void Awake()
+        {
+            _health = GetComponent<Health>();
+            _sounds = GetComponent<PlaySoundsComponent>();
+        }
+
+        private void OnEnable()
+        {
+            _health.Damaged += TakeDamage;
+            _health.Healed += TakeHeal;
+        }
+        
+        private void Update()
+        {
+            _isGrounded = _layerCheck.IsTouchingLayer;
+        }
+        
+        private void FixedUpdate()
+        {
+            var xVelocity = CalculateXVelocity(); 
+            var yVelocity = CalculateYVelocity();
+            _rigidbody2D.velocity = new Vector2(xVelocity, yVelocity); 
+            
+            UpdateAnimation(); 
+            UpdateSpriteDirection(_direction); 
+        }
+        
+        private void OnDisable()
+        {
+            _health.Damaged -= TakeDamage;
+            _health.Healed -= TakeHeal;
+        }
+        
         public void UpdateSpriteDirection(Vector2 direction)
         {
             var multiplier = _invertScale ? -1 : 1;
@@ -96,40 +128,6 @@ namespace Scriptes.Creatures
             this._direction = direction; 
         }
 
-        private void OnEnable()
-        {
-            _health = GetComponent<Health>();
-            
-            _health.Damaged += TakeDamage;
-            _health.Healed += TakeHeal;
-        }
-
-        private void OnDisable()
-        {
-            _health.Damaged -= TakeDamage;
-            _health.Healed -= TakeHeal;
-        }
-
-        private void Awake()
-        {
-            _sounds = GetComponent<PlaySoundsComponent>();
-        }
-
-        private void Update()
-        {
-            _isGrounded = _layerCheck.IsTouchingLayer;
-        }
-
-        private void FixedUpdate()
-        {
-            var xVelocity = CalculateXVelocity(); 
-            var yVelocity = CalculateYVelocity();
-            _rigidbody2D.velocity = new Vector2(xVelocity, yVelocity); 
-            
-            UpdateAnimation(); 
-            UpdateSpriteDirection(_direction); 
-        }
-        
         private void TakeDamage() 
         {
             _isJumping = false;

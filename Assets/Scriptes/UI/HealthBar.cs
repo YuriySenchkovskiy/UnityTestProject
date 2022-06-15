@@ -7,17 +7,23 @@ namespace UI
 {
     public class HealthBar : MonoBehaviour
     {
-        [SerializeField] private Health _hp;
-        [SerializeField] private float _step;
+        [SerializeField] private Health _health;
+        [SerializeField] private float _speed;
         [SerializeField] private Image _bar;
 
         private Coroutine _currentCoroutine;
         private float _previousHp;
         private int _maxHp;
         
-        public void SetBarValue(int hp)
+        private void Start()
         {
-            StartCurrentCoroutine(ChangeBarValue(hp));
+            _maxHp = _health.HealthValue;
+            _previousHp = _maxHp;
+        }
+        
+        public void SetBarValue(int health)
+        {
+            StartCurrentCoroutine(ChangeBarValue(health));
         }
         
         private void StartCurrentCoroutine(IEnumerator coroutine)
@@ -30,14 +36,11 @@ namespace UI
             _currentCoroutine = StartCoroutine(coroutine);
         }
 
-        private IEnumerator ChangeBarValue(int hp)
+        private IEnumerator ChangeBarValue(int health)
         {
-            var currentTime = 0f;
-            
-            while (_previousHp != hp)
+            while (_previousHp != health)
             {
-                currentTime += Time.deltaTime;
-                _previousHp = Mathf.MoveTowards(_previousHp, hp, currentTime / _step);
+                _previousHp = Mathf.MoveTowards(_previousHp, health, Time.deltaTime * _speed);
                 SetProgress(_previousHp / _maxHp);
                 
                 yield return null;
@@ -47,12 +50,6 @@ namespace UI
         private void SetProgress(float progress)
         {
             _bar.fillAmount = progress;
-        }
-
-        private void Start()
-        {
-            _maxHp = _hp.HealthValue;
-            _previousHp = _maxHp;
         }
     }
 }
