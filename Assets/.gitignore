@@ -1,4 +1,4 @@
- /.vs
+/.vs
 *.exe
 *.log
 *.bin
@@ -16,6 +16,8 @@
 *.iml
 *.DotSettings.user
 /Assets/Plugins/Editor/JetBrains*
-UIElementsSchema/
+Logs/
 UserSettings/
+obj/
+UIElementsSchema/
 *.DS_Store
