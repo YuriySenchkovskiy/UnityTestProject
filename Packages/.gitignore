@@ -16,3 +16,6 @@
 *.iml
 *.DotSettings.user
 /Assets/Plugins/Editor/JetBrains*
+UIElementsSchema/
+UserSettings/
+*.DS_Store
