@@ -1,3 +1,4 @@
+using Animation;
 using UnityEngine;
 
 namespace Weapon
@@ -8,7 +9,11 @@ namespace Weapon
         [SerializeField] private string _label;
         [SerializeField] private int _price;
         [SerializeField] private Sprite _icon;
+
+        [SerializeField] private SpriteAnimator _spriteAnimator;
         [SerializeField] private bool _isBought = false;
+        
+        public SpriteAnimator SpriteAnimator => _spriteAnimator;
 
         public abstract void Shoot(Transform shootPoint);
     }

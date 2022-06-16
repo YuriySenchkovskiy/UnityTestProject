@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8711646308543035209}
   - component: {fileID: 8711646308543035210}
-  - component: {fileID: 8711646308543035211}
   - component: {fileID: 8711646308543035208}
+  - component: {fileID: 7329804915319580819}
   m_Layer: 0
   m_Name: Musket
   m_TagString: Untagged
@@ -84,35 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8711646308543035211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8711646308543035212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a647cfd87bcf4f558a1476faf70e2b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _frameRate: 10
-  _clips:
-  - _name: fire
-    _loop: 0
-    _random: 0
-    _allowNextClip: 0
-    _sprites:
-    - {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    - {fileID: -4134297769961479837, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    - {fileID: -2222382925705430102, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    - {fileID: -5598497475969772404, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    _complited:
-      m_PersistentCalls:
-        m_Calls: []
-  _endAnimation:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &8711646308543035208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,4 +100,43 @@ MonoBehaviour:
   _label: Musket
   _price: 1
   _icon: {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+  _spriteAnimator: {fileID: 7329804915319580819}
   _isBought: 0
+--- !u!114 &7329804915319580819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8711646308543035212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a647cfd87bcf4f558a1476faf70e2b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frameRate: 10
+  _clips:
+  - _name: idle
+    _loop: 0
+    _random: 0
+    _allowNextClip: 0
+    _sprites:
+    - {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+    _complited:
+      m_PersistentCalls:
+        m_Calls: []
+  - _name: fire
+    _loop: 0
+    _random: 0
+    _allowNextClip: 0
+    _sprites:
+    - {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+    - {fileID: -4134297769961479837, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+    - {fileID: -2222382925705430102, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+    - {fileID: -5598497475969772404, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+    _complited:
+      m_PersistentCalls:
+        m_Calls: []
+  _endAnimation:
+    m_PersistentCalls:
+      m_Calls: []

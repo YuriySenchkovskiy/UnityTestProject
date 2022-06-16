@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scriptes\Creatures\Creatures.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\ObjectPool\PoolItem.cs" />
+     <Compile Include="Assets\Scriptes\Weapon\Weapon.cs" />
      <Compile Include="Assets\Scriptes\Components\ProbabilityDropComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\BaseDetectionComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\LineCastCheck.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\PointPatrol.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\SpawnListComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\AudioParabola.cs" />
+     <Compile Include="Assets\Scriptes\Creatures\Hero\Player.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\LayerCheck.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\DestroyObjectComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\SfxSound.cs" />
@@ -85,13 +87,11 @@
      <Compile Include="Assets\Scriptes\Components\ColliderBased\CheckCircleOverlap.cs" />
      <Compile Include="Assets\Scriptes\Components\Timer\TimerComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\SpawnUtils.cs" />
+     <Compile Include="Assets\Scriptes\Weapon\Musket.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\Patrol.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\StayTriggerComponent.cs" />
-     <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
-     <Compile Include="Assets\Scriptes\Creatures\Hero\Player.cs" />
-     <Compile Include="Assets\Scriptes\Weapon\Weapon.cs" />
      <Compile Include="Assets\Scriptes\Weapon\Bullet.cs" />
-     <Compile Include="Assets\Scriptes\Weapon\Musket.cs" />
+     <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

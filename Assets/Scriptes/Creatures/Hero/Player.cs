@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Scriptes.Creatures.Hero
 {
@@ -11,6 +12,7 @@ namespace Scriptes.Creatures.Hero
         [SerializeField] private List<Weapon.Weapon> _weapons;
         [SerializeField] private Transform _shootPoint;
 
+        private const string Fire = "fire";
         private Weapon.Weapon _currentWeapon;
         private int _currentHealth;
         private Animator _animator;
@@ -26,7 +28,8 @@ namespace Scriptes.Creatures.Hero
         {
             if (Input.GetMouseButtonDown(0))
             {
-                
+                _currentWeapon.SpriteAnimator.SetClip(Fire);
+                _currentWeapon.Shoot(_shootPoint);
             }
         }
     }

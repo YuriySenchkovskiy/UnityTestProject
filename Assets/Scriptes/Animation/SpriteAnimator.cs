@@ -1,10 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
-namespace Scriptes.Animation
+namespace Animation
 {
     [RequireComponent(typeof(SpriteRenderer))]
     public class SpriteAnimator : MonoBehaviour
@@ -42,19 +41,19 @@ namespace Scriptes.Animation
         {
             _nextFrameTime = Time.time;
         }
-
+        
         private void Start()
         {
             _renderer = GetComponent<SpriteRenderer>();
             _secondPerFrame = 1f / _frameRate;
             StartAnimation();
         }
-
+        
         private void OnBecameVisible() 
         {
             enabled = _isPlaying;
         }
-
+        
         private void OnBecameInvisible()
         {
             enabled = false;
@@ -79,17 +78,17 @@ namespace Scriptes.Animation
                     enabled = _isPlaying = clip.AllowNextClip;
                     clip.Complited?.Invoke();
                     _endAnimation?.Invoke(clip.Name);
-
+        
                     if (clip.AllowNextClip)
                     {
                         _currentFrame = 0;
                         _currentClip = (int) Mathf.Repeat(_currentClip + _nextClip, _clips.Length);
                     }
                 }
-
+        
                 return;
             }
-
+        
             _renderer.sprite = clip.Sprites[_currentFrame];
             _nextFrameTime += _secondPerFrame;
             _currentFrame++;
