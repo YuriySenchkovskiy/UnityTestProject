@@ -11,11 +11,12 @@ namespace Scriptes.Creatures.Hero
         [SerializeField] private int _health;
         [SerializeField] private List<Weapon.Weapon> _weapons;
         [SerializeField] private Transform _shootPoint;
-
-        private const string Fire = "fire";
+        
         private Weapon.Weapon _currentWeapon;
         private int _currentHealth;
         private Animator _animator;
+        
+        public int Money { get; private set; }
 
         private void Start()
         {
@@ -28,8 +29,22 @@ namespace Scriptes.Creatures.Hero
         {
             if (Input.GetMouseButtonDown(0))
             {
-                _currentWeapon.SpriteAnimator.SetClip(Fire);
                 _currentWeapon.Shoot(_shootPoint);
+            }
+        }
+
+        private void OnEnemyDied(int reward)
+        {
+            Money += reward;
+        }
+
+        public void ApplyDamage(int damage)
+        {
+            _currentHealth -= damage;
+
+            if (_currentHealth <= 0)
+            {
+                Destroy(gameObject);
             }
         }
     }

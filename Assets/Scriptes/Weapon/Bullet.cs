@@ -1,3 +1,4 @@
+using Scriptes.Creatures;
 using UnityEngine;
 
 namespace Weapon
@@ -15,6 +16,14 @@ namespace Weapon
         private void OnBecameInvisible()
         {
             Destroy(gameObject);
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.gameObject.TryGetComponent(out Enemy enemy))
+            {
+                enemy.TakeDamage(_damage);
+            }
         }
     }
 }

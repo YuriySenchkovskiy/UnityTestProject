@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &595832656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595832657}
+  m_Layer: 0
+  m_Name: ShootEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595832657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595832656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.721, y: 0.134, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8711646308543035209}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8711646308543035212
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,8 +40,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8711646308543035209}
   - component: {fileID: 8711646308543035210}
-  - component: {fileID: 8711646308543035208}
   - component: {fileID: 7329804915319580819}
+  - component: {fileID: 6521504742656205609}
   m_Layer: 0
   m_Name: Musket
   m_TagString: Untagged
@@ -29,7 +59,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.056, y: -1.802, z: 0}
   m_LocalScale: {x: 0.3, y: 0.25, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 595832657}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -84,24 +115,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8711646308543035208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8711646308543035212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea342701f7154eac96fcaebb5f188a77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bullet: {fileID: 3621401020479767764, guid: d6f385eba800e47a39d109ae7c8f825d, type: 3}
-  _label: Musket
-  _price: 1
-  _icon: {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-  _spriteAnimator: {fileID: 7329804915319580819}
-  _isBought: 0
 --- !u!114 &7329804915319580819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +130,7 @@ MonoBehaviour:
   _frameRate: 10
   _clips:
   - _name: idle
-    _loop: 0
+    _loop: 1
     _random: 0
     _allowNextClip: 0
     _sprites:
@@ -136,7 +149,53 @@ MonoBehaviour:
     - {fileID: -5598497475969772404, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
     _complited:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 7329804915319580819}
+          m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
+          m_MethodName: SetClip
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: idle
+            m_BoolArgument: 0
+          m_CallState: 2
   _endAnimation:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6521504742656205609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8711646308543035212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523fd71651c84e6889204580e45de50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 3621401020479767764, guid: d6f385eba800e47a39d109ae7c8f825d, type: 3}
+  Shooted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7329804915319580819}
+        m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
+        m_MethodName: SetClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: fire
+          m_BoolArgument: 0
+        m_CallState: 2
+  Effect: {fileID: 4372085723001592914, guid: 982e9c2c5ccad490bb2f6c74d7d024c5, type: 3}
+  EfectPoint: {fileID: 595832657}
+  _label: Musket
+  _price: 2
+  _icon: {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
+  _isBought: 0
