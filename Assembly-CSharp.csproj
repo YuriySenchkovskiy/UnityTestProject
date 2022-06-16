@@ -52,7 +52,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scriptes\UI\HealthBar.cs" />
      <Compile Include="Assets\Scriptes\Components\Health\ChangeHealthComponent.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Creatures.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerComponent.cs" />
@@ -101,6 +100,11 @@
      <Compile Include="Assets\Scriptes\Creatures\Enemy\MoveState.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Enemy\AttackState.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Enemy\CelebrationState.cs" />
+     <Compile Include="Assets\Scriptes\Components\Spawner.cs" />
+     <Compile Include="Assets\Scriptes\UI\NextWave.cs" />
+     <Compile Include="Assets\Scriptes\UI\HealthBar.cs" />
+     <Compile Include="Assets\Scriptes\UI\Bar.cs" />
+     <Compile Include="Assets\Scriptes\UI\ProgressBar.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

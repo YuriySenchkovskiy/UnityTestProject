@@ -1,0 +1,2059 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/rozencrants/Desktop/GameDev/Unior/UnityProjects/Unior
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+55116
+Successfully changed project path to: /Users/rozencrants/Desktop/GameDev/Unior/UnityProjects/Unior
+/Users/rozencrants/Desktop/GameDev/Unior/UnityProjects/Unior
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 60.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.13f1 (71691879b7f5)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/rozencrants/Desktop/GameDev/Unior/UnityProjects/Unior/Assets
+GfxDevice: creating device client; threaded=0
+2022-06-16 22:18:43.104 Unity[43253:20802048] C49J89x preferred device: AMD Radeon Pro 560 (high power)
+2022-06-16 22:18:43.104 Unity[43253:20802048] Metal devices available: 2
+2022-06-16 22:18:43.104 Unity[43253:20802048] 0: AMD Radeon Pro 560 (high power)
+2022-06-16 22:18:43.104 Unity[43253:20802048] 1: Intel(R) HD Graphics 630 (low power)
+2022-06-16 22:18:43.105 Unity[43253:20802048] Using device AMD Radeon Pro 560 (high power)
+Initializing Metal device caps: AMD Radeon Pro 560
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56253
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.13f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.13f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004321 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 67.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.619 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006940 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 57.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+WARNING: RGBA Compressed ETC2 UNorm format is not supported, decompressing texture
+Mono: successfully reloaded assembly
+- Completed reload, in  1.607 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.3 MB.
+System memory in use after: 200.4 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 3029.
+Total: 3.040757 ms (FindLiveObjects: 0.286700 ms CreateObjectMapping: 0.122117 ms MarkObjects: 2.491479 ms  DeleteObjects: 0.139687 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Textures/Props/enemy-big.png
+  artifactKey: Guid(f71e4375beb19426c9c2a271a3925c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/enemy-big.png using Guid(f71e4375beb19426c9c2a271a3925c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b2e08e5d200350d032c97433e24b48') in 1.001475 seconds 
+  Import took 1.007382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Props/hp-big.png
+  artifactKey: Guid(64a8a72ecfe79491ebf566b789af34ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/hp-big.png using Guid(64a8a72ecfe79491ebf566b789af34ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2eceb7840c36c6b9e1fe4361445d40') in 0.012010 seconds 
+  Import took 0.016972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/UI/red.png
+  artifactKey: Guid(02dc7c9ff20a2450e8410f491f308e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/red.png using Guid(02dc7c9ff20a2450e8410f491f308e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41bff7b455cf4ae67c4dd5c1f57e2464') in 0.010467 seconds 
+  Import took 0.016423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/UI/hp-big.png
+  artifactKey: Guid(2e395d21fe4714e9da28e518fec56603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/hp-big.png using Guid(2e395d21fe4714e9da28e518fec56603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597fec898175d2a18710339171fbbbdf') in 0.012021 seconds 
+  Import took 0.018889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.453076 seconds.
+  path: Assets/Textures/TileMaps/Outdoor.png
+  artifactKey: Guid(b1b4df9f4738c44889f204ee8ec97891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/TileMaps/Outdoor.png using Guid(b1b4df9f4738c44889f204ee8ec97891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0d850da9a0e2f9956a535435236a3f') in 0.148441 seconds 
+  Import took 0.155313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Textures/TileMaps/Terrain and Back Wall (32x32).png
+  artifactKey: Guid(3f87ef5f72b11448abb3ccde26152d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/TileMaps/Terrain and Back Wall (32x32).png using Guid(3f87ef5f72b11448abb3ccde26152d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edc984a15aa2fb6571f016dc34883c7') in 0.274594 seconds 
+  Import took 0.280309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.841944 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 03.png
+  artifactKey: Guid(0af0c7d849665425180c53d6f1f38215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 03.png using Guid(0af0c7d849665425180c53d6f1f38215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac5fdc4e70b6bc1e75ee91f31f85771') in 0.012645 seconds 
+  Import took 0.019040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Wall/wall.png
+  artifactKey: Guid(056b04bff6dfb472b8505521469f37c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Wall/wall.png using Guid(056b04bff6dfb472b8505521469f37c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c03f87a4b8d4a198a7062ab01da03e') in 0.012252 seconds 
+  Import took 0.016981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/UI mini Hero/UI mini hero6.png
+  artifactKey: Guid(cad94bbe51d3a498a808e046a329adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/UI mini Hero/UI mini hero6.png using Guid(cad94bbe51d3a498a808e046a329adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087ce7f52daf5f682d57e2801660fb0f') in 0.010545 seconds 
+  Import took 0.014931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Wall/wall-armed.png
+  artifactKey: Guid(37486fff044df4187931ace8d3ebafcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Wall/wall-armed.png using Guid(37486fff044df4187931ace8d3ebafcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07f4eb507bb8283edfab3ebe18e13d8') in 0.013188 seconds 
+  Import took 0.017285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 03.png
+  artifactKey: Guid(0af0c7d849665425180c53d6f1f38215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 03.png using Guid(0af0c7d849665425180c53d6f1f38215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac5fdc4e70b6bc1e75ee91f31f85771') in 0.009961 seconds 
+  Import took 0.015271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.169403 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/20-Throw Sword/Throw Sword 02.png
+  artifactKey: Guid(fa9d5db034f3c49fdafe198e73a32160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/20-Throw Sword/Throw Sword 02.png using Guid(fa9d5db034f3c49fdafe198e73a32160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3869d873367f1e32939ca58c037addbf') in 0.015687 seconds 
+  Import took 0.022973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/20-Throw/Throw Sword 02.png
+  artifactKey: Guid(e33d3e5e26a304a5299f901c29ce15ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/20-Throw/Throw Sword 02.png using Guid(e33d3e5e26a304a5299f901c29ce15ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b54e49b05d97d6bf370b023823f3c51') in 0.007822 seconds 
+  Import took 0.012453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/20-Throw/Throw Sword 03.png
+  artifactKey: Guid(b0975237398fe441b89a68fcabe3fe20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/20-Throw/Throw Sword 03.png using Guid(b0975237398fe441b89a68fcabe3fe20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb57246e7e87d87b6885d9203f7437ea') in 0.010071 seconds 
+  Import took 0.014983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/20-Throw Sword/Throw Sword 01.png
+  artifactKey: Guid(3f54adb6b3fb241b5b9507d5beb9363b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/20-Throw Sword/Throw Sword 01.png using Guid(3f54adb6b3fb241b5b9507d5beb9363b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3d34352783e13cb0bebf08bbdc8799') in 0.010753 seconds 
+  Import took 0.016269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/20-Throw/Throw Sword 01.png
+  artifactKey: Guid(1a38f8f6cf8004c5591f8350cd821199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/20-Throw/Throw Sword 01.png using Guid(1a38f8f6cf8004c5591f8350cd821199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30ad684035c12d9e9c83ea8373a269e') in 0.012036 seconds 
+  Import took 0.018280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/20-Throw Sword/Throw Sword 03.png
+  artifactKey: Guid(ec99ee7c30ccd401d844dd5ff5695286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/20-Throw Sword/Throw Sword 03.png using Guid(ec99ee7c30ccd401d844dd5ff5695286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284bc3421f01de223ebc13c584b0a0df') in 0.011554 seconds 
+  Import took 0.017232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 01.png
+  artifactKey: Guid(879438e1540534365b917957f0876e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 01.png using Guid(879438e1540534365b917957f0876e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a2decfd6b20c59d5ddeba389458ee7') in 0.013310 seconds 
+  Import took 0.019721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 02.png
+  artifactKey: Guid(74e16c81fbceb45688702450f66d6fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/20-Throw Sword/Throw Sword 02.png using Guid(74e16c81fbceb45688702450f66d6fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91b7a7b59866b009ae790e41788aa39') in 0.013350 seconds 
+  Import took 0.018725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.162216 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 03.png
+  artifactKey: Guid(18409d56fc43c486d8572d50c593f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 03.png using Guid(18409d56fc43c486d8572d50c593f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff464747bc89ec7d63b7a4a2ecf4d672') in 0.010817 seconds 
+  Import took 0.016117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/11-Jump Sword/Jump Sword 02.png
+  artifactKey: Guid(05019e545984d4ab1907b9e4a3453299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/11-Jump Sword/Jump Sword 02.png using Guid(05019e545984d4ab1907b9e4a3453299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31acbef1bd83fce3a87d1ece93668a73') in 0.011557 seconds 
+  Import took 0.016576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Textures/Dialogue/Interrogation/Interrogation Out 01.png
+  artifactKey: Guid(614929e924e4f4b3c8102fec68466ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Interrogation/Interrogation Out 01.png using Guid(614929e924e4f4b3c8102fec68466ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a491273b4aeb72887220a0d1c29264') in 0.010007 seconds 
+  Import took 0.014783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 01.png
+  artifactKey: Guid(69fa17966ac9d4e078bdaf4c49be378c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 01.png using Guid(69fa17966ac9d4e078bdaf4c49be378c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37c03f71f504bfbb44c46be2cb2eae6') in 0.011978 seconds 
+  Import took 0.017509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 03.png
+  artifactKey: Guid(a1e0ec0ac1ed542d698dac390b06bcc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 03.png using Guid(a1e0ec0ac1ed542d698dac390b06bcc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768eb1349b61cfd70b40e9f828b3642e') in 0.012838 seconds 
+  Import took 0.018562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/Textures/Dialogue/Interrogation/Interrogation In 01.png
+  artifactKey: Guid(63f02c71e5f544b8fa8d6cb648872455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Interrogation/Interrogation In 01.png using Guid(63f02c71e5f544b8fa8d6cb648872455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ac266b06564c60f2438005ea1b9fcc') in 0.015568 seconds 
+  Import took 0.021861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/03-Jump/Jump 02.png
+  artifactKey: Guid(eaf671ccac40d409d9d3e78acc4501fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/03-Jump/Jump 02.png using Guid(eaf671ccac40d409d9d3e78acc4501fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b9e50238ed5c6cde34d07f50a8baa7') in 0.013665 seconds 
+  Import took 0.019077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/01-Idle/Idle 01.png
+  artifactKey: Guid(69bf8c61cf45943818c7bca354128bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/01-Idle/Idle 01.png using Guid(69bf8c61cf45943818c7bca354128bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89853f1fc92e40e2f14b34c7256e3f65') in 0.012747 seconds 
+  Import took 0.017979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 02.png
+  artifactKey: Guid(c2be73659446042a89c54e55ce8310b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 02.png using Guid(c2be73659446042a89c54e55ce8310b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0a1e38eedd7339c3431873097a31ed') in 0.010579 seconds 
+  Import took 0.016431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 01.png
+  artifactKey: Guid(77a65a347c4c142d4b9ac7ac50f8dc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 01.png using Guid(77a65a347c4c142d4b9ac7ac50f8dc39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae39e29f5810a6304da325e7b07898a') in 0.010100 seconds 
+  Import took 0.015388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down1.png
+  artifactKey: Guid(0e51a2cdf6cf043da8003b1a6c675eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down1.png using Guid(0e51a2cdf6cf043da8003b1a6c675eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e762379f3746596cbec4cf66cc8fa87') in 0.012525 seconds 
+  Import took 0.018188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down3.png
+  artifactKey: Guid(ee6b466e3f4fa42beacf89c2ed2d5e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down3.png using Guid(ee6b466e3f4fa42beacf89c2ed2d5e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505ddaaede1d6d4ed6bf1063b67b05c6') in 0.010311 seconds 
+  Import took 0.014915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 03.png
+  artifactKey: Guid(3a6259d8deef44fd0a5f61f3eafb36a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 03.png using Guid(3a6259d8deef44fd0a5f61f3eafb36a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04fca58d0ee7f9ff7ca40cb05c225652') in 0.010758 seconds 
+  Import took 0.016130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 05.png
+  artifactKey: Guid(056e3b90e8544476ca4ea862a1ad99b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 05.png using Guid(056e3b90e8544476ca4ea862a1ad99b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c67655153f54db9b7cda478e4df8d54') in 0.012711 seconds 
+  Import took 0.018370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Textures/Dialogue/Interrogation/Interrogation Out 02.png
+  artifactKey: Guid(ce8766c0a55a2411a8f36251c6878194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Interrogation/Interrogation Out 02.png using Guid(ce8766c0a55a2411a8f36251c6878194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e87f1e8eb06451349386f44b92e96a') in 0.013352 seconds 
+  Import took 0.018242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 05.png
+  artifactKey: Guid(13eb45e0854d0457589f70d41a42107c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 05.png using Guid(13eb45e0854d0457589f70d41a42107c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbd213add383b046b051737273461f9') in 0.012101 seconds 
+  Import took 0.017697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c3.png
+  artifactKey: Guid(498e6548703a24c7b91a26cb12bc802a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c3.png using Guid(498e6548703a24c7b91a26cb12bc802a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd463200db0293e4939cfbe19bd22da') in 0.010513 seconds 
+  Import took 0.016459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Textures/Creatures/Captain/Hero.png
+  artifactKey: Guid(d7c276e284f394b3c8575b55ad24f41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Hero.png using Guid(d7c276e284f394b3c8575b55ad24f41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75864dabdd7dff759d97ad2c0f5822f7') in 0.113233 seconds 
+  Import took 0.117973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/26-Attack 3/Attack 3 03.png
+  artifactKey: Guid(9c4d7de7376294da392adc80d7c7c03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/26-Attack 3/Attack 3 03.png using Guid(9c4d7de7376294da392adc80d7c7c03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f7d5f1149b740e814e88df4befa25f') in 0.010897 seconds 
+  Import took 0.015822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/26-Attack 3/Attack 3 01.png
+  artifactKey: Guid(0b16a86baa63849cf9663201c67acfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/26-Attack 3/Attack 3 01.png using Guid(0b16a86baa63849cf9663201c67acfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff6e5a321fcb19a48485899ad8b8797') in 0.009206 seconds 
+  Import took 0.015186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 05.png
+  artifactKey: Guid(b3a13472ffdf14075b8a1c9a89978df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 05.png using Guid(b3a13472ffdf14075b8a1c9a89978df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ae180609ba888f5940a70daf238e6d') in 0.011051 seconds 
+  Import took 0.015543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/17-Attack 3/Attack 3 02.png
+  artifactKey: Guid(0cd53eef923504643a06d45ff4d5daf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/17-Attack 3/Attack 3 02.png using Guid(0cd53eef923504643a06d45ff4d5daf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b45b111a119b6dea3da681e70015686') in 0.013256 seconds 
+  Import took 0.018033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 02.png
+  artifactKey: Guid(b40018c6d3684488e9448f93876a7a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 02.png using Guid(b40018c6d3684488e9448f93876a7a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10608785328dba3d230a30251041a31c') in 0.009729 seconds 
+  Import took 0.014180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c9.png
+  artifactKey: Guid(7925a447b97d3427894377b9ab766f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c9.png using Guid(7925a447b97d3427894377b9ab766f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be06c94201f2af5fe05d48c67b33400') in 0.010614 seconds 
+  Import took 0.014746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Props/Bomb/3.png
+  artifactKey: Guid(1b14683d8ee334241a0716d9a7e85ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/3.png using Guid(1b14683d8ee334241a0716d9a7e85ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e30befba6f52346353b7da2c9dea05') in 0.016166 seconds 
+  Import took 0.020733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Textures/Props/Door/ShipDoor/05.png
+  artifactKey: Guid(31fb7276e4bf64bc48b82a436f1e2010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Door/ShipDoor/05.png using Guid(31fb7276e4bf64bc48b82a436f1e2010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c82fb995863c73cb5a5b71513e38b8') in 0.016785 seconds 
+  Import took 0.021846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Textures/Props/Bomb/4.png
+  artifactKey: Guid(4a7849b126e3e49e68dbfd81c4716459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/4.png using Guid(4a7849b126e3e49e68dbfd81c4716459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bbd9ba7b0ccaf683ec79564788a8826') in 0.009644 seconds 
+  Import took 0.015991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Textures/Props/Door/ShipDoor/02.png
+  artifactKey: Guid(4310ebf8fda6848a59c221860814d0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Door/ShipDoor/02.png using Guid(4310ebf8fda6848a59c221860814d0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80232180435706c5b82fe32f65173ed7') in 0.009246 seconds 
+  Import took 0.013618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Textures/Props/Bomb/1.png
+  artifactKey: Guid(427e9ebce49d64346a155778cfd7c39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/1.png using Guid(427e9ebce49d64346a155778cfd7c39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411fe5897ac7856a7a34cf3f3f200faf') in 0.009417 seconds 
+  Import took 0.014855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Hit/3.png
+  artifactKey: Guid(c4fcf095e652e4aff8667527debc4ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Hit/3.png using Guid(c4fcf095e652e4aff8667527debc4ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380594522fd5553f4e4e61fb7136825a') in 0.010824 seconds 
+  Import took 0.015774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 01.png
+  artifactKey: Guid(780a235b7495645359574088e473216e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 01.png using Guid(780a235b7495645359574088e473216e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e2fca260a3e5502448cd322ec88749') in 0.007969 seconds 
+  Import took 0.012007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/11-Jump Sword/Jump Sword 03.png
+  artifactKey: Guid(9ee5173da54174c88acf54507d841536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/11-Jump Sword/Jump Sword 03.png using Guid(9ee5173da54174c88acf54507d841536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32dd2122f6371d3067bf6bbe6cf0bb72') in 0.010205 seconds 
+  Import took 0.014250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/17-Attack 3/Attack 3 01.png
+  artifactKey: Guid(de5c4c84a4ed64ec8918582adf89695a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/17-Attack 3/Attack 3 01.png using Guid(de5c4c84a4ed64ec8918582adf89695a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9926f8cd18a54580a32fb551fbeb1ca9') in 0.011882 seconds 
+  Import took 0.016020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down2.png
+  artifactKey: Guid(f5007086cbed44312baeb7c76d536e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down2.png using Guid(f5007086cbed44312baeb7c76d536e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1328510dac29be8aaf8936b5337e71c6') in 0.018207 seconds 
+  Import took 0.022648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Textures/Props/Bomb/1 1.png
+  artifactKey: Guid(02c068821ee1d4736b0f2754b6a32c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/1 1.png using Guid(02c068821ee1d4736b0f2754b6a32c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b60aa9426eb3e764771fc71231fc821') in 0.009216 seconds 
+  Import took 0.013829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 04.png
+  artifactKey: Guid(b53836ec48699448aa577ac3bcc36165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 04.png using Guid(b53836ec48699448aa577ac3bcc36165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edbbfa84a0705b79fbf070337acb14d') in 0.010089 seconds 
+  Import took 0.014596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/11-Jump Sword/Jump Sword 01.png
+  artifactKey: Guid(2176b2ea5268349e78cfd4f5093ed481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/11-Jump Sword/Jump Sword 01.png using Guid(2176b2ea5268349e78cfd4f5093ed481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb91ed5233807e7043645d987532f5e') in 0.008846 seconds 
+  Import took 0.013223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel.png
+  artifactKey: Guid(0a2400889fb8347ed8578a34e6234ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel.png using Guid(0a2400889fb8347ed8578a34e6234ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4833a2504abac40d4be93ceffee873e2') in 0.034412 seconds 
+  Import took 0.039366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/Die/Captain Clown Nose1.png
+  artifactKey: Guid(3e44391e430ef41efad1ab6017792e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/Die/Captain Clown Nose1.png using Guid(3e44391e430ef41efad1ab6017792e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a5495fbb09233da0ef0148efef617b') in 0.012191 seconds 
+  Import took 0.017459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/03-Jump/Jump 01.png
+  artifactKey: Guid(bd43b1d8360c7401bacf26628bbe1ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/03-Jump/Jump 01.png using Guid(bd43b1d8360c7401bacf26628bbe1ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46503d424a791c16a8fc8d8bc01b1c37') in 0.008592 seconds 
+  Import took 0.013884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/11-Attack Effect/Attack Effect 03.png
+  artifactKey: Guid(5f25e04ff7e8748209b65b592fe922f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/11-Attack Effect/Attack Effect 03.png using Guid(5f25e04ff7e8748209b65b592fe922f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e621a41177870607c155ca7746f821e2') in 0.009807 seconds 
+  Import took 0.014540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 04.png
+  artifactKey: Guid(4bc484e30baa442139db35605c02c53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 04.png using Guid(4bc484e30baa442139db35605c02c53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a817767cf60ed00e8383a2e19213ca5') in 0.008869 seconds 
+  Import took 0.013308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Destroyed/1.png
+  artifactKey: Guid(b36f0374390af4e828eafd620497f11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Destroyed/1.png using Guid(b36f0374390af4e828eafd620497f11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8206a821191e9f6acd9073e6f8b2c76c') in 0.008078 seconds 
+  Import took 0.012804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/16-Attack 2/Attack 2 02.png
+  artifactKey: Guid(b4bb23873df4345a4b8bfeeb7ff7d381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/16-Attack 2/Attack 2 02.png using Guid(b4bb23873df4345a4b8bfeeb7ff7d381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1afc6d4a829de376b7c1368367f527ad') in 0.009050 seconds 
+  Import took 0.013643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/11-Attack Effect/Attack Effect 01.png
+  artifactKey: Guid(e1c444350b5124d02af54b8fd6f81462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/11-Attack Effect/Attack Effect 01.png using Guid(e1c444350b5124d02af54b8fd6f81462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f852185659b1fe562736a3f2f2567c') in 0.013347 seconds 
+  Import took 0.017794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/11-Attack Effect/Attack Effect 02.png
+  artifactKey: Guid(3b31823c7da864eab94182c3abccda79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/11-Attack Effect/Attack Effect 02.png using Guid(3b31823c7da864eab94182c3abccda79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49780fdec2b3e643db01717249aaf0cd') in 0.011918 seconds 
+  Import took 0.016757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 01.png
+  artifactKey: Guid(3b9d28ea6fc8745f8814a65f0e6e2c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 01.png using Guid(3b9d28ea6fc8745f8814a65f0e6e2c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2a6e04a931b3a0c77f079ee8138e8b') in 0.011454 seconds 
+  Import took 0.016995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 02.png
+  artifactKey: Guid(cf0a7db1f74bf4db7b659283ad225788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 02.png using Guid(cf0a7db1f74bf4db7b659283ad225788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c13cf0c851a774a12c5a76af98a66fe') in 0.009123 seconds 
+  Import took 0.013997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 04.png
+  artifactKey: Guid(97381f24f929347ff900ba2cef74d39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 04.png using Guid(97381f24f929347ff900ba2cef74d39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96132ae5e6fa0ec4a24905016562184e') in 0.014575 seconds 
+  Import took 0.018885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c6.png
+  artifactKey: Guid(f4859005ad10d47ce9c76f443d78beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c6.png using Guid(f4859005ad10d47ce9c76f443d78beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c83ac86e2777b901439f0f067767af9') in 0.010102 seconds 
+  Import took 0.014739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/25-Attack 2/Attack 2 02.png
+  artifactKey: Guid(8b0afbbb04df946e79d7f229230bab49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/25-Attack 2/Attack 2 02.png using Guid(8b0afbbb04df946e79d7f229230bab49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2536a102319598b6fcc3b5acbe425a64') in 0.013123 seconds 
+  Import took 0.018063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Hit/2.png
+  artifactKey: Guid(da0c7697bfb614970b2b298eae8ba722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Hit/2.png using Guid(da0c7697bfb614970b2b298eae8ba722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'effeffd1e50e22e8bf652bde31080373') in 0.015755 seconds 
+  Import took 0.020507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 06.png
+  artifactKey: Guid(960eee4b7418542d8a089551511e9eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Jump 06.png using Guid(960eee4b7418542d8a089551511e9eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e726df32f4a0b93c890cd531a58f6b87') in 0.008925 seconds 
+  Import took 0.013210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Textures/Props/Door/ShipDoor/03.png
+  artifactKey: Guid(aa2f03aa0a0fa439baba9cbf70784f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Door/ShipDoor/03.png using Guid(aa2f03aa0a0fa439baba9cbf70784f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e0fa7524714aed519487cadedd1170') in 0.012402 seconds 
+  Import took 0.016573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b7.png
+  artifactKey: Guid(72aac6759f567481e9d76c6fa6cc2ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b7.png using Guid(72aac6759f567481e9d76c6fa6cc2ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31444be210d7cdf172409758bb8cb429') in 0.013184 seconds 
+  Import took 0.017894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Textures/Props/Bomb/7.png
+  artifactKey: Guid(1450ca51694514e828a3212725bfb676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/7.png using Guid(1450ca51694514e828a3212725bfb676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7c782007815712b9dc005e754bccb6') in 0.011655 seconds 
+  Import took 0.017044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/18-Air Attack 1/Air Attack 1 01.png
+  artifactKey: Guid(7571d6fecd5824d3981dc194d822b540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/18-Air Attack 1/Air Attack 1 01.png using Guid(7571d6fecd5824d3981dc194d822b540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2faafdbfa9e88a85614dff5fed35f3') in 0.011367 seconds 
+  Import took 0.015502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/03-Jump/Jump 03.png
+  artifactKey: Guid(8cba6125dce7143da9641f7b1a10d42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/03-Jump/Jump 03.png using Guid(8cba6125dce7143da9641f7b1a10d42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e28ef92813944ae3db31c86030604368') in 0.008796 seconds 
+  Import took 0.013352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/19-Air Attack 2/Air Attack 2 01.png
+  artifactKey: Guid(bbda14bad34bf432c9e8b2390a5759a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/19-Air Attack 2/Air Attack 2 01.png using Guid(bbda14bad34bf432c9e8b2390a5759a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eceb852ee7539f5b1cfe26b35a8dd906') in 0.010770 seconds 
+  Import took 0.015683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Textures/Props/Bomb/6.png
+  artifactKey: Guid(29ad7f537adad489c919a14d0899e0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/6.png using Guid(29ad7f537adad489c919a14d0899e0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6703cd5b9e43cd7229f0dada6b419ee5') in 0.009655 seconds 
+  Import took 0.014639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c1.png
+  artifactKey: Guid(2942bee0d526e441fa3ed9afc1e77564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c1.png using Guid(2942bee0d526e441fa3ed9afc1e77564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ed9585182724c434765491d2120495') in 0.008700 seconds 
+  Import took 0.012749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 02.png
+  artifactKey: Guid(b9d249db4be804b55a0637ad0c31c3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 02.png using Guid(b9d249db4be804b55a0637ad0c31c3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5d55ed8f6b2f4556ac606ab68f32a8') in 0.013371 seconds 
+  Import took 0.017470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 03.png
+  artifactKey: Guid(47901b8b558514a2b8e3cb6282d0d5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 03.png using Guid(47901b8b558514a2b8e3cb6282d0d5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7508747c42b26bebd5c0166cb4d8f9') in 0.011932 seconds 
+  Import took 0.016437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Destroyed/5.png
+  artifactKey: Guid(67477096d5e9943ce945451f13a5d1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Destroyed/5.png using Guid(67477096d5e9943ce945451f13a5d1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3fbcf6754203795baf3037166605d6') in 0.011701 seconds 
+  Import took 0.016502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 03.png
+  artifactKey: Guid(5e195105cd84b49c0afd88525ebc373f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/06-Hit/Hit 03.png using Guid(5e195105cd84b49c0afd88525ebc373f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a0d9a0d0a57ef5b55831e1ad7ee433') in 0.008783 seconds 
+  Import took 0.012965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/16-Attack 2/Attack 2 03.png
+  artifactKey: Guid(f0d91d5710aec4fad86af07c89f382e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/16-Attack 2/Attack 2 03.png using Guid(f0d91d5710aec4fad86af07c89f382e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c3467f81294b4d28237650168e3908') in 0.009145 seconds 
+  Import took 0.012985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/17-Attack 3/Attack 3 03.png
+  artifactKey: Guid(7b352c8e1d6104a70a4f89f6eae67be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/17-Attack 3/Attack 3 03.png using Guid(7b352c8e1d6104a70a4f89f6eae67be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552f5deef0d834c4134ffda3884e4fc7') in 0.008801 seconds 
+  Import took 0.012765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 01.png
+  artifactKey: Guid(bfa3faddee1974494ad6ddfb5f583bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 01.png using Guid(bfa3faddee1974494ad6ddfb5f583bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e531a30faddaa38e4a04187998c7dce2') in 0.014466 seconds 
+  Import took 0.018726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b12.png
+  artifactKey: Guid(cd64477d1a0694ea28e5ad1db37ba77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b12.png using Guid(cd64477d1a0694ea28e5ad1db37ba77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44a669d1fcb62ff022a8de9afe33cc6') in 0.009359 seconds 
+  Import took 0.013989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b11.png
+  artifactKey: Guid(b07b76d02713040dda33af28a799a266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b11.png using Guid(b07b76d02713040dda33af28a799a266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9ef44eca1efc9d20b0a0ea4aa7b5d9') in 0.013059 seconds 
+  Import took 0.017832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/26-Attack 3/Attack 3 02.png
+  artifactKey: Guid(0064233b8d3cb4ea3aaad78c9fd5fbc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/26-Attack 3/Attack 3 02.png using Guid(0064233b8d3cb4ea3aaad78c9fd5fbc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c178d8dc95aef3d6c59b2ab34b38f3') in 0.012332 seconds 
+  Import took 0.018162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c5.png
+  artifactKey: Guid(1075481c982594457979ee442b97aafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c5.png using Guid(1075481c982594457979ee442b97aafc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c22ecada57a273ffcc0857d2c0e8e2') in 0.013226 seconds 
+  Import took 0.019478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000719 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 04.png
+  artifactKey: Guid(7a99990b91db94211beb2cb6cb45fdc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 04.png using Guid(7a99990b91db94211beb2cb6cb45fdc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb611be43849605a3c1b46b938a2eb73') in 0.013784 seconds 
+  Import took 0.020033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Hit/1.png
+  artifactKey: Guid(d33c92ca66ef54941b907cdde22cdabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Hit/1.png using Guid(d33c92ca66ef54941b907cdde22cdabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd3eee53c81b49ccbce51c30a25f541') in 0.011476 seconds 
+  Import took 0.018415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011076 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b6.png
+  artifactKey: Guid(61f934a1713ae4f6c9d8931262771a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b6.png using Guid(61f934a1713ae4f6c9d8931262771a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610bca3d9607613f19bfa4e885603156') in 0.012124 seconds 
+  Import took 0.018701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Textures/Dialogue/Interrogation/Interrogation In 03.png
+  artifactKey: Guid(060a634d428384bbdb25986e8d457716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Interrogation/Interrogation In 03.png using Guid(060a634d428384bbdb25986e8d457716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ca94b09456850e80d44dd24418db58') in 0.011318 seconds 
+  Import took 0.017909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c7.png
+  artifactKey: Guid(0f927db0ab3fb4cf1b9555c26560262a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c7.png using Guid(0f927db0ab3fb4cf1b9555c26560262a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe28bc5b883d55cd912466a266db5b0') in 0.012152 seconds 
+  Import took 0.018414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000796 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/27-Air Attack 1/Air Attack 1 01.png
+  artifactKey: Guid(aec5d05ce0dfb4fd29fa7eaaa1ed6b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/27-Air Attack 1/Air Attack 1 01.png using Guid(aec5d05ce0dfb4fd29fa7eaaa1ed6b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e244234afeff245bcd525cdd1c872a8a') in 0.016296 seconds 
+  Import took 0.022648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/18-Air Attack 1/Air Attack 1 02.png
+  artifactKey: Guid(29c7822f0b9ee4f54b888624c9e3af84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/18-Air Attack 1/Air Attack 1 02.png using Guid(29c7822f0b9ee4f54b888624c9e3af84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db284fbe812718289ab4fbc0e5b12075') in 0.014415 seconds 
+  Import took 0.021201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b10.png
+  artifactKey: Guid(2766620e236904c49a36e66626f6d313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b10.png using Guid(2766620e236904c49a36e66626f6d313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0362fbbb9a121a2e789bbaa46c2fed2') in 0.012022 seconds 
+  Import took 0.018029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Textures/Props/Door/ShipDoor/01.png
+  artifactKey: Guid(57eb51f7b656847d3a5d7ffe7d65ddd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Door/ShipDoor/01.png using Guid(57eb51f7b656847d3a5d7ffe7d65ddd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02254293b7bd9540efa4a8da24e904fe') in 0.010984 seconds 
+  Import took 0.016885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b9.png
+  artifactKey: Guid(31751eec0394b48e0994f0c328b6d40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b9.png using Guid(31751eec0394b48e0994f0c328b6d40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102d757db740f85a4d62f4f817eadda1') in 0.012558 seconds 
+  Import took 0.016761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/25-Attack 2/Attack 2 03.png
+  artifactKey: Guid(5b5620a183b404c5783e2d570ea8fe61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/25-Attack 2/Attack 2 03.png using Guid(5b5620a183b404c5783e2d570ea8fe61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd2a99692ef7aa7bc26a3e732164ab8') in 0.009482 seconds 
+  Import took 0.013665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/16-Attack 2/Attack 2 01.png
+  artifactKey: Guid(69a2ce97fee2549c89572c20ec0fcade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/16-Attack 2/Attack 2 01.png using Guid(69a2ce97fee2549c89572c20ec0fcade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7803858ddeac79023c12f30e8add5f0') in 0.010759 seconds 
+  Import took 0.015406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Textures/Expsolions/explosion-b/explosion-b8.png
+  artifactKey: Guid(d438ca37a256b4445a2e553fc67f3fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-b/explosion-b8.png using Guid(d438ca37a256b4445a2e553fc67f3fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7594807269ba32de15f9dcdb8a75bb9') in 0.008792 seconds 
+  Import took 0.014026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c8.png
+  artifactKey: Guid(3d2fdc8343069489aa4b24d1378317e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c8.png using Guid(3d2fdc8343069489aa4b24d1378317e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159716368d60258c0d7fbd7b06eb8647') in 0.013744 seconds 
+  Import took 0.017802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down4.png
+  artifactKey: Guid(eee8fedf5424f4e1baac5d8e06ab3763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/UpDown/look-up-down4.png using Guid(eee8fedf5424f4e1baac5d8e06ab3763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1932d3a0ab7f3f8e26a32816be35f4') in 0.012614 seconds 
+  Import took 0.016637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c4.png
+  artifactKey: Guid(cb53f78875e3c4d5da0caebba55ec597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c4.png using Guid(cb53f78875e3c4d5da0caebba55ec597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a96de5bd1799c345669bc0c45d420b') in 0.015787 seconds 
+  Import took 0.020795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 04.png
+  artifactKey: Guid(4eb5d0230d1ef497593d8149b307c487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 04.png using Guid(4eb5d0230d1ef497593d8149b307c487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfd671538aa39ba44902e99a6f9f89e') in 0.008037 seconds 
+  Import took 0.012565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 02.png
+  artifactKey: Guid(9368a73db960c48f6854a4152dc87b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/08-Hit/Hit 02.png using Guid(9368a73db960c48f6854a4152dc87b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ea20880f4790c9faea8b6f9decbf61') in 0.008620 seconds 
+  Import took 0.013622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Destroyed/3.png
+  artifactKey: Guid(18f29783b2e7f4ae0aefe01efe3bc461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Destroyed/3.png using Guid(18f29783b2e7f4ae0aefe01efe3bc461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6fa98eeb62c8e32993d85557449fe7c') in 0.007496 seconds 
+  Import took 0.011495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Destroyed/2.png
+  artifactKey: Guid(a2bea2fe913ec46b4ac1efd3a8153311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Destroyed/2.png using Guid(a2bea2fe913ec46b4ac1efd3a8153311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d71858057da84cd4e16f7c53bae6cd3') in 0.008465 seconds 
+  Import took 0.013692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/25-Attack 2/Attack 2 01.png
+  artifactKey: Guid(5ae0f663c3d3a42a49dfb4eb328acf2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/25-Attack 2/Attack 2 01.png using Guid(5ae0f663c3d3a42a49dfb4eb328acf2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c0cfcccd2e709592ab545edce54b26') in 0.014904 seconds 
+  Import took 0.019200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Hit/4.png
+  artifactKey: Guid(8348427835e3d4fcbbaf551d7ffbd74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Hit/4.png using Guid(8348427835e3d4fcbbaf551d7ffbd74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4aae255c365332d5073c413cf7cd89') in 0.012905 seconds 
+  Import took 0.016927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Textures/Props/Bomb/2.png
+  artifactKey: Guid(ffda5e222288d49559bae7e4936aa668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/2.png using Guid(ffda5e222288d49559bae7e4936aa668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067b374ff122b019710e1ec4248703dd') in 0.012724 seconds 
+  Import took 0.016866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Textures/Props/Bomb/5.png
+  artifactKey: Guid(ddff037873b784c9c9a387a384e3b39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Bomb/5.png using Guid(ddff037873b784c9c9a387a384e3b39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec60f73e1704a4b7188a3003005be4e') in 0.014514 seconds 
+  Import took 0.019182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/27-Air Attack 1/Air Attack 1 02.png
+  artifactKey: Guid(30e934bd111504c7f882af670e575412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/27-Air Attack 1/Air Attack 1 02.png using Guid(30e934bd111504c7f882af670e575412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355934ed6d7d52317429f80e3fb51211') in 0.009241 seconds 
+  Import took 0.013453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Textures/Dialogue/Interrogation/Interrogation In 02.png
+  artifactKey: Guid(aa4a4999060214bf0affeab3d59538d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Interrogation/Interrogation In 02.png using Guid(aa4a4999060214bf0affeab3d59538d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50954383caeb5c470710a708dc378edb') in 0.007827 seconds 
+  Import took 0.012050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 03.png
+  artifactKey: Guid(48dde5a53e722425b9aa1edde21c629a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/14-Hit Sword/Hit Sword 03.png using Guid(48dde5a53e722425b9aa1edde21c629a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc78510ae9f38555c40ea3803f78605b') in 0.009749 seconds 
+  Import took 0.014350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 04.png
+  artifactKey: Guid(b10406de1f8784aa8b19aa58951e59f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 04.png using Guid(b10406de1f8784aa8b19aa58951e59f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f77c977793c37a51ddaab78de36ef26') in 0.009220 seconds 
+  Import took 0.014328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Textures/Expsolions/explosion-c/explosion-c2.png
+  artifactKey: Guid(b22559120236b4d6da011fe2f892c38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-c/explosion-c2.png using Guid(b22559120236b4d6da011fe2f892c38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893aa66cc93c0c3bfffe756fa368299f') in 0.008149 seconds 
+  Import took 0.012056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/18-Air Attack 1/Air Attack 1 03.png
+  artifactKey: Guid(3ec56b4f1cea44d3a895a8c9710e6707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/18-Air Attack 1/Air Attack 1 03.png using Guid(3ec56b4f1cea44d3a895a8c9710e6707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70171063fc3b5989b40b7bc0a630e93') in 0.012590 seconds 
+  Import took 0.017236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Textures/Expsolions/explosion-d/explosion-d1.png
+  artifactKey: Guid(dd36292b0ce904b3ea1f5011c150948e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-d/explosion-d1.png using Guid(dd36292b0ce904b3ea1f5011c150948e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d3b46b4e791b81ce41572f9c5c7a36') in 0.012194 seconds 
+  Import took 0.016807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Destroyed/4.png
+  artifactKey: Guid(4a762fa3956974f92a1e63d3024ff135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Destroyed/4.png using Guid(4a762fa3956974f92a1e63d3024ff135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc110bad2bccdc801d94a7a02937adc9') in 0.011078 seconds 
+  Import took 0.015776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Textures/Props/Door/ShipDoor/04.png
+  artifactKey: Guid(ecd51d1969f4640f7b6d5a68105e1b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Door/ShipDoor/04.png using Guid(ecd51d1969f4640f7b6d5a68105e1b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e726555920c9d1c77638cb10254de7') in 0.011202 seconds 
+  Import took 0.015234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.721194 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 03.png
+  artifactKey: Guid(ed6f50ed414324aeeb161531d6acc393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 03.png using Guid(ed6f50ed414324aeeb161531d6acc393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e24e58e6cffe758a331f76ac2a3080') in 0.009089 seconds 
+  Import took 0.013858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 05.png
+  artifactKey: Guid(f508cdabe0b5d451aa3feb6ee894623e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 05.png using Guid(f508cdabe0b5d451aa3feb6ee894623e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6721e0f29a344e6b2382211799ec338d') in 0.009206 seconds 
+  Import took 0.013994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Textures/Props/Chest/shest1.png
+  artifactKey: Guid(83cf572f55d3b4761bd9d43b7d59c26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Chest/shest1.png using Guid(83cf572f55d3b4761bd9d43b7d59c26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efac8b589aeb37425ea932ddf520fe1') in 0.007893 seconds 
+  Import took 0.012102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 04.png
+  artifactKey: Guid(a8c533bef11d145dbbb3d064938f9721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 04.png using Guid(a8c533bef11d145dbbb3d064938f9721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c123cf2ca16463097e5ab2925404bbe4') in 0.008626 seconds 
+  Import took 0.012566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Textures/Props/Chest/shest4.png
+  artifactKey: Guid(d7a0d59cc73a94bd98b1a30ebb364906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Chest/shest4.png using Guid(d7a0d59cc73a94bd98b1a30ebb364906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f567a270a154432f3c7daaba370a4933') in 0.012034 seconds 
+  Import took 0.015910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 01.png
+  artifactKey: Guid(6cd44523fa8594ebd918df1c2bb16396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 01.png using Guid(6cd44523fa8594ebd918df1c2bb16396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be3e706c103e30f1ca941a976d11b09') in 0.017037 seconds 
+  Import took 0.021358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 01.png
+  artifactKey: Guid(a26b2a027faea42c9a5583a7a74844b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 01.png using Guid(a26b2a027faea42c9a5583a7a74844b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f19c139a2a37b9dfb94f2aa097688e') in 0.011947 seconds 
+  Import took 0.016460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 07.png
+  artifactKey: Guid(4bd10889add53467887a42a347c6a1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 07.png using Guid(4bd10889add53467887a42a347c6a1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33414105ae6dbb2ff364ebc40edf6b1') in 0.010339 seconds 
+  Import took 0.014952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 02.png
+  artifactKey: Guid(d03e21247cd43433da6b212d67ebf1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 02.png using Guid(d03e21247cd43433da6b212d67ebf1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea558d23afad63c7b3f5a7c68e1aa43') in 0.008985 seconds 
+  Import took 0.013597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 02.png
+  artifactKey: Guid(c87a7bf75257a45ca91ddf6deb39bc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 02.png using Guid(c87a7bf75257a45ca91ddf6deb39bc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8d9e284efaa5b16c8dd83bd743acf6') in 0.012014 seconds 
+  Import took 0.016896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/02-Run/Run 06.png
+  artifactKey: Guid(2e243cea4cbd64fccb19f6222e1970e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/02-Run/Run 06.png using Guid(2e243cea4cbd64fccb19f6222e1970e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7a11e48191291a53532bc7f77960d7') in 0.008658 seconds 
+  Import took 0.012653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/02-Run/Run 05.png
+  artifactKey: Guid(2863943ae848840a49f994dac7c2fc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/02-Run/Run 05.png using Guid(2863943ae848840a49f994dac7c2fc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01ba3e8f9fcf264a43d7537142bdb9f') in 0.008765 seconds 
+  Import took 0.013391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 04.png
+  artifactKey: Guid(86d5932336e8540d8b0dd0ccc3302e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 04.png using Guid(86d5932336e8540d8b0dd0ccc3302e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb85ca777bbe6bc32e2dfdf73d22574') in 0.011977 seconds 
+  Import took 0.016457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 02.png
+  artifactKey: Guid(27ae8c91249d14073ab20a69552f1f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 02.png using Guid(27ae8c91249d14073ab20a69552f1f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0057649e5aa05e4f6bc4d21ebc02608b') in 0.015160 seconds 
+  Import took 0.019771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 06.png
+  artifactKey: Guid(aba932321c4e549cda7d0cb282c4abbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 06.png using Guid(aba932321c4e549cda7d0cb282c4abbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331264ffe9b83792c31a3f84ae900b01') in 0.010446 seconds 
+  Import took 0.014953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 04.png
+  artifactKey: Guid(f65d4a15df4e440939e2420cc4c7f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 04.png using Guid(f65d4a15df4e440939e2420cc4c7f83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824f4162c21996b648a0b346549761a4') in 0.008546 seconds 
+  Import took 0.012959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/02-Run/Run 04.png
+  artifactKey: Guid(171c34c17ddfe495d90f79a5f65e89c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/02-Run/Run 04.png using Guid(171c34c17ddfe495d90f79a5f65e89c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1738d00ce6ea362002d66b8cc0b0cb41') in 0.009047 seconds 
+  Import took 0.014308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Textures/Props/Chest/shest5.png
+  artifactKey: Guid(5c1823a441bed42a187a0d5037abde41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Chest/shest5.png using Guid(5c1823a441bed42a187a0d5037abde41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89285b63fed85fa8733c01edd99ae660') in 0.009842 seconds 
+  Import took 0.014884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 05.png
+  artifactKey: Guid(452bac4f2d3d744058e2f8729ffbfa78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 05.png using Guid(452bac4f2d3d744058e2f8729ffbfa78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46477838b6218a7a379c75d66cacab99') in 0.009877 seconds 
+  Import took 0.013865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 03.png
+  artifactKey: Guid(a7117ff071f1a45c0b428e4272a6db50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 03.png using Guid(a7117ff071f1a45c0b428e4272a6db50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9954274d9fc549f5dbf6e11c607be096') in 0.007741 seconds 
+  Import took 0.011699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 01.png
+  artifactKey: Guid(19c6d1bfb5d534e558cc9050d0bcdb37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 01.png using Guid(19c6d1bfb5d534e558cc9050d0bcdb37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f234de083679d1da276ab327cbb87c5') in 0.012762 seconds 
+  Import took 0.017891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 06.png
+  artifactKey: Guid(33ad123e9fb044135a275ad5a707f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 06.png using Guid(33ad123e9fb044135a275ad5a707f554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c015636e445ff763782689eb2e894831') in 0.011510 seconds 
+  Import took 0.015687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Textures/Props/Chest/shest3.png
+  artifactKey: Guid(f9154290e0b34494d987dd387d655b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Chest/shest3.png using Guid(f9154290e0b34494d987dd387d655b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9170eea8977d307064fa112a19af24dd') in 0.009901 seconds 
+  Import took 0.014024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Run 04.png
+  artifactKey: Guid(0b2c85b55b2ca4ade84c2a715dc4da67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Run 04.png using Guid(0b2c85b55b2ca4ade84c2a715dc4da67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72abccb8329ced65d427b1a94c2cd250') in 0.009970 seconds 
+  Import took 0.015494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 03.png
+  artifactKey: Guid(7ac02ccf176e84581a2c4cca32b74861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/23-Sword Embedded/Sword Embedded 03.png using Guid(7ac02ccf176e84581a2c4cca32b74861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7629a8de4a6fcdebf701cf8a6612b346') in 0.009351 seconds 
+  Import took 0.014356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Run 05.png
+  artifactKey: Guid(faa4d0571a4e34db7a89c4db173ec956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Run 05.png using Guid(faa4d0571a4e34db7a89c4db173ec956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f4a8eabdd45c65fb688f2a98e7cd27c') in 0.011147 seconds 
+  Import took 0.016400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 02.png
+  artifactKey: Guid(50e4c7ae02939430aa0b23f1a44b4b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 02.png using Guid(50e4c7ae02939430aa0b23f1a44b4b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8463647026a02eed35673052a2a8bc09') in 0.010693 seconds 
+  Import took 0.015356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Textures/Props/Chest/shest2.png
+  artifactKey: Guid(29c075501c360462e889c4dfde106443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Chest/shest2.png using Guid(29c075501c360462e889c4dfde106443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a724b5ce4a70c1e95a7068dc7cfc2a') in 0.010264 seconds 
+  Import took 0.014977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 04.png
+  artifactKey: Guid(035c3c1577a4e4a488749dccb93e8e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword/22-Sword Spinning/Sword Spinning 04.png using Guid(035c3c1577a4e4a488749dccb93e8e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b403d169bc75a88b5db095e2b8216907') in 0.014604 seconds 
+  Import took 0.020053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Textures/Expsolions/explosion-g/explosion-g6.png
+  artifactKey: Guid(aecd121b160b44a5b8982490ed35e6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-g/explosion-g6.png using Guid(aecd121b160b44a5b8982490ed35e6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e91798db98d3a3353018c141e185de') in 0.013650 seconds 
+  Import took 0.019209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 05.png
+  artifactKey: Guid(32231edc04edd4fd1b20ab42d5c94cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 05.png using Guid(32231edc04edd4fd1b20ab42d5c94cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f285f6dccaef032006ae67b0861c93') in 0.010607 seconds 
+  Import took 0.015880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/12-Fall Sword/Fall Sword 01.png
+  artifactKey: Guid(55e1647b199eb4bd3ad49f3144d417b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/12-Fall Sword/Fall Sword 01.png using Guid(55e1647b199eb4bd3ad49f3144d417b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5938069103a1d5d9c192199ac06f5b13') in 0.010368 seconds 
+  Import took 0.017439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 03.png
+  artifactKey: Guid(bc33959943b6343b185ea6ad2a2ae111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 03.png using Guid(bc33959943b6343b185ea6ad2a2ae111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd64c7ec2999ed4e36f12427ddbae7ae') in 0.010022 seconds 
+  Import took 0.016450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 03_2.png
+  artifactKey: Guid(9a16c2e7465ea4d67bef4c60c2dabb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 03_2.png using Guid(9a16c2e7465ea4d67bef4c60c2dabb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69841ea805e705a678f9a983369b8ef') in 0.009088 seconds 
+  Import took 0.013747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/10-Dead Ground/Dead Ground 03.png
+  artifactKey: Guid(3841a048e061446d6bc25a535ba72482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/10-Dead Ground/Dead Ground 03.png using Guid(3841a048e061446d6bc25a535ba72482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3035a496c2d3e720c3a5303ed8f85d9') in 0.010508 seconds 
+  Import took 0.016447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 03.png
+  artifactKey: Guid(29e0ddac087c84f47a35b7a7b32af0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 03.png using Guid(29e0ddac087c84f47a35b7a7b32af0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bd28e999756cbb20aba519cb194a60') in 0.014249 seconds 
+  Import took 0.019495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 01.png
+  artifactKey: Guid(0f44055fedec14cb38df0400c4b7143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 01.png using Guid(0f44055fedec14cb38df0400c4b7143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0ab4fe6aec0cffcb7cc628729f3002') in 0.015494 seconds 
+  Import took 0.020707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Textures/Dialogue/Dead/Dead In 03.png
+  artifactKey: Guid(d943ea5ef458c4252bb66a3a34796c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Dead/Dead In 03.png using Guid(d943ea5ef458c4252bb66a3a34796c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb3b5f75f2d2a8100ca5607c86bfb43') in 0.010288 seconds 
+  Import took 0.014766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/04-Fall/Fall 01.png
+  artifactKey: Guid(14248317ef8dd4788b042d7417aa108e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/04-Fall/Fall 01.png using Guid(14248317ef8dd4788b042d7417aa108e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8159f2a5f2c995d605d56ca6cf1128') in 0.009290 seconds 
+  Import took 0.013784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/04-Fall/Fall 01.png
+  artifactKey: Guid(4f3368a8d20f54bb6999b9cc9102caee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/04-Fall/Fall 01.png using Guid(4f3368a8d20f54bb6999b9cc9102caee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8d4e001117bc9558196927197741aa') in 0.011711 seconds 
+  Import took 0.016510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Textures/Expsolions/explosion-g/explosion-g9.png
+  artifactKey: Guid(b288410d38fc34506bba569ff56f1758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-g/explosion-g9.png using Guid(b288410d38fc34506bba569ff56f1758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d45bd5b5a3d257f0033558262a9023') in 0.008405 seconds 
+  Import took 0.012689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 02.png
+  artifactKey: Guid(769e5a50b678e45d49f18b2e3197dc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 02.png using Guid(769e5a50b678e45d49f18b2e3197dc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760b633050f42ceb6c90c1f12226dd58') in 0.008269 seconds 
+  Import took 0.013096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 02.png
+  artifactKey: Guid(10695beab288145e7b9d84660c824083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 02.png using Guid(10695beab288145e7b9d84660c824083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3b75a6a15bb01215c6a865d58cc68a') in 0.011077 seconds 
+  Import took 0.015789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/10-Dead Ground/Dead Ground 04.png
+  artifactKey: Guid(4d2f2ab5df09e4d38b428eedf8e8ba1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/10-Dead Ground/Dead Ground 04.png using Guid(4d2f2ab5df09e4d38b428eedf8e8ba1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf34c5a7ac1d75b6aa40b33d6ed4835') in 0.013754 seconds 
+  Import took 0.017945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Textures/Expsolions/explosion-g/explosion-g7.png
+  artifactKey: Guid(a56fbe2d304de427c947ef5072aa3fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-g/explosion-g7.png using Guid(a56fbe2d304de427c947ef5072aa3fa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9944ffad963980e465165be3c0716e1') in 0.013056 seconds 
+  Import took 0.017067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Textures/Expsolions/explosion-g/explosion-g5.png
+  artifactKey: Guid(35f32b7dabcf948818735ed732bcd2a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-g/explosion-g5.png using Guid(35f32b7dabcf948818735ed732bcd2a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b1a4237139b922ffeb8c079664f380') in 0.011962 seconds 
+  Import took 0.016722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 04.png
+  artifactKey: Guid(221739011c0dc47a8a33a76c6eaf7cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 04.png using Guid(221739011c0dc47a8a33a76c6eaf7cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85062f90fdd6c4f17937a84e1f0e420') in 0.009109 seconds 
+  Import took 0.013336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 01.png
+  artifactKey: Guid(83be9d13876254d93af33b4e950554b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 01.png using Guid(83be9d13876254d93af33b4e950554b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680f814166666ab7d65cd10e020d2a34') in 0.013578 seconds 
+  Import took 0.018246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Idle/exposive.png
+  artifactKey: Guid(7d63a99276e4e44539b55104a7832003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Idle/exposive.png using Guid(7d63a99276e4e44539b55104a7832003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4719322261d11c3b81cc7f9293d3230') in 0.007710 seconds 
+  Import took 0.011813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/06-Anticipation/Anticipation 01.png
+  artifactKey: Guid(936390230fc9346b7920f33f8df3b258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/06-Anticipation/Anticipation 01.png using Guid(936390230fc9346b7920f33f8df3b258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f945f96e5ed24845d927c2263478724') in 0.012497 seconds 
+  Import took 0.016640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/28-Air Attack 2/Air Attack 2 01.png
+  artifactKey: Guid(8645d571535e0489daf0ccfdb8cc70dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/28-Air Attack 2/Air Attack 2 01.png using Guid(8645d571535e0489daf0ccfdb8cc70dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db28c5ff3d3cc7be58fee7891d777c4b') in 0.008765 seconds 
+  Import took 0.013233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Sword Effects/28-Air Attack 2/Air Attack 2 02.png
+  artifactKey: Guid(1e1b3b808a30f4e369e349570faa1800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Sword Effects/28-Air Attack 2/Air Attack 2 02.png using Guid(1e1b3b808a30f4e369e349570faa1800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bda653e7d43cd641554a4a09d47d28') in 0.009909 seconds 
+  Import took 0.014937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 01.png
+  artifactKey: Guid(77525885eb266404aa7a05aef5007546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/07-Attack/Attack 01.png using Guid(77525885eb266404aa7a05aef5007546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc697c7b50167ed290ff37da7ee82d7c') in 0.014890 seconds 
+  Import took 0.019640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 03.png
+  artifactKey: Guid(2c2ea2e41055046549318d0564147cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 03.png using Guid(2c2ea2e41055046549318d0564147cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de638bfa7379d23690ae45250674ffe') in 0.011165 seconds 
+  Import took 0.015942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Textures/Dialogue/Dead/Dead In 01.png
+  artifactKey: Guid(7fa604dde8e8e406990afd023b55e01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Dead/Dead In 01.png using Guid(7fa604dde8e8e406990afd023b55e01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282ddbd24581602af418f0d86d0262de') in 0.008437 seconds 
+  Import took 0.012416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 04.png
+  artifactKey: Guid(fd2657fb9a2894811b9a19b457dd6bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Particles/HeroMovementParticles/Fall 04.png using Guid(fd2657fb9a2894811b9a19b457dd6bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05247d6fcaffaac500419d3af291223e') in 0.008662 seconds 
+  Import took 0.013427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 01.png
+  artifactKey: Guid(25e0e443f3ca34a078e40d015be9fe92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 01.png using Guid(25e0e443f3ca34a078e40d015be9fe92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92d942ebf71a9966c37de9e49765673') in 0.010478 seconds 
+  Import took 0.015384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 02_2.png
+  artifactKey: Guid(a664fe802c6fc46438a5358869698114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 02_2.png using Guid(a664fe802c6fc46438a5358869698114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d4a1ad1df08e2a67af510c9e2004d9') in 0.009173 seconds 
+  Import took 0.013527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 02.png
+  artifactKey: Guid(21a920a6973364c59acd8bf2416ee64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 02.png using Guid(21a920a6973364c59acd8bf2416ee64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f03818c451b4772a446caafbf84cf4') in 0.007690 seconds 
+  Import took 0.011686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/08-Dead Ground/Dead Ground 04.png
+  artifactKey: Guid(5829ecd7756014cb69ef4c10bc578c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/08-Dead Ground/Dead Ground 04.png using Guid(5829ecd7756014cb69ef4c10bc578c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de7b91056f5453c661656bf3469d6f54') in 0.009131 seconds 
+  Import took 0.013872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Textures/Dialogue/Dead/Dead In 02.png
+  artifactKey: Guid(e19de9e4c56bd4d3d9edf93329557d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Dialogue/Dead/Dead In 02.png using Guid(e19de9e4c56bd4d3d9edf93329557d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27106e104808b364de3d022e3f0b99a3') in 0.013172 seconds 
+  Import took 0.018009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/06-Anticipation/Anticipation 02.png
+  artifactKey: Guid(9763fba815960455abf71fe824a3ca84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/06-Anticipation/Anticipation 02.png using Guid(9763fba815960455abf71fe824a3ca84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b665b5538ab2dda50172979eef651ac1') in 0.012126 seconds 
+  Import took 0.017009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 04.png
+  artifactKey: Guid(43576cdcf7f9e47a185b6428c811c569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/07-Dead Hit/Dead Hit 04.png using Guid(43576cdcf7f9e47a185b6428c811c569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc2568db3549aa855aed939cc774834') in 0.009103 seconds 
+  Import took 0.013309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/06-Anticipation/Anticipation 03.png
+  artifactKey: Guid(335a06d394dda489cadd81a265237502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/06-Anticipation/Anticipation 03.png using Guid(335a06d394dda489cadd81a265237502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6534c12229009cc894fec60b9dbc6d58') in 0.010945 seconds 
+  Import took 0.014977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/19-Air Attack 2/Air Attack 2 02.png
+  artifactKey: Guid(44508711fae554d17aada9fd7ad30fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/19-Air Attack 2/Air Attack 2 02.png using Guid(44508711fae554d17aada9fd7ad30fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2bd39a107297fc0124ecc7b99089b9') in 0.012862 seconds 
+  Import took 0.017031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Textures/Expsolions/explosion-g/explosion-g8.png
+  artifactKey: Guid(6fb29582181fc4a38839ae3cbea53bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Expsolions/explosion-g/explosion-g8.png using Guid(6fb29582181fc4a38839ae3cbea53bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20fedca8e1a20ff55c223762eb39f8c5') in 0.009607 seconds 
+  Import took 0.013602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 01.png
+  artifactKey: Guid(9188a034bf8954781b3ca3aa861acb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 01.png using Guid(9188a034bf8954781b3ca3aa861acb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68930136e3a09726ae3b10c30160393a') in 0.009004 seconds 
+  Import took 0.013237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 04_2.png
+  artifactKey: Guid(7c655569125f949d6b452e16081814ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Fierce Tooth/09-Dead Hit/Dead Hit 04_2.png using Guid(7c655569125f949d6b452e16081814ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7d1b663d8f9a5ba841c1bbc6cfc4f6') in 0.012674 seconds 
+  Import took 0.017199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Textures/Props/Sword/Sword Idle 08.png
+  artifactKey: Guid(832fdd2fcf30549d9bf6f49dc2275f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Sword/Sword Idle 08.png using Guid(832fdd2fcf30549d9bf6f49dc2275f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c232c80317609070bb075eebb38f33') in 0.015172 seconds 
+  Import took 0.020339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 03.png
+  artifactKey: Guid(97104705cbf8b4efb94ce3245042c2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/10-Run Sword/Run Sword 03.png using Guid(97104705cbf8b4efb94ce3245042c2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22ac52f248cedae60393bca76082af4') in 0.011146 seconds 
+  Import took 0.015360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/19-Air Attack 2/Air Attack 2 03.png
+  artifactKey: Guid(c9c34b6c2689e49069a486b3bb551f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Creatures/Captain/Textures/Captain Clown Nose with Sword/19-Air Attack 2/Air Attack 2 03.png using Guid(c9c34b6c2689e49069a486b3bb551f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2327c871f08284cbbc9e578949638d40') in 0.009609 seconds 
+  Import took 0.014303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Textures/Props/Barrel/Barrel/Idle/simple.png
+  artifactKey: Guid(5d6a5367510784dc4b11eb62565c999d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Props/Barrel/Barrel/Idle/simple.png using Guid(5d6a5367510784dc4b11eb62565c999d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc81c29b4056ad90f7f9fe6e6303c9e') in 0.010059 seconds 
+  Import took 0.014542 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004364 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.656 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.2 MB.
+System memory in use after: 210.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3137.
+Total: 2.694032 ms (FindLiveObjects: 0.316663 ms CreateObjectMapping: 0.107115 ms MarkObjects: 2.169622 ms  DeleteObjects: 0.099828 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001996 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.447 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.3 MB.
+System memory in use after: 210.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3141.
+Total: 2.845421 ms (FindLiveObjects: 0.306285 ms CreateObjectMapping: 0.131924 ms MarkObjects: 2.301347 ms  DeleteObjects: 0.105050 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002306 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.648 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.6 MB.
+System memory in use after: 210.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3145.
+Total: 3.711247 ms (FindLiveObjects: 0.460098 ms CreateObjectMapping: 0.195706 ms MarkObjects: 2.871574 ms  DeleteObjects: 0.182699 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005861 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.502 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2575 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.7 MB.
+System memory in use after: 210.8 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3148.
+Total: 3.866478 ms (FindLiveObjects: 0.300662 ms CreateObjectMapping: 0.122651 ms MarkObjects: 3.321592 ms  DeleteObjects: 0.120523 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006139 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.621 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 210.9 MB.
+System memory in use after: 211.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3154.
+Total: 3.997294 ms (FindLiveObjects: 0.464270 ms CreateObjectMapping: 0.210927 ms MarkObjects: 3.157038 ms  DeleteObjects: 0.162832 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006686 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.502 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 211.2 MB.
+System memory in use after: 211.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3158.
+Total: 2.862627 ms (FindLiveObjects: 0.301380 ms CreateObjectMapping: 0.120823 ms MarkObjects: 2.331764 ms  DeleteObjects: 0.107810 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008187 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.455 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 211.5 MB.
+System memory in use after: 211.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3162.
+Total: 3.103465 ms (FindLiveObjects: 0.414805 ms CreateObjectMapping: 0.116554 ms MarkObjects: 2.360300 ms  DeleteObjects: 0.210813 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006010 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.505 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 211.7 MB.
+System memory in use after: 211.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3166.
+Total: 3.895853 ms (FindLiveObjects: 0.589586 ms CreateObjectMapping: 0.277167 ms MarkObjects: 2.796687 ms  DeleteObjects: 0.230873 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.768 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2578 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.0 MB.
+System memory in use after: 212.1 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3171.
+Total: 2.964293 ms (FindLiveObjects: 0.311746 ms CreateObjectMapping: 0.131100 ms MarkObjects: 2.397327 ms  DeleteObjects: 0.123159 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005981 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.550 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2578 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.2 MB.
+System memory in use after: 212.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3175.
+Total: 2.986862 ms (FindLiveObjects: 0.307146 ms CreateObjectMapping: 0.132573 ms MarkObjects: 2.433814 ms  DeleteObjects: 0.112408 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004070 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.739 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2578 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.4 MB.
+System memory in use after: 212.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3179.
+Total: 3.577995 ms (FindLiveObjects: 0.563607 ms CreateObjectMapping: 0.241320 ms MarkObjects: 2.644235 ms  DeleteObjects: 0.126806 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002059 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.723 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2578 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.7 MB.
+System memory in use after: 212.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3183.
+Total: 4.317154 ms (FindLiveObjects: 0.334913 ms CreateObjectMapping: 0.260563 ms MarkObjects: 3.388248 ms  DeleteObjects: 0.330976 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

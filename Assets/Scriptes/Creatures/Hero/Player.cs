@@ -15,8 +15,10 @@ namespace Scriptes.Creatures.Hero
         private Weapon.Weapon _currentWeapon;
         private int _currentHealth;
         private Animator _animator;
-        
+
         public int Money { get; private set; }
+
+        public event Action<int, int> HealthChanged;
 
         private void Start()
         {
@@ -33,7 +35,7 @@ namespace Scriptes.Creatures.Hero
             }
         }
 
-        private void OnEnemyDied(int reward)
+        public void AddMoney(int reward)
         {
             Money += reward;
         }
@@ -41,6 +43,7 @@ namespace Scriptes.Creatures.Hero
         public void ApplyDamage(int damage)
         {
             _currentHealth -= damage;
+            HealthChanged?.Invoke(_currentHealth, _health);
 
             if (_currentHealth <= 0)
             {

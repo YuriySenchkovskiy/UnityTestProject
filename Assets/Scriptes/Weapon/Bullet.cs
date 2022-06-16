@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using Scriptes.Creatures;
 using UnityEngine;
 
@@ -23,6 +24,7 @@ namespace Weapon
             if (col.gameObject.TryGetComponent(out Enemy enemy))
             {
                 enemy.TakeDamage(_damage);
+                Destroy(gameObject);
             }
         }
     }

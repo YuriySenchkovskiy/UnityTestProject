@@ -1,55 +1,22 @@
-using System.Collections;
-using Components.Health;
+using System;
+using Scriptes.Creatures.Hero;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace UI
 {
-    public class HealthBar : MonoBehaviour
+    public class HealthBar : Bar
     {
-        [SerializeField] private Health _health;
-        [SerializeField] private float _speed;
-        [SerializeField] private Image _bar;
-
-        private Coroutine _currentCoroutine;
-        private float _previousHp;
-        private int _maxHp;
+        [SerializeField] private Player _player;
         
-        private void Start()
+        private void OnEnable()
         {
-            _maxHp = _health.HealthValue;
-            _previousHp = _maxHp;
-        }
-        
-        public void SetBarValue(int health)
-        {
-            StartCurrentCoroutine(ChangeBarValue(health));
-        }
-        
-        private void StartCurrentCoroutine(IEnumerator coroutine)
-        {
-            if (_currentCoroutine != null)
-            {
-                StopCoroutine(_currentCoroutine);
-            }
-            
-            _currentCoroutine = StartCoroutine(coroutine);
+            _player.HealthChanged += OnValueChanged;
+            Slider.value = 1;
         }
 
-        private IEnumerator ChangeBarValue(int health)
+        private void OnDisable()
         {
-            while (_previousHp != health)
-            {
-                _previousHp = Mathf.MoveTowards(_previousHp, health, Time.deltaTime * _speed);
-                SetProgress(_previousHp / _maxHp);
-                
-                yield return null;
-            }
-        }
-        
-        private void SetProgress(float progress)
-        {
-            _bar.fillAmount = progress;
+            _player.HealthChanged -= OnValueChanged;
         }
     }
 }
