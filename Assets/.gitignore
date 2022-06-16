@@ -22,8 +22,4 @@ obj/
 UIElementsSchema/
 *.DS_Store
  Library/
- Logs/
  Temp/
- UIElementsSchema/
- UserSettings/
- obj/
