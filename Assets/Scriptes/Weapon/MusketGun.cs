@@ -11,6 +11,9 @@ namespace Weapon
 
             Instantiate(Bullet, shootPoint.position, quaternion.identity);
             Instantiate(Effect, shootPoint.position, quaternion.identity);
+            
+            //Instantiate(Bullet, ShootPoint.position, quaternion.identity);
+            //Instantiate(Effect, ShootPoint.position, quaternion.identity);
         }
     }
 }

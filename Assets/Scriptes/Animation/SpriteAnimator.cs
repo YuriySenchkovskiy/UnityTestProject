@@ -33,7 +33,7 @@ namespace Animation
                     return;
                 }
             }
-
+            
             enabled = _isPlaying = false;
         }
         

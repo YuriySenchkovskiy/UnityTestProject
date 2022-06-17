@@ -28,11 +28,6 @@ namespace Scriptes.Creatures.Hero
             ChangeWeapon(_weapons[_currentWeaponNumber]);
             _currentHealth = _health;
             _animator = GetComponent<Animator>();
-            
-            Instantiate(_currentWeapon, 
-                _weaponPoint.position, 
-                quaternion.identity,
-                transform);
         }
 
         private void Update()
@@ -107,15 +102,22 @@ namespace Scriptes.Creatures.Hero
 
         private void TurnOffWeapon()
         {
-            DestroyImmediate(_currentWeapon, true);
+            var a = _weapons[_currentWeaponNumber];
+            a.gameObject.SetActive(false);
         }
 
         private void CreateWeapon(Weapon.Weapon weapon)
         {
-            var go = Instantiate(weapon, 
+            if (_weapons.Contains(weapon))
+            {
+                _currentWeapon.gameObject.SetActive(true);
+            }
+            {
+                var go = Instantiate(weapon, 
                     _weaponPoint.position, 
-                   quaternion.identity,
-                   transform);
+                    quaternion.identity,
+                    transform);
+            }
         }
     }
 }
