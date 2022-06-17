@@ -105,6 +105,10 @@
      <Compile Include="Assets\Scriptes\UI\HealthBar.cs" />
      <Compile Include="Assets\Scriptes\UI\Bar.cs" />
      <Compile Include="Assets\Scriptes\UI\ProgressBar.cs" />
+     <Compile Include="Assets\Scriptes\UI\Shop.cs" />
+     <Compile Include="Assets\Scriptes\UI\WeaponView.cs" />
+     <Compile Include="Assets\Scriptes\UI\MoneyBalance.cs" />
+     <Compile Include="Assets\Scriptes\UI\Menu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

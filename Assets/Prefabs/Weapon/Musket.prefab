@@ -196,6 +196,6 @@ MonoBehaviour:
   Effect: {fileID: 4372085723001592914, guid: 982e9c2c5ccad490bb2f6c74d7d024c5, type: 3}
   EfectPoint: {fileID: 595832657}
   _label: Musket
-  _price: 2
+  _price: 1
   _icon: {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
   _isBought: 0

@@ -19,6 +19,7 @@ namespace Scriptes.Creatures.Hero
         public int Money { get; private set; }
 
         public event Action<int, int> HealthChanged;
+        public event Action<int> MoneyChanged;
 
         private void Start()
         {
@@ -38,6 +39,14 @@ namespace Scriptes.Creatures.Hero
         public void AddMoney(int reward)
         {
             Money += reward;
+            MoneyChanged?.Invoke(Money);
+        }
+
+        public void BuyWeapon(Weapon.Weapon weapon)
+        {
+            Money -= weapon.Price;
+            _weapons.Add(weapon);
+            MoneyChanged?.Invoke(Money);
         }
 
         public void ApplyDamage(int damage)
