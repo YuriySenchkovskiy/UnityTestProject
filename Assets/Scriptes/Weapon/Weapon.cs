@@ -8,8 +8,8 @@ namespace Weapon
         [SerializeField] protected Bullet Bullet;
         [SerializeField] protected UnityEvent Shooted;
         [SerializeField] protected GameObject Effect;
-        [SerializeField] protected Transform EfectPoint;
-        
+        [SerializeField] protected Transform EffectPoint;
+
         [SerializeField] private string _label;
         [SerializeField] private int _price;
         [SerializeField] private Sprite _icon;

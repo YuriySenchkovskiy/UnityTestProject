@@ -8,8 +8,9 @@ namespace Weapon
         public override void Shoot(Transform shootPoint)
         {
             Shooted?.Invoke();
+
             Instantiate(Bullet, shootPoint.position, quaternion.identity);
-            Instantiate(Effect, EfectPoint.position, Quaternion.identity);
+            Instantiate(Effect, shootPoint.position, quaternion.identity);
         }
     }
 }

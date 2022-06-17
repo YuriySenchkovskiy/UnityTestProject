@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Scriptes.Creatures.Hero
 {
@@ -10,9 +10,11 @@ namespace Scriptes.Creatures.Hero
     {
         [SerializeField] private int _health;
         [SerializeField] private List<Weapon.Weapon> _weapons;
+        [SerializeField] private Transform _weaponPoint;
         [SerializeField] private Transform _shootPoint;
         
         private Weapon.Weapon _currentWeapon;
+        private int _currentWeaponNumber;
         private int _currentHealth;
         private Animator _animator;
 
@@ -23,9 +25,14 @@ namespace Scriptes.Creatures.Hero
 
         private void Start()
         {
-            _currentWeapon = _weapons[0];
+            ChangeWeapon(_weapons[_currentWeaponNumber]);
             _currentHealth = _health;
             _animator = GetComponent<Animator>();
+            
+            Instantiate(_currentWeapon, 
+                _weaponPoint.position, 
+                quaternion.identity,
+                transform);
         }
 
         private void Update()
@@ -58,6 +65,57 @@ namespace Scriptes.Creatures.Hero
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void NextWeapon()
+        {
+            TurnOffWeapon();
+            
+            if (_currentWeaponNumber == _weapons.Count - 1)
+            {
+                _currentWeaponNumber = 0;
+            }
+            else
+            {
+                _currentWeaponNumber++;
+            }
+            
+            ChangeWeapon(_weapons[_currentWeaponNumber]);
+        }
+        
+        public void PreviousWeapon()
+        {
+            TurnOffWeapon();
+            
+            if (_currentWeaponNumber == 0)
+            {
+                _currentWeaponNumber = _weapons.Count - 1;
+            }
+            else
+            {
+                _currentWeaponNumber--;
+            }
+            
+            ChangeWeapon(_weapons[_currentWeaponNumber]);
+        }
+
+        private void ChangeWeapon(Weapon.Weapon weapon)
+        {
+            _currentWeapon = weapon;
+            CreateWeapon(_currentWeapon);
+        }
+
+        private void TurnOffWeapon()
+        {
+            DestroyImmediate(_currentWeapon, true);
+        }
+
+        private void CreateWeapon(Weapon.Weapon weapon)
+        {
+            var go = Instantiate(weapon, 
+                    _weaponPoint.position, 
+                   quaternion.identity,
+                   transform);
         }
     }
 }
