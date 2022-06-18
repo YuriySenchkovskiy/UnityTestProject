@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb437cfaefc94591a3dbc6fe59ec3054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 20
+  _health: 11
   _reward: 1
   _target: {fileID: 0}
 --- !u!114 &5048451952217810005

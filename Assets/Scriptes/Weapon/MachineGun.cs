@@ -1,4 +1,3 @@
-using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -11,7 +10,6 @@ namespace Weapon
         
         public override void Shoot()
         {
-            
             AnimatorWeapon.SetTrigger(Fire);
             
             Instantiate(Bullet, ShootPoint.position, quaternion.identity);

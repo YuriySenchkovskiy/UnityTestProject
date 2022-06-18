@@ -135,9 +135,9 @@ MonoBehaviour:
   ShootPoint: {fileID: 1139649664196213555}
   EffectPoint: {fileID: 1139649662684577204}
   _label: Machine Gun
-  _price: 1
+  _price: 3
   _icon: {fileID: 1965591839468455249, guid: 653ba7d59b55a40e098bc368259bd190, type: 3}
-  _isBought: 0
+  _isBought: 1
   _secondBullet: {fileID: 3149546678971259600}
   _thirdBullet: {fileID: 6407553432458456507}
 --- !u!95 &6071102536032411793
@@ -150,7 +150,7 @@ Animator:
   m_GameObject: {fileID: 1139649662905656328}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 7a0e7a5b09e244ab5b28b0f15d45c04e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 62a383ee032e7410eb6cc9f926e79c72, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
