@@ -1,4 +1,3 @@
-using System.Security.Cryptography;
 using Scriptes.Creatures;
 using UnityEngine;
 
