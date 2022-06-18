@@ -5,15 +5,11 @@ namespace Weapon
 {
     public class MusketGun : Weapon
     {
-        public override void Shoot(Transform shootPoint)
+        public override void Shoot()
         {
-            Shooted?.Invoke();
-
-            Instantiate(Bullet, shootPoint.position, quaternion.identity);
-            Instantiate(Effect, shootPoint.position, quaternion.identity);
-            
-            //Instantiate(Bullet, ShootPoint.position, quaternion.identity);
-            //Instantiate(Effect, ShootPoint.position, quaternion.identity);
+            AnimatorWeapon.SetTrigger(Fire);
+            Instantiate(Bullet, ShootPoint.position, quaternion.identity);
+            Instantiate(Effect, EffectPoint.position, quaternion.identity);
         }
     }
 }

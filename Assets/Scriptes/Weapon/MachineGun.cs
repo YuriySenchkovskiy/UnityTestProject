@@ -1,3 +1,4 @@
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -5,11 +6,17 @@ namespace Weapon
 {
     public class MachineGun : Weapon
     {
-        public override void Shoot(Transform shootPoint)
+        [SerializeField] private Transform _secondBullet;
+        [SerializeField] private Transform _thirdBullet;
+        
+        public override void Shoot()
         {
-            Shooted?.Invoke();
-
+            
+            AnimatorWeapon.SetTrigger(Fire);
+            
             Instantiate(Bullet, ShootPoint.position, quaternion.identity);
+            Instantiate(Bullet, _secondBullet.position, _secondBullet.rotation);
+            Instantiate(Bullet, _thirdBullet.position, _thirdBullet.rotation);
             Instantiate(Effect, EffectPoint.position, quaternion.identity);
         }
     }

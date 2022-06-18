@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2356575324877666470}
   - component: {fileID: 2356575324877666469}
-  - component: {fileID: 4461222596809942908}
   - component: {fileID: 202885107508849862}
+  - component: {fileID: 8037868381907007780}
   m_Layer: 0
   m_Name: BlunderbussGun
   m_TagString: Untagged
@@ -86,53 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4461222596809942908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2356575324877666467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a647cfd87bcf4f558a1476faf70e2b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _frameRate: 10
-  _clips:
-  - _name: idle
-    _loop: 1
-    _random: 0
-    _allowNextClip: 0
-    _sprites:
-    - {fileID: 21300000, guid: 17aeac32fddaa46a296fb963d024eb04, type: 3}
-    _complited:
-      m_PersistentCalls:
-        m_Calls: []
-  - _name: fire
-    _loop: 0
-    _random: 0
-    _allowNextClip: 0
-    _sprites:
-    - {fileID: 21300000, guid: 17aeac32fddaa46a296fb963d024eb04, type: 3}
-    _complited:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4461222596809942908}
-          m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
-          m_MethodName: SetClip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: idle
-            m_BoolArgument: 0
-          m_CallState: 2
-  _endAnimation:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &202885107508849862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,21 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 3621401020479767764, guid: b4629518e52b644a986e9db9af6190aa, type: 3}
-  Shooted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4461222596809942908}
-        m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
-        m_MethodName: SetClip
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: fire
-          m_BoolArgument: 0
-        m_CallState: 2
   Effect: {fileID: 4372085723001592914, guid: 982e9c2c5ccad490bb2f6c74d7d024c5, type: 3}
   ShootPoint: {fileID: 409645381985202279}
   EffectPoint: {fileID: 6364079871983345854}
@@ -168,6 +106,25 @@ MonoBehaviour:
   _price: 5
   _icon: {fileID: 21300000, guid: 17aeac32fddaa46a296fb963d024eb04, type: 3}
   _isBought: 0
+--- !u!95 &8037868381907007780
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2356575324877666467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: bdf2cd6241a1a4cfdb2345d4dea78ad9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4930807050378311219
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6364079871983345855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.913, y: 0.138, z: 0}
+  m_LocalPosition: {x: 1.028, y: 0.123, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 2356575324877666470}

@@ -11,12 +11,9 @@ namespace Scriptes.Creatures.Hero
         [SerializeField] private int _health;
         [SerializeField] private List<Weapon.Weapon> _weapons;
         [SerializeField] private Transform _weaponPoint;
-        [SerializeField] private Transform _shootPoint;
         
-        private Weapon.Weapon _currentWeapon;
         private int _currentWeaponNumber;
         private int _currentHealth;
-        private Animator _animator;
 
         public int Money { get; private set; }
 
@@ -25,16 +22,16 @@ namespace Scriptes.Creatures.Hero
 
         private void Start()
         {
-            ChangeWeapon(_weapons[_currentWeaponNumber]);
+            CreateWeapon(_weapons[_currentWeaponNumber]);
             _currentHealth = _health;
-            _animator = GetComponent<Animator>();
         }
 
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                _currentWeapon.Shoot(_shootPoint);
+                var go = GetComponentInChildren<Weapon.Weapon>();
+                go.Shoot();
             }
         }
 
@@ -75,7 +72,7 @@ namespace Scriptes.Creatures.Hero
                 _currentWeaponNumber++;
             }
             
-            ChangeWeapon(_weapons[_currentWeaponNumber]);
+            CreateWeapon(_weapons[_currentWeaponNumber]);
         }
         
         public void PreviousWeapon()
@@ -91,33 +88,21 @@ namespace Scriptes.Creatures.Hero
                 _currentWeaponNumber--;
             }
             
-            ChangeWeapon(_weapons[_currentWeaponNumber]);
-        }
-
-        private void ChangeWeapon(Weapon.Weapon weapon)
-        {
-            _currentWeapon = weapon;
-            CreateWeapon(_currentWeapon);
+            CreateWeapon(_weapons[_currentWeaponNumber]);
         }
 
         private void TurnOffWeapon()
         {
-            var a = _weapons[_currentWeaponNumber];
-            a.gameObject.SetActive(false);
+            var go = GetComponentInChildren<Weapon.Weapon>();
+            Destroy(go.gameObject);
         }
 
         private void CreateWeapon(Weapon.Weapon weapon)
         {
-            if (_weapons.Contains(weapon))
-            {
-                _currentWeapon.gameObject.SetActive(true);
-            }
-            {
-                var go = Instantiate(weapon, 
-                    _weaponPoint.position, 
-                    quaternion.identity,
-                    transform);
-            }
+            Instantiate(weapon, 
+                _weaponPoint.position, 
+                quaternion.identity,
+                _weaponPoint.transform);
         }
     }
 }

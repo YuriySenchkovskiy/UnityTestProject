@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3602922340157012937}
   - component: {fileID: 3602922340157012938}
-  - component: {fileID: 3412998796049998867}
   - component: {fileID: 1181298718081560489}
+  - component: {fileID: 4631891664624899053}
   m_Layer: 0
   m_Name: Musket
   m_TagString: Untagged
@@ -86,56 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3412998796049998867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3602922340157012940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a647cfd87bcf4f558a1476faf70e2b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _frameRate: 10
-  _clips:
-  - _name: idle
-    _loop: 1
-    _random: 0
-    _allowNextClip: 0
-    _sprites:
-    - {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    _complited:
-      m_PersistentCalls:
-        m_Calls: []
-  - _name: fire
-    _loop: 0
-    _random: 0
-    _allowNextClip: 0
-    _sprites:
-    - {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    - {fileID: -4134297769961479837, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    - {fileID: -2222382925705430102, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    - {fileID: -5598497475969772404, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
-    _complited:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3412998796049998867}
-          m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
-          m_MethodName: SetClip
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: idle
-            m_BoolArgument: 0
-          m_CallState: 2
-  _endAnimation:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1181298718081560489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,21 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 3621401020479767764, guid: d6f385eba800e47a39d109ae7c8f825d, type: 3}
-  Shooted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3412998796049998867}
-        m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
-        m_MethodName: SetClip
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: fire
-          m_BoolArgument: 0
-        m_CallState: 2
   Effect: {fileID: 4372085723001592914, guid: 982e9c2c5ccad490bb2f6c74d7d024c5, type: 3}
   ShootPoint: {fileID: 4100476568173272943}
   EffectPoint: {fileID: 5396960444486247377}
@@ -171,6 +106,25 @@ MonoBehaviour:
   _price: 1
   _icon: {fileID: 2866899648910696553, guid: d7e9e128f4d1f4971aad86a6af8c5adf, type: 3}
   _isBought: 0
+--- !u!95 &4631891664624899053
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3602922340157012940}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f5d9c2988b1d4e26a55cd15d3477fbb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5396960444486247376
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5396960444486247376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0.07, z: 0}
+  m_LocalPosition: {x: 0.748, y: 0.111, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3602922340157012937}
