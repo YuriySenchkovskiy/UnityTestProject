@@ -60,6 +60,10 @@
      <Compile Include="Assets\Scriptes\Utils\ObjectPool.cs" />
      <Compile Include="Assets\Scriptes\Pipes\PipeGenerator.cs" />
      <Compile Include="Assets\Scriptes\GameModel.cs" />
+     <Compile Include="Assets\Scriptes\UI\Screen.cs" />
+     <Compile Include="Assets\Scriptes\UI\StartScreen.cs" />
+     <Compile Include="Assets\Scriptes\UI\GameOverScreen.cs" />
+     <Compile Include="Assets\Scriptes\UI\Score.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

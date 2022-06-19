@@ -9,6 +9,9 @@ namespace DefaultNamespace
         private PirateMover _mover;
         private int _score;
 
+        public event Action GameOver;
+        public event Action<int> ScoreChanged; 
+
         private void Start()
         {
             _mover = GetComponent<PirateMover>();
@@ -17,17 +20,19 @@ namespace DefaultNamespace
         public void ResetPlayer()
         {
             _score = 0;
+            ScoreChanged?.Invoke(_score);
             _mover.Reset();
         }
 
         public void Die()
         {
-            Time.timeScale = 0;
+            GameOver?.Invoke();
         }
 
         public void AddScore()
         {
-            ++_score;
+            _score++;
+            ScoreChanged?.Invoke(_score);
         }
     }
 }
