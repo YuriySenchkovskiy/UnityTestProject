@@ -53,6 +53,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\MoveToMouse.cs" />
+     <Compile Include="Assets\Bandits - Pixel Art\Demo\GuardScript.cs" />
+     <Compile Include="Assets\Bandits - Pixel Art\Particles.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
