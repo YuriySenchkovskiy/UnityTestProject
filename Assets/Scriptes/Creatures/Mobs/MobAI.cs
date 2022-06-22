@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Scriptes.Creatures.Mobs
 {
-    [RequireComponent(typeof(Patrol), typeof(SpawnListComponent))]
+    [RequireComponent(typeof(Patrol), typeof(SpawnListComponent), typeof(Animator))]
     public class MobAI : MonoBehaviour
     {
         [SerializeField] private LayerCheck _isCanAttack;
@@ -18,10 +18,11 @@ namespace Scriptes.Creatures.Mobs
         [SerializeField] private float _missHeroCooldown = 0.5f;
         [SerializeField] private LayerCheck _vision;
         [SerializeField] private string _attack = "Attack";
-        
         [SerializeField] private string _miss = "Miss";
-        [SerializeField] private string _exclamation = "Exclamation";
+
+        private static readonly int IsDeadKey = Animator.StringToHash("isDeadKey");
         
+        private Animator _animator; 
         private GameObject _target; 
         private SpawnListComponent _particles;
         private bool _isDead; 
@@ -32,6 +33,40 @@ namespace Scriptes.Creatures.Mobs
         
         private WaitForSeconds _cooldownWait;
         private WaitForSeconds _alarmWait;
+        
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+            _particles = GetComponent<SpawnListComponent>();
+            _patrol = GetComponent<Patrol>();
+        }
+
+        private void Start()
+        {
+            StartState(_patrol.DoPatrol());
+            _attackWait = new WaitForSeconds(_attackCooldawn);
+            _cooldownWait = new WaitForSeconds(_missHeroCooldown);
+            _alarmWait = new WaitForSeconds(_alarmDelay); 
+        }
+        
+        public void FindHeroInVision(GameObject go)
+        {
+            if (_isDead) return;
+            _target = go; 
+            
+            StartState(AgroToHero()); 
+        }
+        
+        public void Die()
+        {
+            _isDead = true;
+            _animator.SetBool(IsDeadKey,true);
+    
+            if (_currentCoroutine != null)
+            {
+                StopCoroutine(_currentCoroutine);
+            }
+        }
 
         private void StartState(IEnumerator coroutine)
         {
@@ -48,7 +83,6 @@ namespace Scriptes.Creatures.Mobs
         private IEnumerator AgroToHero()
         {
             LookAtHero();
-            _particles.Spawn(_exclamation);
             yield return _alarmWait;
             StartState(GoToHero());
         }
@@ -114,21 +148,7 @@ namespace Scriptes.Creatures.Mobs
         {
             StartState(_vision.IsTouchingLayer ? GoToHero() : _patrol.DoPatrol());
         }
-        
-        private void Awake()
-        {
-            _particles = GetComponent<SpawnListComponent>();
-            _patrol = GetComponent<Patrol>();
-        }
 
-        private void Start()
-        {
-            StartState(_patrol.DoPatrol());
-            _attackWait = new WaitForSeconds(_attackCooldawn);
-            _cooldownWait = new WaitForSeconds(_missHeroCooldown);
-            _alarmWait = new WaitForSeconds(_alarmDelay); 
-        }
-        
         private Vector2 GetDirectionToTarget()
         {
             var direction = _target.transform.position - transform.position;

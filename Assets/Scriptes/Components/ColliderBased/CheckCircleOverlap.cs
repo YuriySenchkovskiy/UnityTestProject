@@ -31,6 +31,7 @@ namespace Scriptes.Components.ColliderBased
             {
                 var overlapResult = _interactionResult[i];
                 var isInTag = _tags.Any(tag => overlapResult.CompareTag(tag));
+                
                 if(isInTag)
                 {
                     _onOverlap?.Invoke(_interactionResult[i].gameObject); 

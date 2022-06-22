@@ -8,7 +8,6 @@ namespace Components
 {
     public class RandomSpawnerComponent : MonoBehaviour
     {
-        [Header("BombPoints bound:")] 
         [SerializeField] private float _sectorAngle = 60;
         [SerializeField] private float _sectorRotation;
         [SerializeField] private float _waitTime = 0.1f;
@@ -16,6 +15,16 @@ namespace Components
 
         private Coroutine _coroutine;
         private WaitForSeconds _waitFor;
+        
+        private void OnDisable()
+        {
+            TryStopRoutine();
+        }
+
+        private void OnDestroy()
+        {
+            TryStopRoutine();
+        }
 
         [ContextMenu("Restart")]
         public void StartDrop(GameObject[] items)
@@ -59,16 +68,6 @@ namespace Components
             var y = Mathf.Sin(angleRadians);
 
             return new Vector3(x, y, 0);
-        }
-
-        private void OnDisable()
-        {
-            TryStopRoutine();
-        }
-
-        private void OnDestroy()
-        {
-            TryStopRoutine();
         }
 
         private void TryStopRoutine()

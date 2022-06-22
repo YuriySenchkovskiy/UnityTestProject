@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6347780493372067441}
   - component: {fileID: 6347780493372067443}
   - component: {fileID: 6347780493372067440}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 6347780493505673542}
   - component: {fileID: 6347780493505673560}
   - component: {fileID: 6347780493505673561}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Audio
   m_TagString: SfxAudioSource
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6347780494264343533}
   - component: {fileID: 6347780494264343532}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: JumpPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6347780494688018298}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 1749219279}
   m_Layer: 7
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -384,7 +384,7 @@ Animator:
   m_GameObject: {fileID: 6347780494746357157}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 561ed3a1276924df9a7a7d46d423f83b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1320daaaa7bbc4addb07532761b7760b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -445,7 +445,6 @@ MonoBehaviour:
   _damageJumpLevel: 5
   _layerCheck: {fileID: 6347780493372067440}
   _jump: Jump
-  _damage: 0
   _attackRange: {fileID: 0}
   _melee: Melee
   _particles: {fileID: 6347780494746357180}
@@ -580,25 +579,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthValue: 100
-  _changedHp:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UI.HealthBar, Assembly-CSharp
-        m_MethodName: ChangeBarValue
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   _damaged:
     m_PersistentCalls:
       m_Calls: []
   _healed:
+    m_PersistentCalls:
+      m_Calls: []
+  _died:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &6347780494858127689
@@ -611,7 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6347780494858127688}
   - component: {fileID: 6347780494858127691}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: FootStepPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}

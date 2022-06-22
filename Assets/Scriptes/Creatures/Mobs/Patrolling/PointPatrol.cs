@@ -24,6 +24,18 @@ namespace Scriptes.Creatures.Mobs.Patrolling
 
         private bool _isOnPoint => (_points[_destinationPointIndex].position - transform.position).magnitude < _treshold;
 
+        private void Awake()
+        {
+            _creature = GetComponent<Creatures>();
+            _particles = GetComponent<SpawnListComponent>();
+            _startSpeed = _creature.Speed;
+        }
+
+        private void Start()
+        {
+            _waitTimeSeconds = new WaitForSeconds(_waitTime);
+        }
+        
         public override IEnumerator DoPatrol()
         {
             while (enabled)
@@ -44,18 +56,6 @@ namespace Scriptes.Creatures.Mobs.Patrolling
 
                 yield return null;
             }
-        }
-
-        private void Awake()
-        {
-            _creature = GetComponent<Creatures>();
-            _particles = GetComponent<SpawnListComponent>();
-            _startSpeed = _creature.Speed;
-        }
-
-        private void Start()
-        {
-            _waitTimeSeconds = new WaitForSeconds(_waitTime);
         }
     }
 }

@@ -7,9 +7,9 @@ namespace Components.Health
     public class Health : MonoBehaviour
     {
         [SerializeField] private int _healthValue;
-        [SerializeField] private HealthChangeEvent _changedHp;
         [SerializeField] private UnityEvent _damaged;
         [SerializeField] private UnityEvent _healed;
+        [SerializeField] private UnityEvent _died;
         
         private int _minHealth;
         private int _maxHealth;
@@ -37,9 +37,7 @@ namespace Components.Health
         public void ApplyHeal(int healthDelta)
         {
             _healthValue = Mathf.Clamp(_healthValue + healthDelta, _minHealth, _maxHealth);
-
             _healed?.Invoke();
-            _changedHp?.Invoke(_healthValue);
         }
 
         public void ApplyDamage(int damage)
@@ -47,7 +45,11 @@ namespace Components.Health
             _healthValue = Mathf.Clamp(_healthValue - damage, _minHealth, _maxHealth);
             
             _damaged?.Invoke();
-            _changedHp?.Invoke(_healthValue);
+
+            if (_healthValue == _minHealth)
+            {
+                _died?.Invoke();
+            }
         }
 
         [Serializable]

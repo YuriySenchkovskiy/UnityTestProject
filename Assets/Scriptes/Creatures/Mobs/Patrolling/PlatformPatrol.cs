@@ -9,6 +9,7 @@ namespace Scriptes.Creatures.Mobs.Patrolling
     public class PlatformPatrol : Patrol
     {
         [SerializeField] private LayerCheck _isGround;
+        [SerializeField] private LayerCheck _obstacleCheck;
         [SerializeField] private OnChangeDirection _onChangeDirection;
         [SerializeField] private int _direction;
 
@@ -16,7 +17,7 @@ namespace Scriptes.Creatures.Mobs.Patrolling
         {
             while (enabled)
             {
-                if (_isGround.IsTouchingLayer)
+                if (_isGround.IsTouchingLayer && !_obstacleCheck.IsTouchingLayer)
                 {
                     _onChangeDirection?.Invoke(new Vector2(_direction, 0));
                 }

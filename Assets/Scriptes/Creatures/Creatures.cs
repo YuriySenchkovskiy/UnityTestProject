@@ -31,7 +31,6 @@ namespace Scriptes.Creatures
         private float _platformSpeed;
         
         [Space] [Header("Attack")]
-        [SerializeField] private int _damage; 
         [SerializeField] private CheckCircleOverlap _attackRange;
         [SerializeField] private string _melee = "Melee";
 
@@ -118,7 +117,7 @@ namespace Scriptes.Creatures
             _sounds.Play(_melee);
         }
         
-        public void DoAttack() 
+        public void DoAttack() // используется в аниматоре!
         {
             _attackRange.Check(); 
         }
@@ -189,7 +188,7 @@ namespace Scriptes.Creatures
             _sounds.Play(_jump);
         }
 
-        private void SpawnFootDust()
+        private void SpawnFootDust() // вызывается в аниматоре
         {
             if (_isGrounded && _rigidbody2D.velocity.y <= _minSpeed)
             {

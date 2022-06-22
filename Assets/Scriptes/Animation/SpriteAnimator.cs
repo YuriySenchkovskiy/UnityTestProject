@@ -23,21 +23,6 @@ namespace Scriptes.Animation
         private int _currentClip;
         private int _nextClip = 1;
 
-        public void SetClip(string name)
-        {
-            for (var i = 0; i < _clips.Length; i++)
-            {
-                if (_clips[i].Name == name)
-                {
-                    _currentClip = i;
-                    StartAnimation();
-                    return;
-                }
-            }
-
-            enabled = _isPlaying = false;
-        }
-        
         private void OnEnable() 
         {
             _nextFrameTime = Time.time;
@@ -93,6 +78,21 @@ namespace Scriptes.Animation
             _renderer.sprite = clip.Sprites[_currentFrame];
             _nextFrameTime += _secondPerFrame;
             _currentFrame++;
+        }
+        
+        public void SetClip(string name)
+        {
+            for (var i = 0; i < _clips.Length; i++)
+            {
+                if (_clips[i].Name == name)
+                {
+                    _currentClip = i;
+                    StartAnimation();
+                    return;
+                }
+            }
+
+            enabled = _isPlaying = false;
         }
 
         private void StartAnimation()
