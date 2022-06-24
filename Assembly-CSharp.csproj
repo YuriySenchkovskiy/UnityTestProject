@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scriptes\Creatures\Creatures.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\ObjectPool\PoolItem.cs" />
+     <Compile Include="Assets\Scriptes\Components\GoBased\DestroyInvisible.cs" />
      <Compile Include="Assets\Scriptes\Components\ProbabilityDropComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\BaseDetectionComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\LineCastCheck.cs" />
@@ -77,6 +78,7 @@
      <Compile Include="Assets\Scriptes\Creatures\Mobs\MobAI.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\PlatformPatrol.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitTriggerComponent.cs" />
+     <Compile Include="Assets\Scriptes\Components\GoBased\ReloadLevel.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterEventComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\PlaySoundsComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\RandomSpawnerComponent.cs" />
@@ -88,8 +90,6 @@
      <Compile Include="Assets\Scriptes\Creatures\Mobs\Patrolling\Patrol.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\StayTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
-     <Compile Include="Assets\Scriptes\Components\GoBased\ReloadLevel.cs" />
-     <Compile Include="Assets\Scriptes\Components\GoBased\DestroyInvisible.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
