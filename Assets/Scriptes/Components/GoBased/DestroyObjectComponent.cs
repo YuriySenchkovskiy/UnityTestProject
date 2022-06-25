@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Scriptes.Components.GoBased
+namespace Components.GoBased
 {
     public class DestroyObjectComponent : MonoBehaviour
     {

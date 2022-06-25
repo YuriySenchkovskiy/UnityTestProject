@@ -1,7 +1,6 @@
-using Scriptes.Utils;
 using UnityEngine;
 
-namespace Scriptes.Components.ColliderBased
+namespace Components.ColliderBased
 {
     public class ExitTriggerComponent : BaseDetectionComponent
     {

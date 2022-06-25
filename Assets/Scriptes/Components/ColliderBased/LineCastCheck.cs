@@ -1,9 +1,6 @@
-using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.PlayerLoop;
 
-namespace Scriptes.Components.ColliderBased
+namespace Components.ColliderBased
 {
     public class LineCastCheck : LayerCheck
     {

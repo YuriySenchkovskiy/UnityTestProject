@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Scriptes.Components.Audio
+namespace Components.Audio
 {
     public class AudioParabola : MonoBehaviour
     {

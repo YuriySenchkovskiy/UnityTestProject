@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8430767659374391170}
   - component: {fileID: 8378804435567226185}
   - component: {fileID: 5498353428836255706}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: DeadSharky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1103338959
-  m_SortingLayer: 3
+  m_SortingLayerID: 836077661
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a664fe802c6fc46438a5358869698114, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

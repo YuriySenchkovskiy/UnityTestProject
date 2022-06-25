@@ -1,7 +1,7 @@
-using Scriptes.Utils;
 using UnityEngine;
+using Utils;
 
-namespace Scriptes.Components.Audio
+namespace Components.Audio
 {
     public class SfxSound : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Scriptes.Components.GoBased
+namespace Components.GoBased
 {
     public class ReloadLevel : MonoBehaviour
     {
@@ -10,6 +10,5 @@ namespace Scriptes.Components.GoBased
             var scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
-
     }
 }

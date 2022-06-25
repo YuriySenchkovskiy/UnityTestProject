@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
-namespace Scriptes.Utils.ObjectPool
+namespace Utils.ObjectPool
 {
     public class PoolItem : MonoBehaviour
     {

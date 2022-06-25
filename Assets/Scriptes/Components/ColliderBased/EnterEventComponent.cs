@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Scriptes.Components.ColliderBased
+namespace Components.ColliderBased
 {
     [Serializable]
     public class EnterEventComponent : UnityEvent<GameObject>

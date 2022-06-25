@@ -1,8 +1,7 @@
 using System;
-using TMPro;
 using UnityEngine;
 
-namespace Scriptes.Components.Audio
+namespace Components.Audio
 {
     public class PlaySoundsComponent : MonoBehaviour
     {

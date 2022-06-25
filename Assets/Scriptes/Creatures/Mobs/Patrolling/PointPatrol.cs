@@ -1,8 +1,8 @@
 using System.Collections;
-using Scriptes.Components.GoBased;
+using Components.GoBased;
 using UnityEngine;
 
-namespace Scriptes.Creatures.Mobs.Patrolling
+namespace Creatures.Mobs.Patrolling
 {
     [RequireComponent(typeof(Creatures), typeof(SpawnListComponent))]
     public class PointPatrol : Patrol

@@ -1,10 +1,10 @@
 using System.Collections;
-using Scriptes.Components.ColliderBased;
-using Scriptes.Components.GoBased;
-using Scriptes.Creatures.Mobs.Patrolling;
+using Components.ColliderBased;
+using Components.GoBased;
+using Creatures.Mobs.Patrolling;
 using UnityEngine;
 
-namespace Scriptes.Creatures.Mobs
+namespace Creatures.Mobs
 {
     [RequireComponent(typeof(Patrol), typeof(SpawnListComponent), typeof(Animator))]
     public class MobAI : MonoBehaviour

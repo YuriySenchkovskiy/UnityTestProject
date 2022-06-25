@@ -1,25 +1,24 @@
-using Scriptes.Utils;
-using Scriptes.Utils.ObjectPool;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Utils;
+using Utils.ObjectPool;
 
-namespace Scriptes.Components.GoBased
+namespace Components.GoBased
 {
     public class SpawnComponent : MonoBehaviour
     {
-        [SerializeField] private Transform _target; 
-        [SerializeField] private GameObject _prefab; 
-        [SerializeField] private bool _isInvertXScale;
-        [SerializeField] private bool _isInvertYScale;
-        [SerializeField] private bool _isUsePool;
-        
+        [SerializeField] protected Transform _target; 
+        [SerializeField] protected GameObject _prefab; 
+        [SerializeField] protected bool _isInvertXScale;
+        [SerializeField] protected bool _isInvertYScale;
+        [SerializeField] protected bool _isUsePool;
+
         [ContextMenu("Points")]
         public void Spawn()
         {
             SpawnInstance();
         }
 
-        private GameObject SpawnInstance()
+        protected GameObject SpawnInstance()
         {
             var instance = _isUsePool 
                 ? Pool.Instance.GetGameObject(_prefab, _target.position) 

@@ -1,8 +1,7 @@
 using System.Collections;
-using Scriptes.Utils;
-using Scriptes.Utils.ObjectPool;
 using UnityEditor;
 using UnityEngine;
+using Utils;
 
 namespace Components
 {

@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Scriptes.Components.GoBased
+namespace Components.GoBased
 {
     public class SpawnListComponent : MonoBehaviour
     {

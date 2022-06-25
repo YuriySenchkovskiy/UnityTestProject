@@ -1,11 +1,11 @@
+using Components.Audio;
+using Components.ColliderBased;
+using Components.GoBased;
 using Components.Health;
-using Scriptes.Components.Audio;
-using Scriptes.Components.ColliderBased;
-using Scriptes.Components.GoBased;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Scriptes.Creatures
+namespace Creatures
 {
     [RequireComponent(typeof(Animator), typeof(PlaySoundsComponent), typeof(Health))]
     public class Creatures : MonoBehaviour
@@ -114,6 +114,7 @@ namespace Scriptes.Creatures
         public void Attack()
         {
             _animator.SetTrigger(AttackKey);
+            _particles.Spawn(_melee);
             _sounds.Play(_melee);
         }
         
@@ -130,8 +131,7 @@ namespace Scriptes.Creatures
         private void TakeDamage() 
         {
             _isJumping = false;
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel); 
-            _animator.SetTrigger(Hit);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel);
             _sounds.Play(_damageSound);
         }
 

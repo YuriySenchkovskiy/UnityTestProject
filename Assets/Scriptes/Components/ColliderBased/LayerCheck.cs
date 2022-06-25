@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Scriptes.Components.ColliderBased
+namespace Components.ColliderBased
 {
     [RequireComponent(typeof(Collider2D))]
     public class LayerCheck : MonoBehaviour

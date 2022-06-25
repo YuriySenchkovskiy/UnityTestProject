@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
-namespace Scriptes.Creatures.Mobs
+namespace Creatures.Mobs
 {
     public class Bomb : MonoBehaviour
     {

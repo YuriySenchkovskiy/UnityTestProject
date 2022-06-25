@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
-using Scriptes.Components.ColliderBased;
+using Components.ColliderBased;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Scriptes.Creatures.Mobs.Patrolling
+namespace Creatures.Mobs.Patrolling
 {
     public class PlatformPatrol : Patrol
     {
@@ -32,9 +32,9 @@ namespace Scriptes.Creatures.Mobs.Patrolling
             }
         }
     }
-}
 
-[Serializable]
-public class OnChangeDirection : UnityEvent<Vector2>
-{
+    [Serializable]
+    public class OnChangeDirection : UnityEvent<Vector2>
+    {
+    }
 }

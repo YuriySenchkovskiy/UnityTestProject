@@ -1,11 +1,10 @@
-using Scriptes.Utils;
 using UnityEngine;
 
-namespace Scriptes.Components.ColliderBased
+namespace Components.ColliderBased
 {
     public class EnterTriggerComponent : BaseDetectionComponent
     {
-        private void OnTriggerEnter2D(Collider2D other)
+        protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             base.DetectCollider(other);
         }
