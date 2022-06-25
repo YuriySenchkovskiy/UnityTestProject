@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Components.Health
+namespace Creatures.Health
 {
     public class ChangeHealthComponent : MonoBehaviour
     {
@@ -8,7 +8,7 @@ namespace Components.Health
         
         public void ApplyDamage(GameObject target)
         {
-            var healthComponent = target.GetComponent<Health>();
+            var healthComponent = target.GetComponent<HealthComponent>();
             if (healthComponent != null)
             {
                 healthComponent.ApplyDamage(_changeValue);
@@ -17,7 +17,7 @@ namespace Components.Health
         
         public void ApplyHeal(GameObject target)
         {
-            var healthComponent = target.GetComponent<Health>();
+            var healthComponent = target.GetComponent<HealthComponent>();
             if (healthComponent != null)
             {
                 healthComponent.ApplyHeal(_changeValue);

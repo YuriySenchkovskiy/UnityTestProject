@@ -7,7 +7,7 @@ namespace Utils.ObjectPool
     {
         private readonly Dictionary<int, Queue<PoolItem>> _items = new Dictionary<int, Queue<PoolItem>>();
         private static Pool _instance;
-        
+
         public static Pool Instance
         {
             get

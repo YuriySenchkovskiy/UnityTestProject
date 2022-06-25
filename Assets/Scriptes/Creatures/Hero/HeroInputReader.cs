@@ -19,5 +19,13 @@ namespace Creatures.Hero
             _direction.y = context.ReadValue<float>();
             _hero.SetDirection(_direction);
         }
+        
+        public void DoAttack(InputAction.CallbackContext context)
+        {
+            if (context.canceled)
+            {
+                _hero.Attack();
+            }
+        }
     }
 }

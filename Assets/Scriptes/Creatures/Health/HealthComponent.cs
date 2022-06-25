@@ -2,19 +2,20 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Components.Health
+namespace Creatures.Health
 {
-    public class Health : MonoBehaviour
+    public class HealthComponent : MonoBehaviour
     {
-        [SerializeField] private int _healthValue;
+        [SerializeField] private int _health;
         [SerializeField] private UnityEvent _damaged;
         [SerializeField] private UnityEvent _healed;
         [SerializeField] private UnityEvent _died;
         
         private int _minHealth;
         private int _maxHealth;
+        public UnityAction<int> ChangedHealth;
 
-        public int HealthValue => _healthValue;
+        public int Health => _health;
         
         public event UnityAction Damaged
         {
@@ -30,23 +31,23 @@ namespace Components.Health
         
         private void Start()
         {
-            _maxHealth = _healthValue;
+            _maxHealth = _health;
             _minHealth = 0;
         }
         
         public void ApplyHeal(int healthDelta)
         {
-            _healthValue = Mathf.Clamp(_healthValue + healthDelta, _minHealth, _maxHealth);
-            _healed?.Invoke();
+            _health = Mathf.Clamp(_health + healthDelta, _minHealth, _maxHealth);
+            ChangedHealth?.Invoke(_health);
         }
 
         public void ApplyDamage(int damage)
         {
-            _healthValue = Mathf.Clamp(_healthValue - damage, _minHealth, _maxHealth);
+            _health = Mathf.Clamp(_health - damage, _minHealth, _maxHealth);
             
-            _damaged?.Invoke();
+            ChangedHealth?.Invoke(_health);
 
-            if (_healthValue == _minHealth)
+            if (_health == _minHealth)
             {
                 _died?.Invoke();
             }

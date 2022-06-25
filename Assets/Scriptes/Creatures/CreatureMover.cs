@@ -1,14 +1,11 @@
 using Components.Audio;
 using Components.ColliderBased;
 using Components.GoBased;
-using Creatures.Health;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Creatures
 {
-    [RequireComponent(typeof(Animator), typeof(PlaySoundsComponent), typeof(HealthComponent))]
-    public class Creatures : MonoBehaviour
+    public class CreatureMover : MonoBehaviour
     {
         [Header("Movement")] 
         [SerializeField] private Rigidbody2D _rigidbody2D;
@@ -27,11 +24,7 @@ namespace Creatures
         
         private bool _isGrounded; 
         private bool _isJumping;
-
-        [Space] [Header("Attack")]
-        [SerializeField] private CheckCircleOverlap _attackRange;
-        [SerializeField] private string _melee = "Melee";
-
+        
         [Space] [Header("Particles")] 
         [SerializeField] private SpawnListComponent _particles;
         [SerializeField] private string _run = "Run";
@@ -40,20 +33,12 @@ namespace Creatures
         
         [Space] [Header("Animator")]
         [SerializeField] private Animator _animator; 
-        
-        private static readonly int Hit = Animator.StringToHash("hit");
-        private static readonly int AttackKey = Animator.StringToHash("attack");
         private static readonly int isRunning = Animator.StringToHash("isRunning");
         private static readonly int isGround = Animator.StringToHash("isGround");
         
+        private PlaySoundsComponent _sounds;
         private static readonly int VerticalVelocity = Animator.StringToHash("verticalVelocity");
         private int _zeroValue = 0;
-        
-        private PlaySoundsComponent _sounds;
-        private string _healSound = "Heal";
-        private string _damageSound = "Damage";
-
-        private HealthComponent _healthComponent;
         
         public float Speed
         {
@@ -65,14 +50,7 @@ namespace Creatures
         
         private void Awake()
         {
-            _healthComponent = GetComponent<HealthComponent>();
             _sounds = GetComponent<PlaySoundsComponent>();
-        }
-
-        private void OnEnable()
-        {
-            _healthComponent.Damaged += TakeDamage;
-            _healthComponent.Healed += TakeHeal;
         }
         
         private void Update()
@@ -90,12 +68,6 @@ namespace Creatures
             UpdateSpriteDirection(_direction); 
         }
         
-        private void OnDisable()
-        {
-            _healthComponent.Damaged -= TakeDamage;
-            _healthComponent.Healed -= TakeHeal;
-        }
-        
         public void UpdateSpriteDirection(Vector2 direction)
         {
             var multiplier = _invertScale ? -1 : 1;
@@ -108,41 +80,12 @@ namespace Creatures
                 transform.localScale = new Vector3(_backwardsScale.x * multiplier, _backwardsScale.y, _backwardsScale.z);
             }
         }
-
-        public void Attack()
-        {
-            if (!_isGrounded)
-            {
-                return;
-            }
-
-            _animator.SetTrigger(AttackKey);
-            _particles.Spawn(_melee);
-            _sounds.Play(_melee);
-        }
         
-        public void DoAttack() // используется в аниматоре!
-        {
-            _attackRange.Check(); 
-        }
-
         public void SetDirection(Vector2 direction)
         {
             this._direction = direction; 
         }
-
-        private void TakeDamage() 
-        {
-            _isJumping = false;
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel);
-            _sounds.Play(_damageSound);
-        }
-
-        private void TakeHeal()
-        {
-            _sounds.Play(_healSound);
-        }
-
+        
         private float CalculateXVelocity()
         {
             return _direction.x * CalculateSpeed;
@@ -173,7 +116,7 @@ namespace Creatures
 
             return yVelocity;
         }
-
+        
         private float CalculateJumpVelocity(float yVelocity) 
         {
             if (_isGrounded) 
@@ -190,7 +133,7 @@ namespace Creatures
             _particles.Spawn(_jump);
             _sounds.Play(_jump);
         }
-
+        
         private void SpawnFootDust() // вызывается в аниматоре
         {
             if (_isGrounded && _rigidbody2D.velocity.y <= _minSpeed)

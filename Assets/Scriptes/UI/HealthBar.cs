@@ -1,5 +1,5 @@
 using System.Collections;
-using Components.Health;
+using Creatures.Health;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +7,7 @@ namespace UI
 {
     public class HealthBar : MonoBehaviour
     {
-        [SerializeField] private Health _health;
+        [SerializeField] private HealthComponent healthComponent;
         [SerializeField] private float _speed;
         [SerializeField] private Image _bar;
 
@@ -15,13 +15,23 @@ namespace UI
         private float _previousHp;
         private int _maxHp;
         
+        private void OnEnable()
+        { 
+            healthComponent.ChangedHealth += OnChangedHealth;
+        }
+        
         private void Start()
         {
-            _maxHp = _health.HealthValue;
+            _maxHp = healthComponent.Health;
             _previousHp = _maxHp;
         }
         
-        public void SetBarValue(int health)
+        private void OnDisable()
+        { 
+            healthComponent.ChangedHealth -= OnChangedHealth;
+        }
+        
+        private void OnChangedHealth(int health)
         {
             StartCurrentCoroutine(ChangeBarValue(health));
         }

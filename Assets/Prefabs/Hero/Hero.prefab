@@ -550,10 +550,10 @@ MonoBehaviour:
     m_ActionName: Hero/Jump[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6347780494746357179}
-        m_TargetAssemblyTypeName: Creatures.Creatures, Assembly-CSharp
-        m_MethodName: Attack
-        m_Mode: 1
+      - m_Target: {fileID: 6347780494746357156}
+        m_TargetAssemblyTypeName: Creatures.Hero.HeroInputReader, Assembly-CSharp
+        m_MethodName: DoAttack
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -625,7 +625,7 @@ MonoBehaviour:
     Component: {fileID: 6347780494264343532}
   - Id: Melee
     Component: {fileID: 7152834249198804693}
-  - Id: Die
+  - Id: die
     Component: {fileID: 8968514200822602617}
 --- !u!114 &1749219279
 MonoBehaviour:
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41721a7cd3c54f07a33b2704d92b3b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthValue: 3
+  _health: 30
   _damaged:
     m_PersistentCalls:
       m_Calls: []
@@ -670,7 +670,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Die
+          m_StringArgument: die
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 6347780494746357156}

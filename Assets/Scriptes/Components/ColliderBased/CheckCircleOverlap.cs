@@ -14,6 +14,7 @@ namespace Components.ColliderBased
         [SerializeField] private LayerMask _mask;
         [SerializeField] private OnOverlapEvent _onOverlap; 
         [SerializeField] private string[] _tags; 
+        
         private Collider2D[] _interactionResult = new Collider2D[10];
         
         public void Check()
