@@ -5,12 +5,13 @@ namespace Components.ColliderBased
 {
     public class EnterTriggerDetection : EnterTriggerComponent
     {
-        public static event Action TriggerDetected;
+        [SerializeField] private Transform _target;
+        public static event Action<Transform> TriggerDetected;
 
         protected override void OnTriggerEnter2D(Collider2D other)
         {
             base.OnTriggerEnter2D(other);
-            TriggerDetected?.Invoke();
+            TriggerDetected?.Invoke(_target);
         }
     }
 }

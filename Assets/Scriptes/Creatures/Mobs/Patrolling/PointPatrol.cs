@@ -10,7 +10,6 @@ namespace Creatures.Mobs.Patrolling
         [SerializeField] private Transform[] _points;
         [SerializeField] private float _treshold = 0.6f;
         [SerializeField] private float _waitTime;
-        [SerializeField] private string _miss = "Miss";
 
         private float _startSpeed;
         private int _zeroValue = 0;

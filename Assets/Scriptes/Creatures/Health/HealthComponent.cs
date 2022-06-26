@@ -51,6 +51,7 @@ namespace Creatures.Health
         {
             _health = Mathf.Clamp(_health - damage, _minHealth, _maxHealth);
             
+            _damaged?.Invoke();
             ChangedHealth?.Invoke(_health);
 
             if (_health == _minHealth)
@@ -58,8 +59,5 @@ namespace Creatures.Health
                 _died?.Invoke();
             }
         }
-
-        [Serializable]
-        public class HealthChangeEvent : UnityEvent<int> {}
     }
 }

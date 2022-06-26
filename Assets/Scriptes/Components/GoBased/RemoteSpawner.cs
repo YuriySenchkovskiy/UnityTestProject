@@ -1,4 +1,5 @@
 using Components.ColliderBased;
+using UnityEngine;
 
 namespace Components.GoBased
 {
@@ -14,8 +15,9 @@ namespace Components.GoBased
             EnterTriggerDetection.TriggerDetected -= OnTriggerDetected;
         }
         
-        private void OnTriggerDetected()
+        private void OnTriggerDetected(Transform target)
         {
+            Target = target;
             SpawnInstance();
         }
     }
