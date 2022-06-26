@@ -462,6 +462,7 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseCameraPool: 0
 --- !u!1 &6299724645828961925
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,9 +508,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 6299724645828961930}
   Prefab: {fileID: 4898851383623844100, guid: eb4e3714ecdc5410899faddb3f7f978e, type: 3}
-  IsInvertXScale: 0
+  IsInvertXScale: 1
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseCameraPool: 0
 --- !u!1 &6299724645880345759
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +841,7 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseCameraPool: 0
 --- !u!114 &3217155878156616512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,7 +876,19 @@ MonoBehaviour:
   _releasePoint: -2
   _restart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5752212409225890784}
+        m_TargetAssemblyTypeName: Creatures.Health.HealthComponent, Assembly-CSharp
+        m_MethodName: SetStartValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6299724645911396206
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,9 +934,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 6299724645911396207}
   Prefab: {fileID: 2306195718720910413, guid: b4f0fb16f48954b71948f6623adad29e, type: 3}
-  IsInvertXScale: 0
+  IsInvertXScale: 1
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseCameraPool: 0
 --- !u!1 &6299724646472048326
 GameObject:
   m_ObjectHideFlags: 0

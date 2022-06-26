@@ -13,7 +13,7 @@ namespace Creatures.Mobs
         [SerializeField] private LayerCheck _isCanAttack;
         [SerializeField] private float _horizontalTrashold = 0.2f;
         [SerializeField] private float _alarmDelay = 0.5f;
-        [SerializeField] private float _attackCooldawn = 1f;
+        [SerializeField] private float _attackCooldown = 1f;
        
         [SerializeField] private float _missHeroCooldown = 0.5f;
         [SerializeField] private LayerCheck _vision;
@@ -26,13 +26,13 @@ namespace Creatures.Mobs
         private CreatureAttack _creatureAttack;
         private Animator _animator; 
         private GameObject _target; 
-        private SpawnListComponent _particles;
-        private bool _isDead; 
         
+        private SpawnListComponent _particles;
+        private bool _isDead;
         private Patrol _patrol;
         private Coroutine _currentCoroutine;
-        private WaitForSeconds _attackWait;
         
+        private WaitForSeconds _attackWait;
         private WaitForSeconds _cooldownWait;
         private WaitForSeconds _alarmWait;
         
@@ -48,14 +48,17 @@ namespace Creatures.Mobs
         private void Start()
         {
             StartState(_patrol.DoPatrol());
-            _attackWait = new WaitForSeconds(_attackCooldawn);
+            _attackWait = new WaitForSeconds(_attackCooldown);
             _cooldownWait = new WaitForSeconds(_missHeroCooldown);
             _alarmWait = new WaitForSeconds(_alarmDelay); 
         }
         
         public void FindHeroInVision(GameObject go)
         {
-            if (_isDead) return;
+            if (_isDead)
+            {
+                return;
+            }
             _target = go; 
             
             StartState(AgroToHero()); 
@@ -145,7 +148,7 @@ namespace Creatures.Mobs
         private void SetDirectionToTarget()
         {
             var direction = GetDirectionToTarget();
-            _creatureMover.SetDirection(direction);
+            _creatureMover.SetDirection(direction.normalized);
         }
 
         private void CheckHeroPosition()
@@ -157,7 +160,7 @@ namespace Creatures.Mobs
         {
             var direction = _target.transform.position - transform.position;
             direction.y = 0;
-            return direction.normalized;
+            return direction;
         }
     }
 }

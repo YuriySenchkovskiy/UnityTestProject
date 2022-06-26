@@ -34,7 +34,13 @@ namespace Creatures.Health
             _maxHealth = _health;
             _minHealth = 0;
         }
-        
+
+        public void SetStartValue()
+        {
+            _health = _maxHealth;
+            ChangedHealth?.Invoke(_health);
+        }
+
         public void ApplyHeal(int healthDelta)
         {
             _health = Mathf.Clamp(_health + healthDelta, _minHealth, _maxHealth);

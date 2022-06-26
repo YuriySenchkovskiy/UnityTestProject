@@ -21,7 +21,7 @@ namespace Utils.ObjectPool
         private void Update()
         {
             Vector3 disablePoint = _camera.ViewportToWorldPoint(new Vector2(_releasePoint, 0f));
-            
+
             if (gameObject.transform.position.x < disablePoint.x)
             {
                 Release();

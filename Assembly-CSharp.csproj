@@ -71,7 +71,6 @@
      <Compile Include="Assets\Scriptes\Components\Audio\SfxSound.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\CameraController.cs" />
      <Compile Include="Assets\Scriptes\Animation\SpriteAnimator.cs" />
-     <Compile Include="Assets\Scriptes\Components\GoBased\PlatformSpawner.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\SpawnComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\HandleUtils.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Health\HealthComponent.cs" />
@@ -96,6 +95,7 @@
      <Compile Include="Assets\Scriptes\Components\ColliderBased\StayTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\OnEnableSpawner.cs" />
+     <Compile Include="Assets\Scriptes\Components\GoBased\RemoteSpawner.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

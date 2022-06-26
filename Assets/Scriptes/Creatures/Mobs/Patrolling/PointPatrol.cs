@@ -13,7 +13,6 @@ namespace Creatures.Mobs.Patrolling
         [SerializeField] private string _miss = "Miss";
 
         private float _startSpeed;
-        private float _multiplier = 1.5f;
         private int _zeroValue = 0;
         private int _destinationPointIndex;
         
@@ -43,11 +42,10 @@ namespace Creatures.Mobs.Patrolling
                 if (_isOnPoint)
                 {
                     _creatureMover.Speed = _zeroValue;
-                    _particles.Spawn(_miss);
                     yield return _waitTimeSeconds;
 
                     _destinationPointIndex = (int) Mathf.Repeat(_destinationPointIndex + _nextPoint, _points.Length);
-                    _creatureMover.Speed = _startSpeed * _multiplier;
+                    _creatureMover.Speed = _startSpeed;
                 }
                 
                 var direction = _points[_destinationPointIndex].position - transform.position;

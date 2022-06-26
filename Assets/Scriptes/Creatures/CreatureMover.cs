@@ -49,8 +49,7 @@ namespace Creatures
             get => _speed;
             set => _speed = value;
         }
-
-        private float CalculateSpeed => _speed;
+        
         public bool IsGrounded => _isGrounded;
 
         private void Awake()
@@ -104,12 +103,12 @@ namespace Creatures
         
         public void SetDirection(Vector2 direction)
         {
-            this._direction = direction; 
+            _direction = direction; 
         }
         
         private float CalculateXVelocity()
         {
-            return _direction.x * CalculateSpeed;
+            return _direction.x * _speed;
         }
 
         private float CalculateYVelocity() 
