@@ -11,5 +11,11 @@ namespace Components.GoBased
         {
             Destroy(_objectToDestroy, _waitTime); 
         }
+
+        public void DestroyObject(GameObject go)
+        {
+            var destroyer = go.GetComponent<DestroyObjectComponent>();
+            destroyer.DestroyObject();
+        }
     }
 }

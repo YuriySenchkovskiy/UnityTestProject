@@ -145,7 +145,7 @@ namespace Creatures.Mobs
         private void SetDirectionToTarget()
         {
             var direction = GetDirectionToTarget();
-            _creatureMover.SetDirection(direction);
+            _creatureMover.SetDirection(direction.normalized);
         }
 
         private void CheckHeroPosition()
@@ -157,7 +157,7 @@ namespace Creatures.Mobs
         {
             var direction = _target.transform.position - transform.position;
             direction.y = 0;
-            return direction.normalized;
+            return direction;
         }
     }
 }
