@@ -22,20 +22,6 @@ namespace Utils.ObjectPool
                 return _instance;
             }
         }
-        
-        public static Pool CameraInstance
-        {
-            get
-            {
-                if (_cameraInstance == null)
-                {
-                    var container = GameObject.Find("---CAMERA POOL---");
-                    _cameraInstance = container.AddComponent<Pool>();
-                }
-
-                return _cameraInstance;
-            }
-        }
 
         public GameObject GetGameObject(GameObject go, Vector3 position)
         {

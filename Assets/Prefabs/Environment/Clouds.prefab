@@ -807,9 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7146751462209763442}
-  - component: {fileID: 3093698709069312539}
-  - component: {fileID: 7808942605923311289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,35 +831,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3093698709069312539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146751462209763441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88dd713a03b5401bab1ea6f584729640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _releasePoint: -2
-  _restart:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &7808942605923311289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146751462209763441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a791fb8bb4e49cdbfb4e5f31ebd15a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _length: 25
 --- !u!1 &7146751462246724999
 GameObject:
   m_ObjectHideFlags: 0

@@ -96,7 +96,6 @@
      <Compile Include="Assets\Scriptes\Components\ColliderBased\ExitCollisionComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\OnEnableSpawner.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\RemoteSpawner.cs" />
-     <Compile Include="Assets\Scriptes\Utils\ObjectPool\Releaser.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -11,7 +11,6 @@ namespace Components.GoBased
         [SerializeField] protected bool IsInvertXScale;
         [SerializeField] protected bool IsInvertYScale;
         [SerializeField] protected bool IsUsePool;
-        [SerializeField] protected bool IsUseCameraPool;
 
         [ContextMenu("Points")]
         public void Spawn()
@@ -21,10 +20,8 @@ namespace Components.GoBased
 
         protected GameObject SpawnInstance()
         {
-            var instance = IsUsePool 
-                    ? IsUseCameraPool 
-                    ? Pool.CameraInstance.GetGameObject(Prefab, Target.position) 
-                : Pool.Instance.GetGameObject(Prefab, Target.position) 
+            var instance = IsUsePool
+                ? Pool.Instance.GetGameObject(Prefab, Target.position) 
                 : SpawnUtils.Spawn(Prefab, Target.position);
 
             var scale = Target.lossyScale;
