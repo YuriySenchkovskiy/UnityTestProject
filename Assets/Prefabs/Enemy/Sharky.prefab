@@ -457,11 +457,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fcc0c5903c45a2b1cca5a5565c638c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 4365892507285138409}
-  _prefab: {fileID: 2581273962295338201, guid: 3c72dec714cf34a66b983cf0785e3400, type: 3}
-  _isInvertXScale: 0
-  _isInvertYScale: 0
-  _isUsePool: 1
+  Target: {fileID: 4365892507285138409}
+  Prefab: {fileID: 2581273962295338201, guid: 3c72dec714cf34a66b983cf0785e3400, type: 3}
+  IsInvertXScale: 0
+  IsInvertYScale: 0
+  IsUsePool: 1
 --- !u!1 &6299724645828961925
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,11 +505,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fcc0c5903c45a2b1cca5a5565c638c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 6299724645828961930}
-  _prefab: {fileID: 4898851383623844100, guid: eb4e3714ecdc5410899faddb3f7f978e, type: 3}
-  _isInvertXScale: 1
-  _isInvertYScale: 0
-  _isUsePool: 1
+  Target: {fileID: 6299724645828961930}
+  Prefab: {fileID: 4898851383623844100, guid: eb4e3714ecdc5410899faddb3f7f978e, type: 3}
+  IsInvertXScale: 0
+  IsInvertYScale: 0
+  IsUsePool: 1
 --- !u!1 &6299724645880345759
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,11 +834,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fcc0c5903c45a2b1cca5a5565c638c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 6299724645880345756}
-  _prefab: {fileID: 5863280331941358844, guid: c2614e0b861b2410b85faf2479f8f9fb, type: 3}
-  _isInvertXScale: 0
-  _isInvertYScale: 0
-  _isUsePool: 1
+  Target: {fileID: 6299724645880345756}
+  Prefab: {fileID: 5863280331941358844, guid: c2614e0b861b2410b85faf2479f8f9fb, type: 3}
+  IsInvertXScale: 0
+  IsInvertYScale: 0
+  IsUsePool: 1
 --- !u!114 &3217155878156616512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,11 +917,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fcc0c5903c45a2b1cca5a5565c638c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 6299724645911396207}
-  _prefab: {fileID: 2306195718720910413, guid: b4f0fb16f48954b71948f6623adad29e, type: 3}
-  _isInvertXScale: 1
-  _isInvertYScale: 0
-  _isUsePool: 1
+  Target: {fileID: 6299724645911396207}
+  Prefab: {fileID: 2306195718720910413, guid: b4f0fb16f48954b71948f6623adad29e, type: 3}
+  IsInvertXScale: 0
+  IsInvertYScale: 0
+  IsUsePool: 1
 --- !u!1 &6299724646472048326
 GameObject:
   m_ObjectHideFlags: 0

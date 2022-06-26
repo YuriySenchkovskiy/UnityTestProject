@@ -19,7 +19,7 @@ namespace Components.Timer
             }
         }
         
-        private void SetTimer(int index)
+        public void SetTimer(int index)
         {
             var timer = _timers[index];
             var waitTime = new WaitForSeconds(timer.Delay);

@@ -7,6 +7,7 @@ namespace Utils.ObjectPool
     {
         private readonly Dictionary<int, Queue<PoolItem>> _items = new Dictionary<int, Queue<PoolItem>>();
         private static Pool _instance;
+        private static Pool _cameraInstance;
 
         public static Pool Instance
         {
@@ -19,6 +20,20 @@ namespace Utils.ObjectPool
                 }
 
                 return _instance;
+            }
+        }
+        
+        public static Pool CameraInstance
+        {
+            get
+            {
+                if (_cameraInstance == null)
+                {
+                    var container = GameObject.Find("---CAMERA POOL---");
+                    _cameraInstance = container.AddComponent<Pool>();
+                }
+
+                return _cameraInstance;
             }
         }
 

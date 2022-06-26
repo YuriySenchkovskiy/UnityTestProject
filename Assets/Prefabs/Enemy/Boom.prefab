@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &32277726495544831
+--- !u!114 &8734979450166001042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectToDestroy: {fileID: 1015422148946946714}
-  _waitTime: 0.1
+  _waitTime: 0
 --- !u!1 &5997375534371048591
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,11 +179,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fcc0c5903c45a2b1cca5a5565c638c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 5997375534371048579}
-  _prefab: {fileID: 1015422148946946714}
-  _isInvertXScale: 0
-  _isInvertYScale: 0
-  _isUsePool: 0
+  Target: {fileID: 5997375534371048579}
+  Prefab: {fileID: 1015422148946946714}
+  IsInvertXScale: 0
+  IsInvertYScale: 0
+  IsUsePool: 0
 --- !u!114 &-7411024207107887093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,7 +294,7 @@ PrefabInstance:
     - target: {fileID: 6183854236339880244, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}
       propertyPath: _dropCalculated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 32277726495544831}
+      objectReference: {fileID: 8734979450166001042}
     - target: {fileID: 6183854236339880244, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}
       propertyPath: _dropCalculated.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6183854236339880244, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}
       propertyPath: _dropCalculated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Scriptes.Components.GoBased.DestroyObjectComponent, Assembly-CSharp
+      value: Components.GoBased.DestroyObjectComponent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6183854236339880244, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}
       propertyPath: _dropCalculated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

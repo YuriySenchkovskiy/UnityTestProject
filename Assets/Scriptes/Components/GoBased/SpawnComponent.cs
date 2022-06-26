@@ -6,11 +6,12 @@ namespace Components.GoBased
 {
     public class SpawnComponent : MonoBehaviour
     {
-        [SerializeField] protected Transform _target;
-        [SerializeField] protected GameObject _prefab; 
-        [SerializeField] protected bool _isInvertXScale;
-        [SerializeField] protected bool _isInvertYScale;
-        [SerializeField] protected bool _isUsePool;
+        [SerializeField] protected Transform Target;
+        [SerializeField] protected GameObject Prefab; 
+        [SerializeField] protected bool IsInvertXScale;
+        [SerializeField] protected bool IsInvertYScale;
+        [SerializeField] protected bool IsUsePool;
+        [SerializeField] protected bool IsUseCameraPool;
 
         [ContextMenu("Points")]
         public void Spawn()
@@ -20,13 +21,15 @@ namespace Components.GoBased
 
         protected GameObject SpawnInstance()
         {
-            var instance = _isUsePool 
-                ? Pool.Instance.GetGameObject(_prefab, _target.position) 
-                : SpawnUtils.Spawn(_prefab, _target.position);
+            var instance = IsUsePool 
+                    ? IsUseCameraPool 
+                    ? Pool.CameraInstance.GetGameObject(Prefab, Target.position) 
+                : Pool.Instance.GetGameObject(Prefab, Target.position) 
+                : SpawnUtils.Spawn(Prefab, Target.position);
 
-            var scale = _target.lossyScale;
-            scale.x *= _isInvertXScale ? -1 : 1;
-            scale.y *= _isInvertYScale ? -1 : 1;
+            var scale = Target.lossyScale;
+            scale.x *= IsInvertXScale ? -1 : 1;
+            scale.y *= IsInvertYScale ? -1 : 1;
             instance.transform.localScale = scale;
             instance.SetActive(true);
             return instance;
