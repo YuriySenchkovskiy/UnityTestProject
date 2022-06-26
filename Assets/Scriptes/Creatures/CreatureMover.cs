@@ -1,17 +1,19 @@
 using Components.Audio;
 using Components.ColliderBased;
 using Components.GoBased;
+using Creatures.Health;
 using UnityEngine;
 
 namespace Creatures
 {
+    [RequireComponent(typeof(Rigidbody2D), typeof(SpawnListComponent), typeof(Animator))]
     public class CreatureMover : MonoBehaviour
     {
-        [Header("Movement")] 
-        [SerializeField] private Rigidbody2D _rigidbody2D;
+        [Header("Movement")]
         [SerializeField, Range(0, 10)] private float _speed;
         [SerializeField] private bool _invertScale;
 
+        private Rigidbody2D _rigidbody2D;
         private Vector2 _direction;
         private Vector3 _forwardScale = Vector3.one; 
         private Vector3 _backwardsScale = new Vector3(-1, 1, 1);
@@ -25,21 +27,23 @@ namespace Creatures
         private bool _isGrounded; 
         private bool _isJumping;
         
-        [Space] [Header("Particles")] 
-        [SerializeField] private SpawnListComponent _particles;
+        [Space] [Header("Particles")]
         [SerializeField] private string _run = "Run";
-        
-        private float _minSpeed = 0.01f;
-        
-        [Space] [Header("Animator")]
-        [SerializeField] private Animator _animator; 
+       
         private static readonly int isRunning = Animator.StringToHash("isRunning");
         private static readonly int isGround = Animator.StringToHash("isGround");
-        
-        private PlaySoundsComponent _sounds;
         private static readonly int VerticalVelocity = Animator.StringToHash("verticalVelocity");
+        
+        private SpawnListComponent _particles;
+        private float _minSpeed = 0.01f;
+        private Animator _animator;
         private int _zeroValue = 0;
         
+        private HealthComponent _healthComponent;
+        private PlaySoundsComponent _sounds;
+        private string _healSound = "Heal";
+        private string _damageSound = "Damage";
+
         public float Speed
         {
             get => _speed;
@@ -47,10 +51,21 @@ namespace Creatures
         }
 
         private float CalculateSpeed => _speed;
-        
+        public bool IsGrounded => _isGrounded;
+
         private void Awake()
         {
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+            _particles = GetComponent<SpawnListComponent>();
+            _animator = GetComponent<Animator>();
+            _healthComponent = GetComponent<HealthComponent>();
             _sounds = GetComponent<PlaySoundsComponent>();
+        }
+        
+        private void OnEnable()
+        {
+            _healthComponent.Damaged += TakeDamage;
+            _healthComponent.Healed += TakeHeal;
         }
         
         private void Update()
@@ -66,6 +81,12 @@ namespace Creatures
             
             UpdateAnimation(); 
             UpdateSpriteDirection(_direction); 
+        }
+        
+        private void OnDisable()
+        {
+            _healthComponent.Damaged -= TakeDamage;
+            _healthComponent.Healed -= TakeHeal;
         }
         
         public void UpdateSpriteDirection(Vector2 direction)
@@ -134,7 +155,7 @@ namespace Creatures
             _sounds.Play(_jump);
         }
         
-        private void SpawnFootDust() // вызывается в аниматоре
+        private void SpawnFootDustInAnimation()
         {
             if (_isGrounded && _rigidbody2D.velocity.y <= _minSpeed)
             {
@@ -147,6 +168,18 @@ namespace Creatures
             _animator.SetBool(isGround, _isGrounded);
             _animator.SetFloat(VerticalVelocity, _rigidbody2D.velocity.y); 
             _animator.SetBool(isRunning, _direction.x != _zeroValue && _speed != _zeroValue); 
+        }
+
+        private void TakeDamage()
+        {
+            _isJumping = false;
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _damageJumpLevel);
+            _sounds.Play(_damageSound);
+        }
+        
+        private void TakeHeal()
+        {
+            _sounds.Play(_healSound);
         }
     }
 }

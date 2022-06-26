@@ -7,14 +7,14 @@ using UnityEngine;
 namespace Creatures.Mobs
 {
     [RequireComponent(typeof(Patrol), typeof(SpawnListComponent), typeof(Animator))]
+    [RequireComponent(typeof(CreatureMover), typeof(CreatureAttack))]
     public class MobAI : MonoBehaviour
     {
         [SerializeField] private LayerCheck _isCanAttack;
-        [SerializeField] private Creatures _creature;
         [SerializeField] private float _horizontalTrashold = 0.2f;
-        [SerializeField] private float _alarmDelay = 0.5f; 
-        
+        [SerializeField] private float _alarmDelay = 0.5f;
         [SerializeField] private float _attackCooldawn = 1f;
+       
         [SerializeField] private float _missHeroCooldown = 0.5f;
         [SerializeField] private LayerCheck _vision;
         [SerializeField] private string _attack = "Attack";
@@ -22,6 +22,8 @@ namespace Creatures.Mobs
 
         private static readonly int IsDeadKey = Animator.StringToHash("isDeadKey");
         
+        private CreatureMover _creatureMover;
+        private CreatureAttack _creatureAttack;
         private Animator _animator; 
         private GameObject _target; 
         private SpawnListComponent _particles;
@@ -36,6 +38,8 @@ namespace Creatures.Mobs
         
         private void Awake()
         {
+            _creatureMover = GetComponent<CreatureMover>();
+            _creatureAttack = GetComponent<CreatureAttack>();
             _animator = GetComponent<Animator>();
             _particles = GetComponent<SpawnListComponent>();
             _patrol = GetComponent<Patrol>();
@@ -70,7 +74,7 @@ namespace Creatures.Mobs
 
         private void StartState(IEnumerator coroutine)
         {
-            _creature.SetDirection(Vector2.zero); 
+            _creatureMover.SetDirection(Vector2.zero); 
             
             if (_currentCoroutine != null)
             {
@@ -89,9 +93,9 @@ namespace Creatures.Mobs
 
         private void LookAtHero()
         {
-            _creature.SetDirection(Vector2.zero);
+            _creatureMover.SetDirection(Vector2.zero);
             var direction = GetDirectionToTarget();
-            _creature.UpdateSpriteDirection(direction);
+            _creatureMover.UpdateSpriteDirection(direction);
         }
 
         private IEnumerator GoToHero()
@@ -108,7 +112,7 @@ namespace Creatures.Mobs
                                                     - transform.position.x);
                     if (horizontalDelta <= _horizontalTrashold)
                     {
-                        _creature.SetDirection(Vector2.zero);
+                        _creatureMover.SetDirection(Vector2.zero);
                     }
                     else
                     {
@@ -119,7 +123,7 @@ namespace Creatures.Mobs
                 yield return null;
             }
             
-            _creature.SetDirection(Vector2.zero);
+            _creatureMover.SetDirection(Vector2.zero);
             _particles.Spawn(_miss);
             yield return _cooldownWait;
 
@@ -130,7 +134,7 @@ namespace Creatures.Mobs
         {
             while (_isCanAttack.IsTouchingLayer)
             {
-                _creature.Attack();
+                _creatureAttack.Attack();
                 _particles.Spawn(_attack);
                 yield return _attackWait;
             }
@@ -141,7 +145,7 @@ namespace Creatures.Mobs
         private void SetDirectionToTarget()
         {
             var direction = GetDirectionToTarget();
-            _creature.SetDirection(direction);
+            _creatureMover.SetDirection(direction);
         }
 
         private void CheckHeroPosition()

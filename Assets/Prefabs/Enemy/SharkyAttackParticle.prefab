@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2581273962295338196}
   - component: {fileID: 2581273962295338199}
   - component: {fileID: 2581273962295338198}
+  - component: {fileID: -7297670598771628675}
   m_Layer: 0
   m_Name: SharkyAttackParticle
   m_TagString: Untagged
@@ -139,3 +140,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectToDestroy: {fileID: 2581273962295338201}
   _waitTime: 0
+--- !u!114 &-7297670598771628675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2581273962295338201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd713a03b5401bab1ea6f584729640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _releasePoint: -2
+  _restart:
+    m_PersistentCalls:
+      m_Calls: []

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 5997375534371048578}
   - component: {fileID: 5997375534371048577}
   - component: {fileID: 5997375534371048576}
-  - component: {fileID: 5997375534371048580}
+  - component: {fileID: -7411024207107887093}
   m_Layer: 0
   m_Name: Boom
   m_TagString: Untagged
@@ -151,23 +151,22 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 63131295c244d448cab7bb4adf2b0f83, type: 3}
     _complited:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5997375534371048580}
-          m_TargetAssemblyTypeName: Scriptes.Components.GoBased.DestroyObjectComponent,
-            Assembly-CSharp
-          m_MethodName: DestroyObject
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   _endAnimation:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -7411024207107887093}
+        m_TargetAssemblyTypeName: Utils.ObjectPool.PoolItem, Assembly-CSharp
+        m_MethodName: Release
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5997375534371048576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +184,7 @@ MonoBehaviour:
   _isInvertXScale: 0
   _isInvertYScale: 0
   _isUsePool: 0
---- !u!114 &5997375534371048580
+--- !u!114 &-7411024207107887093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,11 +193,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5997375534371048591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b769622d42b24c37a77e516426518ade, type: 3}
+  m_Script: {fileID: 11500000, guid: 88dd713a03b5401bab1ea6f584729640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objectToDestroy: {fileID: 5997375534371048591}
-  _waitTime: 0
+  _releasePoint: 0
+  _restart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5997375534371048577}
+        m_TargetAssemblyTypeName: Animation.SpriteAnimator, Assembly-CSharp
+        m_MethodName: SetClip
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: start
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &6613245483741522857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 6183854236339880245, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}
       propertyPath: _waitTime
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183854236339880245, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}
+      propertyPath: _isUsePool
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdfa5794569064ae6aebf4463251b5a0, type: 3}

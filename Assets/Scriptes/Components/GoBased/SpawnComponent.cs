@@ -6,7 +6,7 @@ namespace Components.GoBased
 {
     public class SpawnComponent : MonoBehaviour
     {
-        [SerializeField] protected Transform _target; 
+        [SerializeField] protected Transform _target;
         [SerializeField] protected GameObject _prefab; 
         [SerializeField] protected bool _isInvertXScale;
         [SerializeField] protected bool _isInvertYScale;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Creatures.Mobs.Patrolling
 {
-    [RequireComponent(typeof(Creatures), typeof(SpawnListComponent))]
+    [RequireComponent(typeof(CreatureAttack), typeof(SpawnListComponent))]
     public class PointPatrol : Patrol
     {
         [SerializeField] private Transform[] _points;
@@ -18,7 +18,7 @@ namespace Creatures.Mobs.Patrolling
         private int _destinationPointIndex;
         
         private int _nextPoint = 1;
-        private Creatures _creature;
+        private CreatureMover _creatureMover;
         private SpawnListComponent _particles;
         private WaitForSeconds _waitTimeSeconds;
 
@@ -26,9 +26,9 @@ namespace Creatures.Mobs.Patrolling
 
         private void Awake()
         {
-            _creature = GetComponent<Creatures>();
+            _creatureMover = GetComponent<CreatureMover>();
             _particles = GetComponent<SpawnListComponent>();
-            _startSpeed = _creature.Speed;
+            _startSpeed = _creatureMover.Speed;
         }
 
         private void Start()
@@ -42,17 +42,17 @@ namespace Creatures.Mobs.Patrolling
             {
                 if (_isOnPoint)
                 {
-                    _creature.Speed = _zeroValue;
+                    _creatureMover.Speed = _zeroValue;
                     _particles.Spawn(_miss);
                     yield return _waitTimeSeconds;
 
                     _destinationPointIndex = (int) Mathf.Repeat(_destinationPointIndex + _nextPoint, _points.Length);
-                    _creature.Speed = _startSpeed * _multiplier;
+                    _creatureMover.Speed = _startSpeed * _multiplier;
                 }
                 
                 var direction = _points[_destinationPointIndex].position - transform.position;
                 direction.y = _zeroValue;
-                _creature.SetDirection(direction.normalized);
+                _creatureMover.SetDirection(direction.normalized);
 
                 yield return null;
             }

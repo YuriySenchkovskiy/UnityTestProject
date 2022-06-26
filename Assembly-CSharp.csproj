@@ -54,7 +54,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scriptes\UI\HealthBar.cs" />
      <Compile Include="Assets\Scriptes\Creatures\Health\ChangeHealthComponent.cs" />
-     <Compile Include="Assets\Scriptes\Creatures\Creatures.cs" />
+     <Compile Include="Assets\Scriptes\Creatures\CreatureAttack.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerComponent.cs" />
      <Compile Include="Assets\Scriptes\Utils\ObjectPool\PoolItem.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\DestroyInvisible.cs" />
@@ -94,8 +94,6 @@
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerDetection.cs" />
      <Compile Include="Assets\Scriptes\Components\GoBased\CameraController.cs" />
      <Compile Include="Assets\Scriptes\Creatures\CreatureMover.cs" />
-     <Compile Include="Assets\Scriptes\Creatures\CreatureAttack.cs" />
-     <Compile Include="Assets\Scriptes\Creatures\CreatureSound.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

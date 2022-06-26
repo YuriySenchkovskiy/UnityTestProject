@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 3300440244280979256}
   - component: {fileID: 1111842868377470335}
   - component: {fileID: 5077710519817185512}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3740031715838891288}
   - component: {fileID: 3175315760457652678}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: DeadCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,13 +332,14 @@ GameObject:
   - component: {fileID: 6347780494746357159}
   - component: {fileID: 6347780494746357156}
   - component: {fileID: 6347780494746357178}
-  - component: {fileID: 6347780494746357179}
   - component: {fileID: 6347780494746357176}
   - component: {fileID: 6347780494746357182}
   - component: {fileID: 6347780494746357183}
   - component: {fileID: 6347780494746357180}
   - component: {fileID: 1749219279}
   - component: {fileID: 8225974208060487469}
+  - component: {fileID: 2929874206650405201}
+  - component: {fileID: 1468374609803871030}
   m_Layer: 7
   m_Name: Hero
   m_TagString: Player
@@ -446,7 +447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21c0fbd7264479e9ca15e2021c032bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hero: {fileID: 6347780494746357179}
 --- !u!114 &6347780494746357178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,30 +467,6 @@ MonoBehaviour:
     _clip: {fileID: 8300000, guid: 3953496524ef34e61927e67ef777c37e, type: 3}
   - _id: Damage
     _clip: {fileID: 8300000, guid: 3a1bb3e8a3b5743088240a2ae82db184, type: 3}
---- !u!114 &6347780494746357179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347780494746357157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf02624f00147fb8557e13733b97a9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rigidbody2D: {fileID: 6347780494746357182}
-  _speed: 2.2
-  _invertScale: 0
-  _jumpLevel: 11.5
-  _damageJumpLevel: 5
-  _layerCheck: {fileID: 6347780493372067440}
-  _jump: Jump
-  _attackRange: {fileID: 1111842868377470335}
-  _melee: Melee
-  _particles: {fileID: 6347780494746357180}
-  _run: Run
-  _animator: {fileID: 6347780494746357159}
 --- !u!114 &6347780494746357176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +673,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8225974208060487469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,6 +699,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objectToDestroy: {fileID: 6347780494746357157}
   _waitTime: 0.1
+--- !u!114 &2929874206650405201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347780494746357157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83669348dc06406482f94bcea4cef8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 2.2
+  _invertScale: 0
+  _jumpLevel: 11.5
+  _damageJumpLevel: 5
+  _layerCheck: {fileID: 6347780493372067440}
+  _jump: Jump
+  _run: Run
+--- !u!114 &1468374609803871030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347780494746357157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf02624f00147fb8557e13733b97a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackRange: {fileID: 1111842868377470335}
+  _melee: Melee
 --- !u!1 &6347780494858127689
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,4 +827,4 @@ MonoBehaviour:
   _prefab: {fileID: 3873079331909188780, guid: c0d1db5e26a3e4c22a0e1660df0ecd58, type: 3}
   _isInvertXScale: 0
   _isInvertYScale: 0
-  _isUsePool: 0
+  _isUsePool: 1

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using Utils;
+using Utils.ObjectPool;
 
 namespace Components
 {
@@ -11,6 +12,7 @@ namespace Components
         [SerializeField] private float _sectorRotation;
         [SerializeField] private float _waitTime = 0.1f;
         [SerializeField] private float _speed = 6;
+        [SerializeField] private bool _isUsePool;
 
         private Coroutine _coroutine;
         private WaitForSeconds _waitFor;
@@ -45,7 +47,9 @@ namespace Components
         [ContextMenu("Points one")]
         private void Spawn(GameObject particle)
         {
-            var instance = SpawnUtils.Spawn(particle, transform.position);
+            var instance = _isUsePool 
+                ? Pool.Instance.GetGameObject(particle, transform.position) 
+                : SpawnUtils.Spawn(particle, transform.position);
             var rigidBody = instance.GetComponent<Rigidbody2D>();
 
             var randomAngle = Random.Range(0, _sectorAngle);
