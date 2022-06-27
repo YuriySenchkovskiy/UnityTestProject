@@ -1,9 +1,8 @@
 using Components.ColliderBased;
-using UnityEngine;
 
 namespace Components.GoBased
 {
-    public class PlatformSpawner : SpawnComponent
+    public class RemoteSpawner : SpawnComponent
     {
         private void OnEnable()
         {
@@ -15,10 +14,9 @@ namespace Components.GoBased
             EnterTriggerDetection.TriggerDetected -= OnTriggerDetected;
         }
         
-        private void OnTriggerDetected(Transform target)
+        private void OnTriggerDetected()
         {
-            Target = target;
-            SpawnInstance();
+            Spawn();
         }
     }
 }

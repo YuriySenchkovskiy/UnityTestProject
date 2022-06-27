@@ -6,7 +6,7 @@ namespace Components.GoBased
     {
         private void OnEnable()
         {
-            SpawnInstance();
+            Spawn();
         }
     }
 }

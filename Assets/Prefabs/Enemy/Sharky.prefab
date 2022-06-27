@@ -462,6 +462,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseRandomXPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!1 &6299724645828961925
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +513,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseRandomXPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!1 &6299724645880345759
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,9 +720,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isCanAttack: {fileID: 7038310401651052711}
   _horizontalTrashold: 0.2
-  _alarmDelay: 0.5
+  _alarmDelay: 0.2
   _attackCooldawn: 1
-  _missHeroCooldown: 0.5
+  _missHeroCooldown: 0.2
   _vision: {fileID: 9082067185226491096}
   _attack: Attack
   _miss: Miss
@@ -839,6 +845,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseRandomXPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!114 &3217155878156616512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83669348dc06406482f94bcea4cef8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.5
+  _speed: 0
   _invertScale: 1
   _jumpLevel: 0
   _damageJumpLevel: 0
@@ -934,6 +943,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseRandomXPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!1 &6299724646472048326
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6299724646472048326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.391, y: -0.256, z: 0}
+  m_LocalPosition: {x: -0.441, y: -0.256, z: 0}
   m_LocalScale: {x: 0.2625, y: 1.114062, z: 1}
   m_Children:
   - {fileID: 6299724646778958930}

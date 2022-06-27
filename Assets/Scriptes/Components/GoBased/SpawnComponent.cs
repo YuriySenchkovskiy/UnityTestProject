@@ -10,7 +10,11 @@ namespace Components.GoBased
         [SerializeField] protected GameObject Prefab; 
         [SerializeField] protected bool IsInvertXScale;
         [SerializeField] protected bool IsInvertYScale;
+        
         [SerializeField] protected bool IsUsePool;
+        [SerializeField] protected bool IsUseRandomXPoint;
+        [SerializeField] protected float XPointStart;
+        [SerializeField] protected float XPointEnd;
 
         [ContextMenu("Points")]
         public void Spawn()
@@ -18,8 +22,15 @@ namespace Components.GoBased
             SpawnInstance();
         }
 
-        protected GameObject SpawnInstance()
+        private GameObject SpawnInstance()
         {
+            if (IsUseRandomXPoint)
+            {
+                var _xAdded = Random.Range(XPointStart, XPointEnd);
+                var position = new Vector3(Target.position.x + _xAdded, Target.position.y);
+                Target.position = position;
+            }
+
             var instance = IsUsePool 
                 ?  Pool.Instance.GetGameObject(Prefab, Target.position) 
                 : SpawnUtils.Spawn(Prefab, Target.position);

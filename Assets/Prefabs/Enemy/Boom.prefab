@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 5997375534371048578}
   - component: {fileID: 5997375534371048577}
   - component: {fileID: 5997375534371048576}
-  - component: {fileID: -7411024207107887093}
+  - component: {fileID: 713782588798556858}
   m_Layer: 0
   m_Name: Boom
   m_TagString: Untagged
@@ -155,7 +155,7 @@ MonoBehaviour:
   _endAnimation:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -7411024207107887093}
+      - m_Target: {fileID: 713782588798556858}
         m_TargetAssemblyTypeName: Utils.ObjectPool.PoolItem, Assembly-CSharp
         m_MethodName: Release
         m_Mode: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 0
---- !u!114 &-7411024207107887093
+--- !u!114 &713782588798556858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

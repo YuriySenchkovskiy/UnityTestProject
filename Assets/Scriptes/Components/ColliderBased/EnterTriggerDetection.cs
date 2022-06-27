@@ -7,12 +7,14 @@ namespace Components.ColliderBased
     {
         [SerializeField] private Transform _targetTransform;
         
-        public static event Action<Transform> TriggerDetected;
+        public static Action<Transform> TriggerTransformDetected;
+        public static Action TriggerDetected;
 
         protected override void OnTriggerEnter2D(Collider2D other)
         {
             base.OnTriggerEnter2D(other);
-            TriggerDetected?.Invoke(_targetTransform);
+            TriggerTransformDetected?.Invoke(_targetTransform);
+            //TriggerDetected?.Invoke();
         }
     }
 }

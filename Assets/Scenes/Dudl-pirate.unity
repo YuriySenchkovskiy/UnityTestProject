@@ -414,6 +414,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 0
+  IsUseRandomPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,7 +1378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1351816342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5fcc0c5903c45a2b1cca5a5565c638c, type: 3}
+  m_Script: {fileID: 11500000, guid: 229f9780ccc64dce9611a213e6df6434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 1351816343}
@@ -1383,6 +1386,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 0
+  IsUseRandomPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!1 &1416853134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1438,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseRandomPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!114 &1416853137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1449,6 +1458,9 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
+  IsUseRandomPoint: 0
+  XPointStart: 0
+  XPointEnd: 0
 --- !u!1 &1467246890
 GameObject:
   m_ObjectHideFlags: 0

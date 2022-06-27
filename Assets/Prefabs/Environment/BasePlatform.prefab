@@ -677,6 +677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813231641058549828}
   - component: {fileID: 1813231641058549829}
+  - component: {fileID: 8899584653950193587}
   m_Layer: 3
   m_Name: Spawner
   m_TagString: Untagged
@@ -715,7 +716,22 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
-  IsUseCameraPool: 0
+  IsUseRandomXPoint: 1
+  XPointStart: 0
+  XPointEnd: 1
+--- !u!114 &8899584653950193587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813231641058549830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c4457b75944b7b2704b483807741f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startPosition: {x: 0, y: 1.2, z: 0}
 --- !u!1 &1813231641128491722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1684,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 3160406517933364721}
+        m_TargetAssemblyTypeName: Components.GoBased.StartTransformSaver, Assembly-CSharp
+        m_MethodName: SetStartPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8899584653950193587}
+        m_TargetAssemblyTypeName: Components.GoBased.StartTransformSaver, Assembly-CSharp
+        m_MethodName: SetStartPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8108783851098434766}
+        m_TargetAssemblyTypeName: Components.GoBased.StartTransformSaver, Assembly-CSharp
+        m_MethodName: SetStartPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4267892269925030955}
+        m_TargetAssemblyTypeName: Components.GoBased.StartTransformSaver, Assembly-CSharp
+        m_MethodName: SetStartPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1813231642167300874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,6 +2098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813231642534970453}
   - component: {fileID: 1813231642534970452}
+  - component: {fileID: 3160406517933364721}
   m_Layer: 3
   m_Name: Spawner
   m_TagString: Untagged
@@ -2072,7 +2137,22 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
-  IsUseCameraPool: 0
+  IsUseRandomXPoint: 1
+  XPointStart: 0
+  XPointEnd: 1
+--- !u!114 &3160406517933364721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813231642534970454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c4457b75944b7b2704b483807741f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startPosition: {x: 0, y: 1.2, z: 0}
 --- !u!1 &1813231642536827652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,6 +2572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3630682335024560169}
   - component: {fileID: 4261742165266911771}
+  - component: {fileID: 4267892269925030955}
   m_Layer: 3
   m_Name: Spawner
   m_TagString: Untagged
@@ -2530,7 +2611,22 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
-  IsUseCameraPool: 0
+  IsUseRandomXPoint: 1
+  XPointStart: 0
+  XPointEnd: 1
+--- !u!114 &4267892269925030955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336679028900178197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c4457b75944b7b2704b483807741f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startPosition: {x: 0, y: 1.2, z: 0}
 --- !u!1 &3513333301782312908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2925,6 +3021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4478419178247222647}
   - component: {fileID: 3037841698583869385}
+  - component: {fileID: 8108783851098434766}
   m_Layer: 3
   m_Name: Spawner
   m_TagString: Untagged
@@ -2963,7 +3060,22 @@ MonoBehaviour:
   IsInvertXScale: 0
   IsInvertYScale: 0
   IsUsePool: 1
-  IsUseCameraPool: 0
+  IsUseRandomXPoint: 1
+  XPointStart: 0
+  XPointEnd: 1
+--- !u!114 &8108783851098434766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5726014519234795023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787c4457b75944b7b2704b483807741f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startPosition: {x: 0, y: 1.2, z: 0}
 --- !u!1 &5933080941589330074
 GameObject:
   m_ObjectHideFlags: 0
