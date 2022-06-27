@@ -717,8 +717,8 @@ MonoBehaviour:
   IsInvertYScale: 0
   IsUsePool: 1
   IsUseRandomXPoint: 1
-  XPointStart: 0
-  XPointEnd: 1
+  XPointStart: -0.8
+  XPointEnd: 0.8
 --- !u!114 &8899584653950193587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,8 +2138,8 @@ MonoBehaviour:
   IsInvertYScale: 0
   IsUsePool: 1
   IsUseRandomXPoint: 1
-  XPointStart: 0
-  XPointEnd: 1
+  XPointStart: -0.8
+  XPointEnd: 0.8
 --- !u!114 &3160406517933364721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2612,8 +2612,8 @@ MonoBehaviour:
   IsInvertYScale: 0
   IsUsePool: 1
   IsUseRandomXPoint: 1
-  XPointStart: 0
-  XPointEnd: 1
+  XPointStart: -0.8
+  XPointEnd: 0.8
 --- !u!114 &4267892269925030955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3061,8 +3061,8 @@ MonoBehaviour:
   IsInvertYScale: 0
   IsUsePool: 1
   IsUseRandomXPoint: 1
-  XPointStart: 0
-  XPointEnd: 1
+  XPointStart: -0.8
+  XPointEnd: 0.8
 --- !u!114 &8108783851098434766
 MonoBehaviour:
   m_ObjectHideFlags: 0

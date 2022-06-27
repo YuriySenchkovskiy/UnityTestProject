@@ -86,7 +86,7 @@
      <Compile Include="Assets\Scriptes\Components\GoBased\ReloadLevel.cs" />
      <Compile Include="Assets\Scriptes\Creatures\CreatureMover.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterEventComponent.cs" />
-     <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerDetection.cs" />
+     <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterTriggerAction.cs" />
      <Compile Include="Assets\Scriptes\Components\Audio\PlaySoundsComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\RandomSpawnerComponent.cs" />
      <Compile Include="Assets\Scriptes\Components\ColliderBased\EnterCollisionComponent.cs" />

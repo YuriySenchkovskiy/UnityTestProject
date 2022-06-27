@@ -7,12 +7,12 @@ namespace Components.GoBased
     {
         private void OnEnable()
         {
-            EnterTriggerDetection.TriggerTransformDetected += OnTriggerTransformDetected;
+            EnterTriggerAction.TriggerTransformDetected += OnTriggerTransformDetected;
         }
 
         private void OnDisable()
         {
-            EnterTriggerDetection.TriggerTransformDetected -= OnTriggerTransformDetected;
+            EnterTriggerAction.TriggerTransformDetected -= OnTriggerTransformDetected;
         }
         
         private void OnTriggerTransformDetected(Transform target)

@@ -6,12 +6,12 @@ namespace Components.GoBased
     {
         private void OnEnable()
         {
-            EnterTriggerDetection.TriggerDetected += OnTriggerDetected;
+            EnterTriggerAction.TriggerDetected += OnTriggerDetected;
         }
 
         private void OnDisable()
         {
-            EnterTriggerDetection.TriggerDetected -= OnTriggerDetected;
+            EnterTriggerAction.TriggerDetected -= OnTriggerDetected;
         }
         
         private void OnTriggerDetected()
