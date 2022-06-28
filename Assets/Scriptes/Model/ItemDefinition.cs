@@ -5,15 +5,15 @@ using UnityEngine;
 namespace Model
 {
     [Serializable]
-    public struct ItemDef
+    public struct ItemDefinition
     {
         [SerializeField] private string _id;
         [SerializeField] private string _label;
         [SerializeField] private string _description;
         [SerializeField] private int _effect;
         [SerializeField] private Sprite _icon;
-        [SerializeField] private ItemTag[] _tags;
         [SerializeField] private string _price;
+        [SerializeField] private ItemTag[] _tags;
 
         public string Id => _id;
         public string Label => _label;
